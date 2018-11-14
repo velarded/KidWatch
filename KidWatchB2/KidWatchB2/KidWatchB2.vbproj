@@ -134,5 +134,11 @@
   <ItemGroup>
     <None Include="Resources\Apps-Google-Maps-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WatchButtonCall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WatchButtonMenu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -26,6 +26,8 @@ Partial Class KidWatch
         Me.mapsButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.CallButton = New System.Windows.Forms.Button()
+        Me.MenuButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'walletButton
@@ -68,6 +70,30 @@ Partial Class KidWatch
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Maps"
         '
+        'CallButton
+        '
+        Me.CallButton.BackColor = System.Drawing.Color.Transparent
+        Me.CallButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.WatchButtonCall
+        Me.CallButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CallButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CallButton.Location = New System.Drawing.Point(87, 329)
+        Me.CallButton.Name = "CallButton"
+        Me.CallButton.Size = New System.Drawing.Size(30, 30)
+        Me.CallButton.TabIndex = 4
+        Me.CallButton.UseVisualStyleBackColor = False
+        '
+        'MenuButton
+        '
+        Me.MenuButton.BackColor = System.Drawing.Color.Transparent
+        Me.MenuButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.WatchButtonMenu
+        Me.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.MenuButton.Location = New System.Drawing.Point(212, 329)
+        Me.MenuButton.Name = "MenuButton"
+        Me.MenuButton.Size = New System.Drawing.Size(30, 30)
+        Me.MenuButton.TabIndex = 5
+        Me.MenuButton.UseVisualStyleBackColor = False
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -75,6 +101,8 @@ Partial Class KidWatch
         Me.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.SmartWatch
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(334, 501)
+        Me.Controls.Add(Me.MenuButton)
+        Me.Controls.Add(Me.CallButton)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mapsButton)
@@ -90,4 +118,6 @@ Partial Class KidWatch
     Friend WithEvents mapsButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents CallButton As Button
+    Friend WithEvents MenuButton As Button
 End Class
