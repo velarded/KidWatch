@@ -120,10 +120,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\blue-smartwatch.jpg" />
+    <None Include="Resources\SmartWatch.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SmartWatch.jpg" />
+    <None Include="Resources\WatchButtonCall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WatchButtonMenu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
