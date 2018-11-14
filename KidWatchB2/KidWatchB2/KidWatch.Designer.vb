@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class KidWatch
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,14 +24,15 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'Form1
+        'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._55994682_closeup_of_blue_smartwatch_with_blank_screen_on_light_background_mock_up_3d_rendering
-        Me.ClientSize = New System.Drawing.Size(434, 450)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.SmartWatch
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(334, 501)
+        Me.Name = "KidWatch"
+        Me.Text = "Group B2 - KidWatch"
         Me.ResumeLayout(False)
 
     End Sub

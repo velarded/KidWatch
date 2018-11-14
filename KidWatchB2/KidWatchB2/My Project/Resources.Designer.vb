@@ -63,10 +63,19 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property _55994682_closeup_of_blue_smartwatch_with_blank_screen_on_light_background_mock_up_3d_rendering() As System.Drawing.Bitmap
+        Friend ReadOnly Property blue_smartwatch() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("55994682-closeup-of-blue-smartwatch-with-blank-screen-on-light-background-mock-up"& _ 
-                        "-3d-rendering", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("blue_smartwatch", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property SmartWatch() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("SmartWatch", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
