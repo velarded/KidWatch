@@ -125,5 +125,14 @@
   <ItemGroup>
     <None Include="Resources\SmartWatch.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ios9-wallet-applepay-app-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ios9-wallet-applepay-app-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-Google-Maps-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
