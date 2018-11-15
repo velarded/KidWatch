@@ -33,10 +33,10 @@ Partial Class MenuControl
         'mapsLabel
         '
         Me.mapsLabel.AutoSize = True
-        Me.mapsLabel.BackColor = System.Drawing.Color.Black
+        Me.mapsLabel.BackColor = System.Drawing.Color.Transparent
         Me.mapsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mapsLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.mapsLabel.Location = New System.Drawing.Point(35, 140)
+        Me.mapsLabel.Location = New System.Drawing.Point(29, 193)
         Me.mapsLabel.Name = "mapsLabel"
         Me.mapsLabel.Size = New System.Drawing.Size(45, 18)
         Me.mapsLabel.TabIndex = 7
@@ -45,10 +45,10 @@ Partial Class MenuControl
         'walletLabel
         '
         Me.walletLabel.AutoSize = True
-        Me.walletLabel.BackColor = System.Drawing.Color.Black
+        Me.walletLabel.BackColor = System.Drawing.Color.Transparent
         Me.walletLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.walletLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.walletLabel.Location = New System.Drawing.Point(33, 59)
+        Me.walletLabel.Location = New System.Drawing.Point(25, 80)
         Me.walletLabel.Name = "walletLabel"
         Me.walletLabel.Size = New System.Drawing.Size(49, 18)
         Me.walletLabel.TabIndex = 6
@@ -57,9 +57,10 @@ Partial Class MenuControl
         'MessagesLabel
         '
         Me.MessagesLabel.AutoSize = True
+        Me.MessagesLabel.BackColor = System.Drawing.Color.Transparent
         Me.MessagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MessagesLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.MessagesLabel.Location = New System.Drawing.Point(19, 230)
+        Me.MessagesLabel.Location = New System.Drawing.Point(11, 298)
         Me.MessagesLabel.Name = "MessagesLabel"
         Me.MessagesLabel.Size = New System.Drawing.Size(77, 18)
         Me.MessagesLabel.TabIndex = 9
@@ -68,18 +69,20 @@ Partial Class MenuControl
         'TextButton
         '
         Me.TextButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._1891029
-        Me.TextButton.Location = New System.Drawing.Point(32, 178)
+        Me.TextButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TextButton.Location = New System.Drawing.Point(10, 219)
         Me.TextButton.Name = "TextButton"
-        Me.TextButton.Size = New System.Drawing.Size(49, 49)
+        Me.TextButton.Size = New System.Drawing.Size(80, 80)
         Me.TextButton.TabIndex = 8
         Me.TextButton.UseVisualStyleBackColor = True
         '
         'mapsButton
         '
         Me.mapsButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.Apps_Google_Maps_icon
-        Me.mapsButton.Location = New System.Drawing.Point(32, 84)
+        Me.mapsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.mapsButton.Location = New System.Drawing.Point(10, 114)
         Me.mapsButton.Name = "mapsButton"
-        Me.mapsButton.Size = New System.Drawing.Size(51, 53)
+        Me.mapsButton.Size = New System.Drawing.Size(80, 80)
         Me.mapsButton.TabIndex = 5
         Me.mapsButton.UseVisualStyleBackColor = True
         '
@@ -87,9 +90,9 @@ Partial Class MenuControl
         '
         Me.walletButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.wallet_icon
         Me.walletButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.walletButton.Location = New System.Drawing.Point(32, 3)
+        Me.walletButton.Location = New System.Drawing.Point(10, 1)
         Me.walletButton.Name = "walletButton"
-        Me.walletButton.Size = New System.Drawing.Size(52, 53)
+        Me.walletButton.Size = New System.Drawing.Size(80, 80)
         Me.walletButton.TabIndex = 4
         Me.walletButton.UseVisualStyleBackColor = True
         '
