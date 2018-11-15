@@ -159,7 +159,7 @@
     <None Include="Resources\WatchButtonMenu.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1891029.png" />
+    <None Include="Resources\wallet-icon1.jfif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

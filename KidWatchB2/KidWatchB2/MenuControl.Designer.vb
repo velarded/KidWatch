@@ -24,10 +24,10 @@ Partial Class MenuControl
     Private Sub InitializeComponent()
         Me.mapsLabel = New System.Windows.Forms.Label()
         Me.walletLabel = New System.Windows.Forms.Label()
+        Me.MessagesLabel = New System.Windows.Forms.Label()
         Me.TextButton = New System.Windows.Forms.Button()
         Me.mapsButton = New System.Windows.Forms.Button()
         Me.walletButton = New System.Windows.Forms.Button()
-        Me.MessagesLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'mapsLabel
@@ -54,6 +54,17 @@ Partial Class MenuControl
         Me.walletLabel.TabIndex = 6
         Me.walletLabel.Text = "Wallet"
         '
+        'MessagesLabel
+        '
+        Me.MessagesLabel.AutoSize = True
+        Me.MessagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessagesLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.MessagesLabel.Location = New System.Drawing.Point(19, 230)
+        Me.MessagesLabel.Name = "MessagesLabel"
+        Me.MessagesLabel.Size = New System.Drawing.Size(77, 18)
+        Me.MessagesLabel.TabIndex = 9
+        Me.MessagesLabel.Text = "Messages"
+        '
         'TextButton
         '
         Me.TextButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._1891029
@@ -74,23 +85,13 @@ Partial Class MenuControl
         '
         'walletButton
         '
-        Me.walletButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.ios9_wallet_applepay_app_icon1
+        Me.walletButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.wallet_icon
+        Me.walletButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.walletButton.Location = New System.Drawing.Point(32, 3)
         Me.walletButton.Name = "walletButton"
         Me.walletButton.Size = New System.Drawing.Size(52, 53)
         Me.walletButton.TabIndex = 4
         Me.walletButton.UseVisualStyleBackColor = True
-        '
-        'MessagesLabel
-        '
-        Me.MessagesLabel.AutoSize = True
-        Me.MessagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessagesLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.MessagesLabel.Location = New System.Drawing.Point(19, 230)
-        Me.MessagesLabel.Name = "MessagesLabel"
-        Me.MessagesLabel.Size = New System.Drawing.Size(77, 18)
-        Me.MessagesLabel.TabIndex = 9
-        Me.MessagesLabel.Text = "Messages"
         '
         'MenuControl
         '
