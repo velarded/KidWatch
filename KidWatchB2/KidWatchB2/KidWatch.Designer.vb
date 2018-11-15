@@ -31,7 +31,7 @@ Partial Class KidWatch
         'CallButton
         '
         Me.CallButton.BackColor = System.Drawing.Color.Transparent
-        Me.CallButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.WatchButtonCall
+        Me.CallButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.callButton
         Me.CallButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CallButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.CallButton.Location = New System.Drawing.Point(47, 191)
@@ -43,7 +43,7 @@ Partial Class KidWatch
         'MenuButton
         '
         Me.MenuButton.BackColor = System.Drawing.Color.Transparent
-        Me.MenuButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.WatchButtonMenu
+        Me.MenuButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.homeButton
         Me.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.MenuButton.Location = New System.Drawing.Point(117, 191)

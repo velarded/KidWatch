@@ -161,5 +161,11 @@
   <ItemGroup>
     <None Include="Resources\wallet-icon1.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\callButton.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeButton.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
