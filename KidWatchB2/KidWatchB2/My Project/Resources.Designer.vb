@@ -93,9 +93,39 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property calendar_flat() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("calendar-flat", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property callButton() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("callButton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property download() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("download", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property download1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("download1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -126,6 +156,16 @@ Namespace My.Resources
         Friend ReadOnly Property ios9_wallet_applepay_app_icon1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ios9-wallet-applepay-app-icon1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property red_alarm_clock_icon_cartoon_style_vector_9292953() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("red-alarm-clock-icon-cartoon-style-vector-9292953", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

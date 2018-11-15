@@ -167,5 +167,17 @@
   <ItemGroup>
     <None Include="Resources\homeButton.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-flat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-alarm-clock-icon-cartoon-style-vector-9292953.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

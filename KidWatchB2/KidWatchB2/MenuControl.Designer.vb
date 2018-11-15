@@ -25,13 +25,13 @@ Partial Class MenuControl
         Me.mapsLabel = New System.Windows.Forms.Label()
         Me.walletLabel = New System.Windows.Forms.Label()
         Me.MessagesLabel = New System.Windows.Forms.Label()
-        Me.TextButton = New System.Windows.Forms.Button()
+        Me.calendarLabel = New System.Windows.Forms.Label()
+        Me.clockLabel = New System.Windows.Forms.Label()
+        Me.clockButton = New System.Windows.Forms.Button()
+        Me.calendarButton = New System.Windows.Forms.Button()
+        Me.messagesButton = New System.Windows.Forms.Button()
         Me.mapsButton = New System.Windows.Forms.Button()
         Me.walletButton = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'mapsLabel
@@ -70,15 +70,59 @@ Partial Class MenuControl
         Me.MessagesLabel.TabIndex = 9
         Me.MessagesLabel.Text = "Messages"
         '
-        'TextButton
+        'calendarLabel
         '
-        Me.TextButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._1891029
-        Me.TextButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TextButton.Location = New System.Drawing.Point(10, 326)
-        Me.TextButton.Name = "TextButton"
-        Me.TextButton.Size = New System.Drawing.Size(80, 80)
-        Me.TextButton.TabIndex = 8
-        Me.TextButton.UseVisualStyleBackColor = True
+        Me.calendarLabel.AutoSize = True
+        Me.calendarLabel.BackColor = System.Drawing.Color.Transparent
+        Me.calendarLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.calendarLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.calendarLabel.Location = New System.Drawing.Point(16, 80)
+        Me.calendarLabel.Name = "calendarLabel"
+        Me.calendarLabel.Size = New System.Drawing.Size(67, 18)
+        Me.calendarLabel.TabIndex = 11
+        Me.calendarLabel.Text = "Calendar"
+        '
+        'clockLabel
+        '
+        Me.clockLabel.AutoSize = True
+        Me.clockLabel.BackColor = System.Drawing.Color.Transparent
+        Me.clockLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.clockLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.clockLabel.Location = New System.Drawing.Point(24, 190)
+        Me.clockLabel.Name = "clockLabel"
+        Me.clockLabel.Size = New System.Drawing.Size(47, 18)
+        Me.clockLabel.TabIndex = 13
+        Me.clockLabel.Text = "Clock"
+        '
+        'clockButton
+        '
+        Me.clockButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.clockButton.Image = Global.KidWatchB2.My.Resources.Resources.red_alarm_clock_icon_cartoon_style_vector_9292953
+        Me.clockButton.Location = New System.Drawing.Point(10, 111)
+        Me.clockButton.Name = "clockButton"
+        Me.clockButton.Size = New System.Drawing.Size(80, 80)
+        Me.clockButton.TabIndex = 12
+        Me.clockButton.UseVisualStyleBackColor = True
+        '
+        'calendarButton
+        '
+        Me.calendarButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.calendar_flat
+        Me.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.calendarButton.Location = New System.Drawing.Point(10, 1)
+        Me.calendarButton.Name = "calendarButton"
+        Me.calendarButton.Size = New System.Drawing.Size(80, 80)
+        Me.calendarButton.TabIndex = 10
+        Me.calendarButton.UseVisualStyleBackColor = True
+        '
+        'messagesButton
+        '
+        Me.messagesButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._1891029
+        Me.messagesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.messagesButton.Location = New System.Drawing.Point(10, 326)
+        Me.messagesButton.Name = "messagesButton"
+        Me.messagesButton.Size = New System.Drawing.Size(80, 80)
+        Me.messagesButton.TabIndex = 8
+        Me.messagesButton.UseVisualStyleBackColor = True
         '
         'mapsButton
         '
@@ -100,59 +144,17 @@ Partial Class MenuControl
         Me.walletButton.TabIndex = 4
         Me.walletButton.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(16, 80)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 18)
-        Me.Label1.TabIndex = 11
-        Me.Label1.Text = "Calendar"
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(10, 1)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 80)
-        Me.Button1.TabIndex = 10
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(24, 190)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 18)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Clock"
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Location = New System.Drawing.Point(10, 111)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(80, 80)
-        Me.Button2.TabIndex = 12
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'MenuControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.clockLabel)
+        Me.Controls.Add(Me.clockButton)
+        Me.Controls.Add(Me.calendarLabel)
+        Me.Controls.Add(Me.calendarButton)
         Me.Controls.Add(Me.MessagesLabel)
-        Me.Controls.Add(Me.TextButton)
+        Me.Controls.Add(Me.messagesButton)
         Me.Controls.Add(Me.mapsLabel)
         Me.Controls.Add(Me.walletLabel)
         Me.Controls.Add(Me.mapsButton)
@@ -168,10 +170,10 @@ Partial Class MenuControl
     Friend WithEvents walletLabel As Label
     Friend WithEvents mapsButton As Button
     Friend WithEvents walletButton As Button
-    Friend WithEvents TextButton As Button
+    Friend WithEvents messagesButton As Button
     Friend WithEvents MessagesLabel As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents calendarLabel As Label
+    Friend WithEvents calendarButton As Button
+    Friend WithEvents clockLabel As Label
+    Friend WithEvents clockButton As Button
 End Class

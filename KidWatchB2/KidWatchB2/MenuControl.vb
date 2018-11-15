@@ -7,7 +7,7 @@
 
     End Sub
 
-    Private Sub TextButton_Click(sender As Object, e As EventArgs) Handles TextButton.Click
+    Private Sub TextButton_Click(sender As Object, e As EventArgs) Handles messagesButton.Click
 
     End Sub
 
