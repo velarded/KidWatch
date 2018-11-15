@@ -158,5 +158,8 @@
   <ItemGroup>
     <None Include="Resources\WatchButtonMenu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1891029.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
