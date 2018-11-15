@@ -22,9 +22,10 @@ Partial Class MenuControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuControl))
         Me.mapsLabel = New System.Windows.Forms.Label()
         Me.walletLabel = New System.Windows.Forms.Label()
-        Me.MessagesLabel = New System.Windows.Forms.Label()
+        Me.messagesLabel = New System.Windows.Forms.Label()
         Me.calendarLabel = New System.Windows.Forms.Label()
         Me.clockLabel = New System.Windows.Forms.Label()
         Me.clockButton = New System.Windows.Forms.Button()
@@ -58,17 +59,17 @@ Partial Class MenuControl
         Me.walletLabel.TabIndex = 6
         Me.walletLabel.Text = "Wallet"
         '
-        'MessagesLabel
+        'messagesLabel
         '
-        Me.MessagesLabel.AutoSize = True
-        Me.MessagesLabel.BackColor = System.Drawing.Color.Transparent
-        Me.MessagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessagesLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.MessagesLabel.Location = New System.Drawing.Point(18, 435)
-        Me.MessagesLabel.Name = "MessagesLabel"
-        Me.MessagesLabel.Size = New System.Drawing.Size(77, 18)
-        Me.MessagesLabel.TabIndex = 9
-        Me.MessagesLabel.Text = "Messages"
+        Me.messagesLabel.AutoSize = True
+        Me.messagesLabel.BackColor = System.Drawing.Color.Transparent
+        Me.messagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.messagesLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.messagesLabel.Location = New System.Drawing.Point(18, 435)
+        Me.messagesLabel.Name = "messagesLabel"
+        Me.messagesLabel.Size = New System.Drawing.Size(77, 18)
+        Me.messagesLabel.TabIndex = 9
+        Me.messagesLabel.Text = "Messages"
         '
         'calendarLabel
         '
@@ -97,7 +98,7 @@ Partial Class MenuControl
         'clockButton
         '
         Me.clockButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.clockButton.Image = Global.KidWatchB2.My.Resources.Resources.red_alarm_clock_icon_cartoon_style_vector_9292953
+        Me.clockButton.Image = CType(resources.GetObject("clockButton.Image"), System.Drawing.Image)
         Me.clockButton.Location = New System.Drawing.Point(15, 121)
         Me.clockButton.Name = "clockButton"
         Me.clockButton.Size = New System.Drawing.Size(80, 80)
@@ -106,7 +107,7 @@ Partial Class MenuControl
         '
         'calendarButton
         '
-        Me.calendarButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.calendar_flat
+        Me.calendarButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.calendar_icon
         Me.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.calendarButton.Location = New System.Drawing.Point(15, 3)
         Me.calendarButton.Name = "calendarButton"
@@ -116,7 +117,7 @@ Partial Class MenuControl
         '
         'messagesButton
         '
-        Me.messagesButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._1891029
+        Me.messagesButton.BackgroundImage = CType(resources.GetObject("messagesButton.BackgroundImage"), System.Drawing.Image)
         Me.messagesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.messagesButton.Location = New System.Drawing.Point(15, 357)
         Me.messagesButton.Name = "messagesButton"
@@ -126,7 +127,7 @@ Partial Class MenuControl
         '
         'mapsButton
         '
-        Me.mapsButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.Apps_Google_Maps_icon
+        Me.mapsButton.BackgroundImage = CType(resources.GetObject("mapsButton.BackgroundImage"), System.Drawing.Image)
         Me.mapsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.mapsButton.Location = New System.Drawing.Point(15, 239)
         Me.mapsButton.Name = "mapsButton"
@@ -136,7 +137,7 @@ Partial Class MenuControl
         '
         'walletButton
         '
-        Me.walletButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.wallet_icon
+        Me.walletButton.BackgroundImage = CType(resources.GetObject("walletButton.BackgroundImage"), System.Drawing.Image)
         Me.walletButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.walletButton.Location = New System.Drawing.Point(15, 475)
         Me.walletButton.Name = "walletButton"
@@ -153,7 +154,7 @@ Partial Class MenuControl
         Me.Controls.Add(Me.clockButton)
         Me.Controls.Add(Me.calendarLabel)
         Me.Controls.Add(Me.calendarButton)
-        Me.Controls.Add(Me.MessagesLabel)
+        Me.Controls.Add(Me.messagesLabel)
         Me.Controls.Add(Me.messagesButton)
         Me.Controls.Add(Me.mapsLabel)
         Me.Controls.Add(Me.walletLabel)
@@ -171,7 +172,7 @@ Partial Class MenuControl
     Friend WithEvents mapsButton As Button
     Friend WithEvents walletButton As Button
     Friend WithEvents messagesButton As Button
-    Friend WithEvents MessagesLabel As Label
+    Friend WithEvents messagesLabel As Label
     Friend WithEvents calendarLabel As Label
     Friend WithEvents calendarButton As Button
     Friend WithEvents clockLabel As Label
