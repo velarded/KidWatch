@@ -40,7 +40,7 @@ Partial Class MenuControl
         Me.mapsLabel.BackColor = System.Drawing.Color.Transparent
         Me.mapsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mapsLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.mapsLabel.Location = New System.Drawing.Point(29, 300)
+        Me.mapsLabel.Location = New System.Drawing.Point(34, 317)
         Me.mapsLabel.Name = "mapsLabel"
         Me.mapsLabel.Size = New System.Drawing.Size(45, 18)
         Me.mapsLabel.TabIndex = 7
@@ -52,7 +52,7 @@ Partial Class MenuControl
         Me.walletLabel.BackColor = System.Drawing.Color.Transparent
         Me.walletLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.walletLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.walletLabel.Location = New System.Drawing.Point(25, 517)
+        Me.walletLabel.Location = New System.Drawing.Point(30, 553)
         Me.walletLabel.Name = "walletLabel"
         Me.walletLabel.Size = New System.Drawing.Size(49, 18)
         Me.walletLabel.TabIndex = 6
@@ -64,7 +64,7 @@ Partial Class MenuControl
         Me.MessagesLabel.BackColor = System.Drawing.Color.Transparent
         Me.MessagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MessagesLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.MessagesLabel.Location = New System.Drawing.Point(11, 405)
+        Me.MessagesLabel.Location = New System.Drawing.Point(18, 435)
         Me.MessagesLabel.Name = "MessagesLabel"
         Me.MessagesLabel.Size = New System.Drawing.Size(77, 18)
         Me.MessagesLabel.TabIndex = 9
@@ -76,7 +76,7 @@ Partial Class MenuControl
         Me.calendarLabel.BackColor = System.Drawing.Color.Transparent
         Me.calendarLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.calendarLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.calendarLabel.Location = New System.Drawing.Point(16, 80)
+        Me.calendarLabel.Location = New System.Drawing.Point(21, 81)
         Me.calendarLabel.Name = "calendarLabel"
         Me.calendarLabel.Size = New System.Drawing.Size(67, 18)
         Me.calendarLabel.TabIndex = 11
@@ -88,7 +88,7 @@ Partial Class MenuControl
         Me.clockLabel.BackColor = System.Drawing.Color.Transparent
         Me.clockLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clockLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.clockLabel.Location = New System.Drawing.Point(24, 190)
+        Me.clockLabel.Location = New System.Drawing.Point(30, 199)
         Me.clockLabel.Name = "clockLabel"
         Me.clockLabel.Size = New System.Drawing.Size(47, 18)
         Me.clockLabel.TabIndex = 13
@@ -98,7 +98,7 @@ Partial Class MenuControl
         '
         Me.clockButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.clockButton.Image = Global.KidWatchB2.My.Resources.Resources.red_alarm_clock_icon_cartoon_style_vector_9292953
-        Me.clockButton.Location = New System.Drawing.Point(10, 111)
+        Me.clockButton.Location = New System.Drawing.Point(15, 121)
         Me.clockButton.Name = "clockButton"
         Me.clockButton.Size = New System.Drawing.Size(80, 80)
         Me.clockButton.TabIndex = 12
@@ -108,7 +108,7 @@ Partial Class MenuControl
         '
         Me.calendarButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.calendar_flat
         Me.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.calendarButton.Location = New System.Drawing.Point(10, 1)
+        Me.calendarButton.Location = New System.Drawing.Point(15, 3)
         Me.calendarButton.Name = "calendarButton"
         Me.calendarButton.Size = New System.Drawing.Size(80, 80)
         Me.calendarButton.TabIndex = 10
@@ -118,7 +118,7 @@ Partial Class MenuControl
         '
         Me.messagesButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._1891029
         Me.messagesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.messagesButton.Location = New System.Drawing.Point(10, 326)
+        Me.messagesButton.Location = New System.Drawing.Point(15, 357)
         Me.messagesButton.Name = "messagesButton"
         Me.messagesButton.Size = New System.Drawing.Size(80, 80)
         Me.messagesButton.TabIndex = 8
@@ -128,7 +128,7 @@ Partial Class MenuControl
         '
         Me.mapsButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.Apps_Google_Maps_icon
         Me.mapsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.mapsButton.Location = New System.Drawing.Point(10, 221)
+        Me.mapsButton.Location = New System.Drawing.Point(15, 239)
         Me.mapsButton.Name = "mapsButton"
         Me.mapsButton.Size = New System.Drawing.Size(80, 80)
         Me.mapsButton.TabIndex = 5
@@ -138,7 +138,7 @@ Partial Class MenuControl
         '
         Me.walletButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.wallet_icon
         Me.walletButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.walletButton.Location = New System.Drawing.Point(10, 438)
+        Me.walletButton.Location = New System.Drawing.Point(15, 475)
         Me.walletButton.Name = "walletButton"
         Me.walletButton.Size = New System.Drawing.Size(80, 80)
         Me.walletButton.TabIndex = 4
@@ -160,7 +160,7 @@ Partial Class MenuControl
         Me.Controls.Add(Me.mapsButton)
         Me.Controls.Add(Me.walletButton)
         Me.Name = "MenuControl"
-        Me.Size = New System.Drawing.Size(116, 555)
+        Me.Size = New System.Drawing.Size(116, 649)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
