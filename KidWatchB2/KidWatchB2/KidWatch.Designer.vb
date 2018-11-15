@@ -80,6 +80,8 @@ Partial Class KidWatch
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
         Me.Controls.Add(Me.PhoneCallScreen)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "KidWatch"
         Me.Text = "Group B2 - KidWatch"
         Me.ResumeLayout(False)
