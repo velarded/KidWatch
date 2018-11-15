@@ -22,16 +22,18 @@ Partial Class KidWatch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KidWatch))
         Me.CallButton = New System.Windows.Forms.Button()
         Me.MenuButton = New System.Windows.Forms.Button()
         Me.MenuScreen = New KidWatchB2.MenuControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'CallButton
         '
         Me.CallButton.BackColor = System.Drawing.Color.Transparent
-        Me.CallButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.callButton
+        Me.CallButton.BackgroundImage = CType(resources.GetObject("CallButton.BackgroundImage"), System.Drawing.Image)
         Me.CallButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CallButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.CallButton.Location = New System.Drawing.Point(47, 191)
@@ -43,7 +45,7 @@ Partial Class KidWatch
         'MenuButton
         '
         Me.MenuButton.BackColor = System.Drawing.Color.Transparent
-        Me.MenuButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.homeButton
+        Me.MenuButton.BackgroundImage = CType(resources.GetObject("MenuButton.BackgroundImage"), System.Drawing.Image)
         Me.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.MenuButton.Location = New System.Drawing.Point(117, 191)
@@ -69,6 +71,18 @@ Partial Class KidWatch
         Me.PhoneCallScreen.Size = New System.Drawing.Size(116, 100)
         Me.PhoneCallScreen.TabIndex = 7
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Aqua
+        Me.Label1.Location = New System.Drawing.Point(57, 70)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(70, 18)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "2:00 PM"
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -76,6 +90,7 @@ Partial Class KidWatch
         Me.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.SmartWatch
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(184, 291)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuScreen)
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
@@ -85,10 +100,12 @@ Partial Class KidWatch
         Me.Name = "KidWatch"
         Me.Text = "Group B2 - KidWatch"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents CallButton As Button
     Friend WithEvents MenuButton As Button
     Friend WithEvents MenuScreen As MenuControl
     Friend WithEvents PhoneCallScreen As PhoneControl
+    Friend WithEvents Label1 As Label
 End Class
