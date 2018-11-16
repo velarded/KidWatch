@@ -28,6 +28,7 @@ Partial Class KidWatch
         Me.MenuScreen = New KidWatchB2.MenuControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.currentTimeLabel = New System.Windows.Forms.Label()
+        Me.Wallet = New KidWatchB2.WalletControl()
         Me.SuspendLayout()
         '
         'CallButton
@@ -83,6 +84,14 @@ Partial Class KidWatch
         Me.currentTimeLabel.TabIndex = 8
         Me.currentTimeLabel.Text = "2:00 PM"
         '
+        'Wallet
+        '
+        Me.Wallet.BackColor = System.Drawing.Color.White
+        Me.Wallet.Location = New System.Drawing.Point(33, 88)
+        Me.Wallet.Name = "Wallet"
+        Me.Wallet.Size = New System.Drawing.Size(116, 100)
+        Me.Wallet.TabIndex = 9
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -91,10 +100,11 @@ Partial Class KidWatch
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(184, 291)
         Me.Controls.Add(Me.currentTimeLabel)
-        Me.Controls.Add(Me.MenuScreen)
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
+        Me.Controls.Add(Me.MenuScreen)
         Me.Controls.Add(Me.PhoneCallScreen)
+        Me.Controls.Add(Me.Wallet)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
@@ -108,4 +118,5 @@ Partial Class KidWatch
     Friend WithEvents MenuScreen As MenuControl
     Friend WithEvents PhoneCallScreen As PhoneControl
     Friend WithEvents currentTimeLabel As Label
+    Friend WithEvents Wallet As WalletControl
 End Class

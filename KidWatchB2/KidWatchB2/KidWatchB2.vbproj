@@ -107,6 +107,12 @@
     <Compile Include="PhoneControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WalletControl.Designer.vb">
+      <DependentUpon>WalletControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WalletControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="KidWatch.resx">
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneControl.resx">
       <DependentUpon>PhoneControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WalletControl.resx">
+      <DependentUpon>WalletControl.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
