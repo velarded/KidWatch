@@ -179,5 +179,29 @@
   <ItemGroup>
     <None Include="Resources\wallet_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
