@@ -65,8 +65,7 @@ Partial Class KidWatch
         '
         'PhoneCallScreen
         '
-        Me.PhoneCallScreen.AutoScroll = True
-        Me.PhoneCallScreen.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PhoneCallScreen.BackColor = System.Drawing.Color.Black
         Me.PhoneCallScreen.Location = New System.Drawing.Point(33, 88)
         Me.PhoneCallScreen.Name = "PhoneCallScreen"
         Me.PhoneCallScreen.Size = New System.Drawing.Size(116, 100)
@@ -92,9 +91,9 @@ Partial Class KidWatch
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(184, 291)
         Me.Controls.Add(Me.currentTimeLabel)
+        Me.Controls.Add(Me.MenuScreen)
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
-        Me.Controls.Add(Me.MenuScreen)
         Me.Controls.Add(Me.PhoneCallScreen)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
