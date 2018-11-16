@@ -25,9 +25,10 @@ Partial Class KidWatch
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KidWatch))
         Me.CallButton = New System.Windows.Forms.Button()
         Me.MenuButton = New System.Windows.Forms.Button()
+        Me.currentTimeLabel = New System.Windows.Forms.Label()
         Me.MenuScreen = New KidWatchB2.MenuControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
-        Me.currentTimeLabel = New System.Windows.Forms.Label()
+        Me.CalendarControl1 = New KidWatchB2.CalendarControl()
         Me.SuspendLayout()
         '
         'CallButton
@@ -54,6 +55,18 @@ Partial Class KidWatch
         Me.MenuButton.TabIndex = 5
         Me.MenuButton.UseVisualStyleBackColor = False
         '
+        'currentTimeLabel
+        '
+        Me.currentTimeLabel.AutoSize = True
+        Me.currentTimeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.currentTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.currentTimeLabel.ForeColor = System.Drawing.Color.Aqua
+        Me.currentTimeLabel.Location = New System.Drawing.Point(57, 70)
+        Me.currentTimeLabel.Name = "currentTimeLabel"
+        Me.currentTimeLabel.Size = New System.Drawing.Size(70, 18)
+        Me.currentTimeLabel.TabIndex = 8
+        Me.currentTimeLabel.Text = "2:00 PM"
+        '
         'MenuScreen
         '
         Me.MenuScreen.AutoScroll = True
@@ -71,17 +84,13 @@ Partial Class KidWatch
         Me.PhoneCallScreen.Size = New System.Drawing.Size(116, 100)
         Me.PhoneCallScreen.TabIndex = 7
         '
-        'currentTimeLabel
+        'CalendarControl1
         '
-        Me.currentTimeLabel.AutoSize = True
-        Me.currentTimeLabel.BackColor = System.Drawing.Color.Transparent
-        Me.currentTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.currentTimeLabel.ForeColor = System.Drawing.Color.Aqua
-        Me.currentTimeLabel.Location = New System.Drawing.Point(57, 70)
-        Me.currentTimeLabel.Name = "currentTimeLabel"
-        Me.currentTimeLabel.Size = New System.Drawing.Size(70, 18)
-        Me.currentTimeLabel.TabIndex = 8
-        Me.currentTimeLabel.Text = "2:00 PM"
+        Me.CalendarControl1.BackColor = System.Drawing.Color.Black
+        Me.CalendarControl1.Location = New System.Drawing.Point(33, 88)
+        Me.CalendarControl1.Name = "CalendarControl1"
+        Me.CalendarControl1.Size = New System.Drawing.Size(116, 100)
+        Me.CalendarControl1.TabIndex = 9
         '
         'KidWatch
         '
@@ -95,6 +104,7 @@ Partial Class KidWatch
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
         Me.Controls.Add(Me.PhoneCallScreen)
+        Me.Controls.Add(Me.CalendarControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
@@ -108,4 +118,5 @@ Partial Class KidWatch
     Friend WithEvents MenuScreen As MenuControl
     Friend WithEvents PhoneCallScreen As PhoneControl
     Friend WithEvents currentTimeLabel As Label
+    Friend WithEvents CalendarControl1 As CalendarControl
 End Class
