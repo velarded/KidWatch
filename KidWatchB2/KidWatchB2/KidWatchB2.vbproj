@@ -138,40 +138,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\blue-smartwatch.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\SmartWatch.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WatchButtonCall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WatchButtonMenu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calendar-flat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\call-button.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clock-icon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\home-button.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maps-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\messages-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendar_icon.png" />
