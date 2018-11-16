@@ -29,7 +29,7 @@ Partial Class clockControl
         '
         'AnalogClockPictureBox
         '
-        Me.AnalogClockPictureBox.Image = Global.KidWatchB2.My.Resources.Resources.ios_clock_icon2
+        Me.AnalogClockPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.ios_clock_icon2
         Me.AnalogClockPictureBox.Location = New System.Drawing.Point(27, 9)
         Me.AnalogClockPictureBox.Name = "AnalogClockPictureBox"
         Me.AnalogClockPictureBox.Size = New System.Drawing.Size(59, 59)
