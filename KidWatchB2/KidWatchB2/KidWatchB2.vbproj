@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalendarControl.Designer.vb">
+      <DependentUpon>CalendarControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="KidWatch.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +113,17 @@
     <Compile Include="PhoneControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WalletControl.Designer.vb">
+      <DependentUpon>WalletControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WalletControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CalendarControl.resx">
+      <DependentUpon>CalendarControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KidWatch.resx">
       <DependentUpon>KidWatch.vb</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneControl.resx">
       <DependentUpon>PhoneControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WalletControl.resx">
+      <DependentUpon>WalletControl.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
