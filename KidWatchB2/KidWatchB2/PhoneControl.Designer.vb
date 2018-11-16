@@ -31,6 +31,8 @@ Partial Class PhoneControl
         Me.ContactLillyButton = New System.Windows.Forms.Button()
         Me.TimmyLabel = New System.Windows.Forms.Label()
         Me.ContactTimmyButton = New System.Windows.Forms.Button()
+        Me.ContactsPanel = New System.Windows.Forms.Panel()
+        Me.ContactsPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'StatusLabel
@@ -49,7 +51,7 @@ Partial Class PhoneControl
         Me.MomLabel.AutoSize = True
         Me.MomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MomLabel.ForeColor = System.Drawing.Color.White
-        Me.MomLabel.Location = New System.Drawing.Point(41, 79)
+        Me.MomLabel.Location = New System.Drawing.Point(38, 78)
         Me.MomLabel.Name = "MomLabel"
         Me.MomLabel.Size = New System.Drawing.Size(43, 18)
         Me.MomLabel.TabIndex = 6
@@ -72,7 +74,7 @@ Partial Class PhoneControl
         Me.DadLabel.AutoSize = True
         Me.DadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DadLabel.ForeColor = System.Drawing.Color.White
-        Me.DadLabel.Location = New System.Drawing.Point(41, 185)
+        Me.DadLabel.Location = New System.Drawing.Point(38, 182)
         Me.DadLabel.Name = "DadLabel"
         Me.DadLabel.Size = New System.Drawing.Size(35, 18)
         Me.DadLabel.TabIndex = 8
@@ -83,7 +85,7 @@ Partial Class PhoneControl
         Me.ContactDadButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.contact2
         Me.ContactDadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContactDadButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactDadButton.Location = New System.Drawing.Point(15, 107)
+        Me.ContactDadButton.Location = New System.Drawing.Point(15, 105)
         Me.ContactDadButton.Name = "ContactDadButton"
         Me.ContactDadButton.Size = New System.Drawing.Size(80, 100)
         Me.ContactDadButton.TabIndex = 7
@@ -95,7 +97,7 @@ Partial Class PhoneControl
         Me.LillyLabel.AutoSize = True
         Me.LillyLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LillyLabel.ForeColor = System.Drawing.Color.White
-        Me.LillyLabel.Location = New System.Drawing.Point(41, 291)
+        Me.LillyLabel.Location = New System.Drawing.Point(38, 288)
         Me.LillyLabel.Name = "LillyLabel"
         Me.LillyLabel.Size = New System.Drawing.Size(32, 18)
         Me.LillyLabel.TabIndex = 10
@@ -106,7 +108,7 @@ Partial Class PhoneControl
         Me.ContactLillyButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.contact3
         Me.ContactLillyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContactLillyButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactLillyButton.Location = New System.Drawing.Point(15, 213)
+        Me.ContactLillyButton.Location = New System.Drawing.Point(15, 211)
         Me.ContactLillyButton.Name = "ContactLillyButton"
         Me.ContactLillyButton.Size = New System.Drawing.Size(80, 100)
         Me.ContactLillyButton.TabIndex = 9
@@ -118,7 +120,7 @@ Partial Class PhoneControl
         Me.TimmyLabel.AutoSize = True
         Me.TimmyLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TimmyLabel.ForeColor = System.Drawing.Color.White
-        Me.TimmyLabel.Location = New System.Drawing.Point(38, 397)
+        Me.TimmyLabel.Location = New System.Drawing.Point(38, 394)
         Me.TimmyLabel.Name = "TimmyLabel"
         Me.TimmyLabel.Size = New System.Drawing.Size(53, 18)
         Me.TimmyLabel.TabIndex = 12
@@ -129,29 +131,39 @@ Partial Class PhoneControl
         Me.ContactTimmyButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.contact4
         Me.ContactTimmyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContactTimmyButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactTimmyButton.Location = New System.Drawing.Point(15, 319)
+        Me.ContactTimmyButton.Location = New System.Drawing.Point(15, 317)
         Me.ContactTimmyButton.Name = "ContactTimmyButton"
         Me.ContactTimmyButton.Size = New System.Drawing.Size(80, 100)
         Me.ContactTimmyButton.TabIndex = 11
         Me.ContactTimmyButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.ContactTimmyButton.UseVisualStyleBackColor = True
         '
+        'ContactsPanel
+        '
+        Me.ContactsPanel.Controls.Add(Me.TimmyLabel)
+        Me.ContactsPanel.Controls.Add(Me.MomLabel)
+        Me.ContactsPanel.Controls.Add(Me.DadLabel)
+        Me.ContactsPanel.Controls.Add(Me.LillyLabel)
+        Me.ContactsPanel.Controls.Add(Me.ContactTimmyButton)
+        Me.ContactsPanel.Controls.Add(Me.ContactDadButton)
+        Me.ContactsPanel.Controls.Add(Me.ContactLillyButton)
+        Me.ContactsPanel.Controls.Add(Me.ContactMomButton)
+        Me.ContactsPanel.Location = New System.Drawing.Point(0, 0)
+        Me.ContactsPanel.Name = "ContactsPanel"
+        Me.ContactsPanel.Size = New System.Drawing.Size(99, 436)
+        Me.ContactsPanel.TabIndex = 13
+        '
         'PhoneControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Controls.Add(Me.TimmyLabel)
-        Me.Controls.Add(Me.ContactTimmyButton)
-        Me.Controls.Add(Me.LillyLabel)
-        Me.Controls.Add(Me.ContactLillyButton)
-        Me.Controls.Add(Me.DadLabel)
-        Me.Controls.Add(Me.ContactDadButton)
-        Me.Controls.Add(Me.MomLabel)
-        Me.Controls.Add(Me.ContactMomButton)
         Me.Controls.Add(Me.StatusLabel)
+        Me.Controls.Add(Me.ContactsPanel)
         Me.Name = "PhoneControl"
         Me.Size = New System.Drawing.Size(116, 514)
+        Me.ContactsPanel.ResumeLayout(False)
+        Me.ContactsPanel.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -166,4 +178,5 @@ Partial Class PhoneControl
     Friend WithEvents ContactLillyButton As Button
     Friend WithEvents TimmyLabel As Label
     Friend WithEvents ContactTimmyButton As Button
+    Friend WithEvents ContactsPanel As Panel
 End Class
