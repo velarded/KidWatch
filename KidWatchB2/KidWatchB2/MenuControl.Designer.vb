@@ -41,7 +41,7 @@ Partial Class MenuControl
         Me.mapsLabel.BackColor = System.Drawing.Color.Transparent
         Me.mapsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mapsLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.mapsLabel.Location = New System.Drawing.Point(34, 317)
+        Me.mapsLabel.Location = New System.Drawing.Point(34, 318)
         Me.mapsLabel.Name = "mapsLabel"
         Me.mapsLabel.Size = New System.Drawing.Size(45, 18)
         Me.mapsLabel.TabIndex = 7
@@ -53,7 +53,7 @@ Partial Class MenuControl
         Me.walletLabel.BackColor = System.Drawing.Color.Transparent
         Me.walletLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.walletLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.walletLabel.Location = New System.Drawing.Point(30, 553)
+        Me.walletLabel.Location = New System.Drawing.Point(30, 554)
         Me.walletLabel.Name = "walletLabel"
         Me.walletLabel.Size = New System.Drawing.Size(49, 18)
         Me.walletLabel.TabIndex = 6
@@ -65,7 +65,7 @@ Partial Class MenuControl
         Me.messagesLabel.BackColor = System.Drawing.Color.Transparent
         Me.messagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.messagesLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.messagesLabel.Location = New System.Drawing.Point(18, 435)
+        Me.messagesLabel.Location = New System.Drawing.Point(18, 436)
         Me.messagesLabel.Name = "messagesLabel"
         Me.messagesLabel.Size = New System.Drawing.Size(77, 18)
         Me.messagesLabel.TabIndex = 9
@@ -77,7 +77,7 @@ Partial Class MenuControl
         Me.calendarLabel.BackColor = System.Drawing.Color.Transparent
         Me.calendarLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.calendarLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.calendarLabel.Location = New System.Drawing.Point(21, 81)
+        Me.calendarLabel.Location = New System.Drawing.Point(21, 82)
         Me.calendarLabel.Name = "calendarLabel"
         Me.calendarLabel.Size = New System.Drawing.Size(67, 18)
         Me.calendarLabel.TabIndex = 11
@@ -89,7 +89,7 @@ Partial Class MenuControl
         Me.clockLabel.BackColor = System.Drawing.Color.Transparent
         Me.clockLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clockLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.clockLabel.Location = New System.Drawing.Point(30, 199)
+        Me.clockLabel.Location = New System.Drawing.Point(30, 200)
         Me.clockLabel.Name = "clockLabel"
         Me.clockLabel.Size = New System.Drawing.Size(47, 18)
         Me.clockLabel.TabIndex = 13
