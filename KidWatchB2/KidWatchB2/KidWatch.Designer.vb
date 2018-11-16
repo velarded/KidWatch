@@ -30,7 +30,6 @@ Partial Class KidWatch
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
 
         Me.CalendarControl1 = New KidWatchB2.CalendarControl()
-        Me.currentTimeLabel = New System.Windows.Forms.Label()
         Me.Wallet = New KidWatchB2.WalletControl()
 
         Me.SuspendLayout()
