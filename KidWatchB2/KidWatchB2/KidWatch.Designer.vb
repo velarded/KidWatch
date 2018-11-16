@@ -28,6 +28,7 @@ Partial Class KidWatch
         Me.MenuScreen = New KidWatchB2.MenuControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.currentTimeLabel = New System.Windows.Forms.Label()
+        Me.ClockControl1 = New KidWatchB2.clockControl()
         Me.SuspendLayout()
         '
         'CallButton
@@ -83,6 +84,14 @@ Partial Class KidWatch
         Me.currentTimeLabel.TabIndex = 8
         Me.currentTimeLabel.Text = "2:00 PM"
         '
+        'ClockControl1
+        '
+        Me.ClockControl1.BackColor = System.Drawing.Color.Black
+        Me.ClockControl1.Location = New System.Drawing.Point(33, 88)
+        Me.ClockControl1.Name = "ClockControl1"
+        Me.ClockControl1.Size = New System.Drawing.Size(116, 100)
+        Me.ClockControl1.TabIndex = 9
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -95,6 +104,7 @@ Partial Class KidWatch
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
         Me.Controls.Add(Me.PhoneCallScreen)
+        Me.Controls.Add(Me.ClockControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
@@ -108,4 +118,5 @@ Partial Class KidWatch
     Friend WithEvents MenuScreen As MenuControl
     Friend WithEvents PhoneCallScreen As PhoneControl
     Friend WithEvents currentTimeLabel As Label
+    Friend WithEvents ClockControl1 As clockControl
 End Class
