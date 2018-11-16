@@ -117,9 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneControl.resx">
       <DependentUpon>PhoneControl.vb</DependentUpon>
@@ -144,28 +144,10 @@
     <None Include="Resources\SmartWatch.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ios9-wallet-applepay-app-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ios9-wallet-applepay-app-icon1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Apps-Google-Maps-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\WatchButtonCall.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WatchButtonMenu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wallet-icon1.jfif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\callButton.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\homeButton.PNG" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download.png" />
@@ -177,7 +159,40 @@
     <None Include="Resources\calendar-flat.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\red-alarm-clock-icon-cartoon-style-vector-9292953.jpg" />
+    <None Include="Resources\call-button.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maps-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call_button.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_button.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maps_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
