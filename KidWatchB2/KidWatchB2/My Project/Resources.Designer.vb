@@ -163,6 +163,46 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property person1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("person1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property person2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("person2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property person3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("person3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property person4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("person4", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property SmartWatch() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("SmartWatch", resourceCulture)
