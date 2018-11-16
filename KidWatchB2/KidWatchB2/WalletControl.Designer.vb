@@ -30,8 +30,11 @@ Partial Class WalletControl
         Me.PayInstructionLabel2 = New System.Windows.Forms.Label()
         Me.PayInstructionLabel1 = New System.Windows.Forms.Label()
         Me.CancelButton = New System.Windows.Forms.Button()
+        Me.PaymentSuccessPage = New System.Windows.Forms.Panel()
+        Me.PaymentSuccessLabel = New System.Windows.Forms.Label()
         Me.MainWalletPage.SuspendLayout()
         Me.PaymentPromptPage.SuspendLayout()
+        Me.PaymentSuccessPage.SuspendLayout()
         Me.SuspendLayout()
         '
         'MainWalletPage
@@ -122,6 +125,26 @@ Partial Class WalletControl
         Me.CancelButton.Text = "Cancel"
         Me.CancelButton.UseVisualStyleBackColor = False
         '
+        'PaymentSuccessPage
+        '
+        Me.PaymentSuccessPage.BackColor = System.Drawing.Color.LightGray
+        Me.PaymentSuccessPage.Controls.Add(Me.PaymentSuccessLabel)
+        Me.PaymentSuccessPage.Location = New System.Drawing.Point(0, 0)
+        Me.PaymentSuccessPage.Name = "PaymentSuccessPage"
+        Me.PaymentSuccessPage.Size = New System.Drawing.Size(116, 100)
+        Me.PaymentSuccessPage.TabIndex = 3
+        '
+        'PaymentSuccessLabel
+        '
+        Me.PaymentSuccessLabel.AutoSize = True
+        Me.PaymentSuccessLabel.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PaymentSuccessLabel.Location = New System.Drawing.Point(25, 20)
+        Me.PaymentSuccessLabel.Name = "PaymentSuccessLabel"
+        Me.PaymentSuccessLabel.Size = New System.Drawing.Size(71, 54)
+        Me.PaymentSuccessLabel.TabIndex = 1
+        Me.PaymentSuccessLabel.Text = "Money" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sent!"
+        Me.PaymentSuccessLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'WalletControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -129,12 +152,15 @@ Partial Class WalletControl
         Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.MainWalletPage)
         Me.Controls.Add(Me.PaymentPromptPage)
+        Me.Controls.Add(Me.PaymentSuccessPage)
         Me.Name = "WalletControl"
-        Me.Size = New System.Drawing.Size(116, 100)
+        Me.Size = New System.Drawing.Size(626, 403)
         Me.MainWalletPage.ResumeLayout(False)
         Me.MainWalletPage.PerformLayout()
         Me.PaymentPromptPage.ResumeLayout(False)
         Me.PaymentPromptPage.PerformLayout()
+        Me.PaymentSuccessPage.ResumeLayout(False)
+        Me.PaymentSuccessPage.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -147,4 +173,6 @@ Partial Class WalletControl
     Friend WithEvents PayInstructionLabel2 As Label
     Friend WithEvents PayInstructionLabel1 As Label
     Friend WithEvents CancelButton As Button
+    Friend WithEvents PaymentSuccessPage As Panel
+    Friend WithEvents PaymentSuccessLabel As Label
 End Class
