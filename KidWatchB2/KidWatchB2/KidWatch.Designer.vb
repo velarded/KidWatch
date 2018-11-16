@@ -27,11 +27,9 @@ Partial Class KidWatch
         Me.MenuButton = New System.Windows.Forms.Button()
         Me.currentTimeLabel = New System.Windows.Forms.Label()
         Me.MenuScreen = New KidWatchB2.MenuControl()
-        Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
-
         Me.CalendarControl1 = New KidWatchB2.CalendarControl()
         Me.Wallet = New KidWatchB2.WalletControl()
-
+        Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.SuspendLayout()
         '
         'CallButton
@@ -79,14 +77,6 @@ Partial Class KidWatch
         Me.MenuScreen.Size = New System.Drawing.Size(116, 100)
         Me.MenuScreen.TabIndex = 6
         '
-        'PhoneCallScreen
-        '
-        Me.PhoneCallScreen.BackColor = System.Drawing.Color.Black
-        Me.PhoneCallScreen.Location = New System.Drawing.Point(33, 88)
-        Me.PhoneCallScreen.Name = "PhoneCallScreen"
-        Me.PhoneCallScreen.Size = New System.Drawing.Size(116, 100)
-        Me.PhoneCallScreen.TabIndex = 7
-        '
         'CalendarControl1
         '
         Me.CalendarControl1.BackColor = System.Drawing.Color.Black
@@ -103,6 +93,15 @@ Partial Class KidWatch
         Me.Wallet.Size = New System.Drawing.Size(116, 100)
         Me.Wallet.TabIndex = 9
         '
+        'PhoneCallScreen
+        '
+        Me.PhoneCallScreen.AutoScroll = True
+        Me.PhoneCallScreen.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PhoneCallScreen.Location = New System.Drawing.Point(33, 88)
+        Me.PhoneCallScreen.Name = "PhoneCallScreen"
+        Me.PhoneCallScreen.Size = New System.Drawing.Size(116, 100)
+        Me.PhoneCallScreen.TabIndex = 10
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -114,11 +113,9 @@ Partial Class KidWatch
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
         Me.Controls.Add(Me.MenuScreen)
-        Me.Controls.Add(Me.PhoneCallScreen)
-
         Me.Controls.Add(Me.CalendarControl1)
         Me.Controls.Add(Me.Wallet)
-
+        Me.Controls.Add(Me.PhoneCallScreen)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
@@ -130,10 +127,9 @@ Partial Class KidWatch
     Friend WithEvents CallButton As Button
     Friend WithEvents MenuButton As Button
     Friend WithEvents MenuScreen As MenuControl
-    Friend WithEvents PhoneCallScreen As PhoneControl
     Friend WithEvents currentTimeLabel As Label
 
     Friend WithEvents CalendarControl1 As CalendarControl
     Friend WithEvents Wallet As WalletControl
-
+    Friend WithEvents PhoneCallScreen As PhoneControl
 End Class

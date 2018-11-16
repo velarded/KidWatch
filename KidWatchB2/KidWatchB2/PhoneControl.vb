@@ -5,25 +5,25 @@
     End Sub
 
     Private Sub ContactMomButton_Click(sender As Object, e As EventArgs) Handles ContactMomButton.Click
-        CallingContactLabel.Text = MomLabel.Text
+        CallingContactLabel.Text = "Mom"
         CallingContactPicture.BackgroundImage = My.Resources.person1
         SetUpCalling()
     End Sub
 
     Private Sub ContactDadButton_Click(sender As Object, e As EventArgs) Handles ContactDadButton.Click
-        CallingContactLabel.Text = DadLabel.Text
+        CallingContactLabel.Text = "Dad"
         CallingContactPicture.BackgroundImage = My.Resources.person2
         SetUpCalling()
     End Sub
 
     Private Sub ContactLillyButton_Click(sender As Object, e As EventArgs) Handles ContactLillyButton.Click
-        CallingContactLabel.Text = LillyLabel.Text
+        CallingContactLabel.Text = "Lilly"
         CallingContactPicture.BackgroundImage = My.Resources.person3
         SetUpCalling()
     End Sub
 
     Private Sub ContactTimmyButton_Click(sender As Object, e As EventArgs) Handles ContactTimmyButton.Click
-        CallingContactLabel.Text = TimmyLabel.Text
+        CallingContactLabel.Text = "Timmy"
         CallingContactPicture.BackgroundImage = My.Resources.person4
         SetUpCalling()
     End Sub
