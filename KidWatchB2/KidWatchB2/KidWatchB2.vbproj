@@ -79,6 +79,12 @@
     <Compile Include="clockControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="CalendarControl.Designer.vb">
+      <DependentUpon>CalendarControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="KidWatch.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -113,10 +119,19 @@
     <Compile Include="PhoneControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WalletControl.Designer.vb">
+      <DependentUpon>WalletControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WalletControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="clockControl.resx">
       <DependentUpon>clockControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarControl.resx">
+      <DependentUpon>CalendarControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KidWatch.resx">
       <DependentUpon>KidWatch.vb</DependentUpon>
@@ -132,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneControl.resx">
       <DependentUpon>PhoneControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WalletControl.resx">
+      <DependentUpon>WalletControl.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +196,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ios-clock-icon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactCard4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

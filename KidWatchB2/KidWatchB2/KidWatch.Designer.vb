@@ -27,6 +27,8 @@ Partial Class KidWatch
         Me.MenuButton = New System.Windows.Forms.Button()
         Me.currentTimeLabel = New System.Windows.Forms.Label()
         Me.MenuScreen = New KidWatchB2.MenuControl()
+        Me.CalendarControl1 = New KidWatchB2.CalendarControl()
+        Me.Wallet = New KidWatchB2.WalletControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
         Me.SuspendLayout()
@@ -76,9 +78,26 @@ Partial Class KidWatch
         Me.MenuScreen.Size = New System.Drawing.Size(116, 100)
         Me.MenuScreen.TabIndex = 6
         '
+        'CalendarControl1
+        '
+        Me.CalendarControl1.BackColor = System.Drawing.Color.Black
+        Me.CalendarControl1.Location = New System.Drawing.Point(33, 88)
+        Me.CalendarControl1.Name = "CalendarControl1"
+        Me.CalendarControl1.Size = New System.Drawing.Size(116, 100)
+        Me.CalendarControl1.TabIndex = 9
+        '
+        'Wallet
+        '
+        Me.Wallet.BackColor = System.Drawing.Color.White
+        Me.Wallet.Location = New System.Drawing.Point(33, 88)
+        Me.Wallet.Name = "Wallet"
+        Me.Wallet.Size = New System.Drawing.Size(116, 100)
+        Me.Wallet.TabIndex = 9
+        '
         'PhoneCallScreen
         '
-        Me.PhoneCallScreen.BackColor = System.Drawing.Color.Black
+        Me.PhoneCallScreen.AutoScroll = True
+        Me.PhoneCallScreen.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PhoneCallScreen.Location = New System.Drawing.Point(33, 88)
         Me.PhoneCallScreen.Name = "PhoneCallScreen"
         Me.PhoneCallScreen.Size = New System.Drawing.Size(116, 100)
@@ -100,9 +119,11 @@ Partial Class KidWatch
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(184, 291)
         Me.Controls.Add(Me.currentTimeLabel)
-        Me.Controls.Add(Me.MenuScreen)
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
+        Me.Controls.Add(Me.MenuScreen)
+        Me.Controls.Add(Me.CalendarControl1)
+        Me.Controls.Add(Me.Wallet)
         Me.Controls.Add(Me.PhoneCallScreen)
         Me.Controls.Add(Me.ClockControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -116,7 +137,9 @@ Partial Class KidWatch
     Friend WithEvents CallButton As Button
     Friend WithEvents MenuButton As Button
     Friend WithEvents MenuScreen As MenuControl
-    Friend WithEvents PhoneCallScreen As PhoneControl
     Friend WithEvents currentTimeLabel As Label
     Friend WithEvents ClockControl1 As clockControl
+    Friend WithEvents CalendarControl1 As CalendarControl
+    Friend WithEvents Wallet As WalletControl
+    Friend WithEvents PhoneCallScreen As PhoneControl
 End Class
