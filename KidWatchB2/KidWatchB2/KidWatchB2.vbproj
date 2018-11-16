@@ -170,5 +170,8 @@
   <ItemGroup>
     <None Include="Resources\wallet_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tap-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

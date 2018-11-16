@@ -121,25 +121,28 @@
   <data name="calendar_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="call_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\call_button.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="clock_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clock_icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_button.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maps_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maps_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="messages_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\messages_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="call_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\call_button.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SmartWatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SmartWatch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="messages_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messages_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maps_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maps_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_button.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wallet_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallet_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tap-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tap-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

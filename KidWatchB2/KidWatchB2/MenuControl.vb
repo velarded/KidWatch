@@ -8,5 +8,6 @@
         Dim kidWatch As KidWatch = walletButton.Parent.Parent
 
         kidWatch.Wallet.BringToFront()
+        kidWatch.Wallet.MainWalletPage.BringToFront()
     End Sub
 End Class
