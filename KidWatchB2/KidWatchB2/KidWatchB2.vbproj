@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clockControl.Designer.vb">
+      <DependentUpon>clockControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clockControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="KidWatch.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="clockControl.resx">
+      <DependentUpon>clockControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KidWatch.resx">
       <DependentUpon>KidWatch.vb</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +202,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wallet_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ios-clock-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ios-clock-icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ios-clock-icon2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
