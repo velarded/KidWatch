@@ -34,7 +34,7 @@ Partial Class CalendarControl
         Me.dateLabel.Name = "dateLabel"
         Me.dateLabel.Size = New System.Drawing.Size(107, 34)
         Me.dateLabel.TabIndex = 0
-        Me.dateLabel.Text = Date.Now.ToString("ddd dd-MM-yyy")
+        Me.dateLabel.Text = Date.Now.ToString("ddd, dd-MM-yyy")
         '
         'CalendarControl
         '

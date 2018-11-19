@@ -22,8 +22,10 @@ Partial Class clockControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.AnalogClockPictureBox = New System.Windows.Forms.PictureBox()
         Me.DigitalTimeLabel = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.AnalogClockPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,13 +41,16 @@ Partial Class clockControl
         'DigitalTimeLabel
         '
         Me.DigitalTimeLabel.AutoSize = True
-        Me.DigitalTimeLabel.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DigitalTimeLabel.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DigitalTimeLabel.ForeColor = System.Drawing.Color.Aqua
         Me.DigitalTimeLabel.Location = New System.Drawing.Point(13, 69)
         Me.DigitalTimeLabel.Name = "DigitalTimeLabel"
         Me.DigitalTimeLabel.Size = New System.Drawing.Size(96, 19)
         Me.DigitalTimeLabel.TabIndex = 1
         Me.DigitalTimeLabel.Text = "10:10:30 AM"
+        '
+        'Timer1
+        '
         '
         'clockControl
         '
@@ -64,4 +69,5 @@ Partial Class clockControl
 
     Friend WithEvents AnalogClockPictureBox As PictureBox
     Friend WithEvents DigitalTimeLabel As Label
+    Friend WithEvents Timer1 As Timer
 End Class
