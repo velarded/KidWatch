@@ -28,13 +28,13 @@ Partial Class CalendarControl
         'dateLabel
         '
         Me.dateLabel.AutoSize = True
-        Me.dateLabel.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateLabel.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dateLabel.ForeColor = System.Drawing.Color.Aqua
         Me.dateLabel.Location = New System.Drawing.Point(3, 33)
         Me.dateLabel.Name = "dateLabel"
-        Me.dateLabel.Size = New System.Drawing.Size(107, 34)
+        Me.dateLabel.Size = New System.Drawing.Size(113, 19)
         Me.dateLabel.TabIndex = 0
-        Me.dateLabel.Text = "        Friday" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "November 16,2018"
+        Me.dateLabel.Text = "Mon, 19-11-2018"
         '
         'CalendarControl
         '
