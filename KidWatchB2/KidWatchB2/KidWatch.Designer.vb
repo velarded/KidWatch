@@ -22,6 +22,7 @@ Partial Class KidWatch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KidWatch))
         Me.CallButton = New System.Windows.Forms.Button()
         Me.MenuButton = New System.Windows.Forms.Button()
@@ -31,6 +32,8 @@ Partial Class KidWatch
         Me.Wallet = New KidWatchB2.WalletControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Timer2.Enabled = True
         Me.SuspendLayout()
         '
         'CallButton
@@ -61,13 +64,13 @@ Partial Class KidWatch
         '
         Me.currentTimeLabel.AutoSize = True
         Me.currentTimeLabel.BackColor = System.Drawing.Color.Transparent
-        Me.currentTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.currentTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.currentTimeLabel.ForeColor = System.Drawing.Color.Aqua
         Me.currentTimeLabel.Location = New System.Drawing.Point(57, 70)
         Me.currentTimeLabel.Name = "currentTimeLabel"
-        Me.currentTimeLabel.Size = New System.Drawing.Size(78, 18)
+        Me.currentTimeLabel.Size = New System.Drawing.Size(76, 17)
         Me.currentTimeLabel.TabIndex = 8
-        Me.currentTimeLabel.Text = "10:10 AM"
+        Me.currentTimeLabel.Text = "05:57 PM"
         '
         'MenuScreen
         '
@@ -111,6 +114,9 @@ Partial Class KidWatch
         Me.ClockControl1.Size = New System.Drawing.Size(116, 100)
         Me.ClockControl1.TabIndex = 9
         '
+        'Timer2
+        '
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -142,4 +148,5 @@ Partial Class KidWatch
     Friend WithEvents CalendarControl1 As CalendarControl
     Friend WithEvents Wallet As WalletControl
     Friend WithEvents PhoneCallScreen As PhoneControl
+    Friend WithEvents Timer2 As Timer
 End Class
