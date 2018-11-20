@@ -31,8 +31,8 @@
         'Create new map control'
         Dim mapButton As Button = sender
         Dim kidWatch As KidWatch = mapButton.Parent.Parent
-
         kidWatch.MapControl1.BringToFront()
+        kidWatch.MapControl1.MainMapsPage.BringToFront()
 
     End Sub
 End Class

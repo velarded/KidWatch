@@ -42,10 +42,9 @@ Partial Class KidWatch
         Me.CallButton.BackgroundImage = CType(resources.GetObject("CallButton.BackgroundImage"), System.Drawing.Image)
         Me.CallButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CallButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.CallButton.Location = New System.Drawing.Point(63, 235)
-        Me.CallButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.CallButton.Location = New System.Drawing.Point(47, 191)
         Me.CallButton.Name = "CallButton"
-        Me.CallButton.Size = New System.Drawing.Size(27, 25)
+        Me.CallButton.Size = New System.Drawing.Size(20, 20)
         Me.CallButton.TabIndex = 4
         Me.CallButton.UseVisualStyleBackColor = False
         '
@@ -55,10 +54,9 @@ Partial Class KidWatch
         Me.MenuButton.BackgroundImage = CType(resources.GetObject("MenuButton.BackgroundImage"), System.Drawing.Image)
         Me.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.MenuButton.Location = New System.Drawing.Point(156, 235)
-        Me.MenuButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.MenuButton.Location = New System.Drawing.Point(117, 191)
         Me.MenuButton.Name = "MenuButton"
-        Me.MenuButton.Size = New System.Drawing.Size(27, 25)
+        Me.MenuButton.Size = New System.Drawing.Size(20, 20)
         Me.MenuButton.TabIndex = 5
         Me.MenuButton.UseVisualStyleBackColor = False
         '
@@ -68,10 +66,9 @@ Partial Class KidWatch
         Me.currentTimeLabel.BackColor = System.Drawing.Color.Transparent
         Me.currentTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.currentTimeLabel.ForeColor = System.Drawing.Color.Aqua
-        Me.currentTimeLabel.Location = New System.Drawing.Point(76, 86)
-        Me.currentTimeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.currentTimeLabel.Location = New System.Drawing.Point(57, 70)
         Me.currentTimeLabel.Name = "currentTimeLabel"
-        Me.currentTimeLabel.Size = New System.Drawing.Size(96, 24)
+        Me.currentTimeLabel.Size = New System.Drawing.Size(79, 18)
         Me.currentTimeLabel.TabIndex = 8
         Me.currentTimeLabel.Text = "09:06 PM"
         '
@@ -83,63 +80,64 @@ Partial Class KidWatch
         '
         Me.MenuScreen.AutoScroll = True
         Me.MenuScreen.BackColor = System.Drawing.Color.Black
-        Me.MenuScreen.Location = New System.Drawing.Point(44, 108)
-        Me.MenuScreen.Margin = New System.Windows.Forms.Padding(5)
+        Me.MenuScreen.Location = New System.Drawing.Point(33, 88)
+        Me.MenuScreen.Margin = New System.Windows.Forms.Padding(4)
         Me.MenuScreen.Name = "MenuScreen"
-        Me.MenuScreen.Size = New System.Drawing.Size(155, 123)
+        Me.MenuScreen.Size = New System.Drawing.Size(116, 100)
         Me.MenuScreen.TabIndex = 6
         '
         'CalendarControl1
         '
         Me.CalendarControl1.BackColor = System.Drawing.Color.Black
-        Me.CalendarControl1.Location = New System.Drawing.Point(44, 108)
-        Me.CalendarControl1.Margin = New System.Windows.Forms.Padding(5)
+        Me.CalendarControl1.Location = New System.Drawing.Point(33, 88)
+        Me.CalendarControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.CalendarControl1.Name = "CalendarControl1"
-        Me.CalendarControl1.Size = New System.Drawing.Size(155, 123)
+        Me.CalendarControl1.Size = New System.Drawing.Size(116, 100)
         Me.CalendarControl1.TabIndex = 9
         '
         'Wallet
         '
         Me.Wallet.BackColor = System.Drawing.Color.White
-        Me.Wallet.Location = New System.Drawing.Point(44, 108)
-        Me.Wallet.Margin = New System.Windows.Forms.Padding(5)
+        Me.Wallet.Location = New System.Drawing.Point(33, 88)
+        Me.Wallet.Margin = New System.Windows.Forms.Padding(4)
         Me.Wallet.Name = "Wallet"
-        Me.Wallet.Size = New System.Drawing.Size(155, 123)
+        Me.Wallet.Size = New System.Drawing.Size(116, 100)
         Me.Wallet.TabIndex = 9
         '
         'PhoneCallScreen
         '
         Me.PhoneCallScreen.AutoScroll = True
         Me.PhoneCallScreen.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PhoneCallScreen.Location = New System.Drawing.Point(44, 108)
-        Me.PhoneCallScreen.Margin = New System.Windows.Forms.Padding(5)
+        Me.PhoneCallScreen.Location = New System.Drawing.Point(33, 88)
+        Me.PhoneCallScreen.Margin = New System.Windows.Forms.Padding(4)
         Me.PhoneCallScreen.Name = "PhoneCallScreen"
-        Me.PhoneCallScreen.Size = New System.Drawing.Size(155, 123)
+        Me.PhoneCallScreen.Size = New System.Drawing.Size(116, 100)
         Me.PhoneCallScreen.TabIndex = 7
         '
         'ClockControl1
         '
         Me.ClockControl1.BackColor = System.Drawing.Color.Black
-        Me.ClockControl1.Location = New System.Drawing.Point(44, 108)
-        Me.ClockControl1.Margin = New System.Windows.Forms.Padding(5)
+        Me.ClockControl1.Location = New System.Drawing.Point(33, 88)
+        Me.ClockControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.ClockControl1.Name = "ClockControl1"
-        Me.ClockControl1.Size = New System.Drawing.Size(155, 123)
+        Me.ClockControl1.Size = New System.Drawing.Size(116, 100)
         Me.ClockControl1.TabIndex = 9
         '
         'MapControl1
         '
-        Me.MapControl1.Location = New System.Drawing.Point(44, 108)
+        Me.MapControl1.Location = New System.Drawing.Point(33, 88)
+        Me.MapControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.MapControl1.Name = "MapControl1"
-        Me.MapControl1.Size = New System.Drawing.Size(155, 123)
+        Me.MapControl1.Size = New System.Drawing.Size(116, 100)
         Me.MapControl1.TabIndex = 10
         '
         'KidWatch
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(245, 358)
+        Me.ClientSize = New System.Drawing.Size(184, 291)
         Me.Controls.Add(Me.currentTimeLabel)
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
@@ -150,7 +148,6 @@ Partial Class KidWatch
         Me.Controls.Add(Me.ClockControl1)
         Me.Controls.Add(Me.MapControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
         Me.Text = "Group B2 - KidWatch"

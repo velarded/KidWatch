@@ -266,5 +266,23 @@
   <ItemGroup>
     <None Include="Resources\map-location.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-library-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-school-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
