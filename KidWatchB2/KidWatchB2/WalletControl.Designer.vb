@@ -32,14 +32,14 @@ Partial Class WalletControl
         Me.PayInstructionLabel1 = New System.Windows.Forms.Label()
         Me.CancelButton = New System.Windows.Forms.Button()
         Me.PaymentFailPage = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PaymentFailedOKButton = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.PaymentSuccessPage = New System.Windows.Forms.Panel()
         Me.PaymentSuccessOKButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PaymentSuccessLabel = New System.Windows.Forms.Label()
-        Me.PaymentFailedOKButton = New System.Windows.Forms.Button()
         Me.MainWalletPage.SuspendLayout()
         Me.PaymentPromptPage.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -162,17 +162,17 @@ Partial Class WalletControl
         Me.PaymentFailPage.Size = New System.Drawing.Size(116, 100)
         Me.PaymentFailPage.TabIndex = 4
         '
-        'Label4
+        'PaymentFailedOKButton
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(50, 25)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(62, 25)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "money"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.PaymentFailedOKButton.BackColor = System.Drawing.Color.YellowGreen
+        Me.PaymentFailedOKButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.PaymentFailedOKButton.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PaymentFailedOKButton.Location = New System.Drawing.Point(7, 62)
+        Me.PaymentFailedOKButton.Name = "PaymentFailedOKButton"
+        Me.PaymentFailedOKButton.Size = New System.Drawing.Size(53, 31)
+        Me.PaymentFailedOKButton.TabIndex = 5
+        Me.PaymentFailedOKButton.Text = "OK"
+        Me.PaymentFailedOKButton.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -197,6 +197,18 @@ Partial Class WalletControl
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "You need"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(50, 25)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(62, 25)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "money"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'PaymentSuccessPage
         '
@@ -247,27 +259,15 @@ Partial Class WalletControl
         Me.PaymentSuccessLabel.Text = "Money" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.PaymentSuccessLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'PaymentFailedOKButton
-        '
-        Me.PaymentFailedOKButton.BackColor = System.Drawing.Color.YellowGreen
-        Me.PaymentFailedOKButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PaymentFailedOKButton.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PaymentFailedOKButton.Location = New System.Drawing.Point(7, 62)
-        Me.PaymentFailedOKButton.Name = "PaymentFailedOKButton"
-        Me.PaymentFailedOKButton.Size = New System.Drawing.Size(53, 31)
-        Me.PaymentFailedOKButton.TabIndex = 5
-        Me.PaymentFailedOKButton.Text = "OK"
-        Me.PaymentFailedOKButton.UseVisualStyleBackColor = False
-        '
         'WalletControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.PaymentFailPage)
-        Me.Controls.Add(Me.PaymentSuccessPage)
         Me.Controls.Add(Me.MainWalletPage)
         Me.Controls.Add(Me.PaymentPromptPage)
+        Me.Controls.Add(Me.PaymentFailPage)
+        Me.Controls.Add(Me.PaymentSuccessPage)
         Me.Name = "WalletControl"
         Me.Size = New System.Drawing.Size(626, 403)
         Me.MainWalletPage.ResumeLayout(False)

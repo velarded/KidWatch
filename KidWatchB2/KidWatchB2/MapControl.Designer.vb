@@ -24,11 +24,11 @@ Partial Class MapControl
     Private Sub InitializeComponent()
         Me.MainMapsPage = New System.Windows.Forms.Panel()
         Me.PlacesButton = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PlacesListPage = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.HomeLabel = New System.Windows.Forms.Label()
         Me.MainMapsPage.SuspendLayout()
-        Me.Panel2.SuspendLayout()
+        Me.PlacesListPage.SuspendLayout()
         Me.SuspendLayout()
         '
         'MainMapsPage
@@ -38,8 +38,9 @@ Partial Class MapControl
         Me.MainMapsPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainMapsPage.Controls.Add(Me.PlacesButton)
         Me.MainMapsPage.Location = New System.Drawing.Point(0, 0)
+        Me.MainMapsPage.Margin = New System.Windows.Forms.Padding(2)
         Me.MainMapsPage.Name = "MainMapsPage"
-        Me.MainMapsPage.Size = New System.Drawing.Size(155, 123)
+        Me.MainMapsPage.Size = New System.Drawing.Size(116, 100)
         Me.MainMapsPage.TabIndex = 0
         '
         'PlacesButton
@@ -47,60 +48,66 @@ Partial Class MapControl
         Me.PlacesButton.BackColor = System.Drawing.Color.LightCyan
         Me.PlacesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PlacesButton.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.PlacesButton.Location = New System.Drawing.Point(40, 83)
+        Me.PlacesButton.Location = New System.Drawing.Point(28, 67)
+        Me.PlacesButton.Margin = New System.Windows.Forms.Padding(2)
         Me.PlacesButton.Name = "PlacesButton"
-        Me.PlacesButton.Size = New System.Drawing.Size(75, 37)
+        Me.PlacesButton.Size = New System.Drawing.Size(61, 30)
         Me.PlacesButton.TabIndex = 0
         Me.PlacesButton.Text = "Places"
         Me.PlacesButton.UseVisualStyleBackColor = False
         '
-        'Panel2
+        'PlacesListPage
         '
-        Me.Panel2.AutoScroll = True
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(227, 58)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(155, 399)
-        Me.Panel2.TabIndex = 1
+        Me.PlacesListPage.AutoScroll = True
+        Me.PlacesListPage.BackColor = System.Drawing.Color.Bisque
+        Me.PlacesListPage.Controls.Add(Me.Label2)
+        Me.PlacesListPage.Controls.Add(Me.HomeLabel)
+        Me.PlacesListPage.Location = New System.Drawing.Point(0, 0)
+        Me.PlacesListPage.Margin = New System.Windows.Forms.Padding(2)
+        Me.PlacesListPage.Name = "PlacesListPage"
+        Me.PlacesListPage.Size = New System.Drawing.Size(116, 100)
+        Me.PlacesListPage.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 168)
+        Me.Label2.Location = New System.Drawing.Point(9, 136)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 17)
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Label2"
         '
-        'Label1
+        'HomeLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 65)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.HomeLabel.AutoSize = True
+        Me.HomeLabel.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HomeLabel.Location = New System.Drawing.Point(38, 10)
+        Me.HomeLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.HomeLabel.Name = "HomeLabel"
+        Me.HomeLabel.Size = New System.Drawing.Size(51, 23)
+        Me.HomeLabel.TabIndex = 0
+        Me.HomeLabel.Text = "Home"
         '
         'MapControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.PlacesListPage)
         Me.Controls.Add(Me.MainMapsPage)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MapControl"
-        Me.Size = New System.Drawing.Size(527, 473)
+        Me.Size = New System.Drawing.Size(116, 100)
         Me.MainMapsPage.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        Me.PlacesListPage.ResumeLayout(False)
+        Me.PlacesListPage.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents MainMapsPage As Panel
     Friend WithEvents PlacesButton As Button
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PlacesListPage As Panel
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents HomeLabel As Label
 End Class
