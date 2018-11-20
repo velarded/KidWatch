@@ -41,9 +41,10 @@ Partial Class MenuControl
         Me.mapsLabel.BackColor = System.Drawing.Color.Transparent
         Me.mapsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mapsLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.mapsLabel.Location = New System.Drawing.Point(34, 318)
+        Me.mapsLabel.Location = New System.Drawing.Point(45, 391)
+        Me.mapsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.mapsLabel.Name = "mapsLabel"
-        Me.mapsLabel.Size = New System.Drawing.Size(45, 18)
+        Me.mapsLabel.Size = New System.Drawing.Size(56, 24)
         Me.mapsLabel.TabIndex = 7
         Me.mapsLabel.Text = "Maps"
         '
@@ -53,9 +54,10 @@ Partial Class MenuControl
         Me.walletLabel.BackColor = System.Drawing.Color.Transparent
         Me.walletLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.walletLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.walletLabel.Location = New System.Drawing.Point(30, 554)
+        Me.walletLabel.Location = New System.Drawing.Point(40, 682)
+        Me.walletLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.walletLabel.Name = "walletLabel"
-        Me.walletLabel.Size = New System.Drawing.Size(49, 18)
+        Me.walletLabel.Size = New System.Drawing.Size(61, 24)
         Me.walletLabel.TabIndex = 6
         Me.walletLabel.Text = "Wallet"
         '
@@ -65,9 +67,10 @@ Partial Class MenuControl
         Me.messagesLabel.BackColor = System.Drawing.Color.Transparent
         Me.messagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.messagesLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.messagesLabel.Location = New System.Drawing.Point(18, 436)
+        Me.messagesLabel.Location = New System.Drawing.Point(24, 537)
+        Me.messagesLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.messagesLabel.Name = "messagesLabel"
-        Me.messagesLabel.Size = New System.Drawing.Size(77, 18)
+        Me.messagesLabel.Size = New System.Drawing.Size(96, 24)
         Me.messagesLabel.TabIndex = 9
         Me.messagesLabel.Text = "Messages"
         '
@@ -77,9 +80,10 @@ Partial Class MenuControl
         Me.calendarLabel.BackColor = System.Drawing.Color.Transparent
         Me.calendarLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.calendarLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.calendarLabel.Location = New System.Drawing.Point(21, 82)
+        Me.calendarLabel.Location = New System.Drawing.Point(28, 101)
+        Me.calendarLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.calendarLabel.Name = "calendarLabel"
-        Me.calendarLabel.Size = New System.Drawing.Size(67, 18)
+        Me.calendarLabel.Size = New System.Drawing.Size(86, 24)
         Me.calendarLabel.TabIndex = 11
         Me.calendarLabel.Text = "Calendar"
         '
@@ -89,9 +93,10 @@ Partial Class MenuControl
         Me.clockLabel.BackColor = System.Drawing.Color.Transparent
         Me.clockLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clockLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.clockLabel.Location = New System.Drawing.Point(30, 200)
+        Me.clockLabel.Location = New System.Drawing.Point(40, 246)
+        Me.clockLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.clockLabel.Name = "clockLabel"
-        Me.clockLabel.Size = New System.Drawing.Size(47, 18)
+        Me.clockLabel.Size = New System.Drawing.Size(57, 24)
         Me.clockLabel.TabIndex = 13
         Me.clockLabel.Text = "Clock"
         '
@@ -99,9 +104,10 @@ Partial Class MenuControl
         '
         Me.clockButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.clockButton.Image = CType(resources.GetObject("clockButton.Image"), System.Drawing.Image)
-        Me.clockButton.Location = New System.Drawing.Point(15, 121)
+        Me.clockButton.Location = New System.Drawing.Point(20, 149)
+        Me.clockButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.clockButton.Name = "clockButton"
-        Me.clockButton.Size = New System.Drawing.Size(80, 80)
+        Me.clockButton.Size = New System.Drawing.Size(107, 98)
         Me.clockButton.TabIndex = 12
         Me.clockButton.UseVisualStyleBackColor = True
         '
@@ -109,9 +115,10 @@ Partial Class MenuControl
         '
         Me.calendarButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.calendar_icon
         Me.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.calendarButton.Location = New System.Drawing.Point(15, 3)
+        Me.calendarButton.Location = New System.Drawing.Point(20, 4)
+        Me.calendarButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.calendarButton.Name = "calendarButton"
-        Me.calendarButton.Size = New System.Drawing.Size(80, 80)
+        Me.calendarButton.Size = New System.Drawing.Size(107, 98)
         Me.calendarButton.TabIndex = 10
         Me.calendarButton.UseVisualStyleBackColor = True
         '
@@ -119,9 +126,10 @@ Partial Class MenuControl
         '
         Me.messagesButton.BackgroundImage = CType(resources.GetObject("messagesButton.BackgroundImage"), System.Drawing.Image)
         Me.messagesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.messagesButton.Location = New System.Drawing.Point(15, 357)
+        Me.messagesButton.Location = New System.Drawing.Point(20, 439)
+        Me.messagesButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.messagesButton.Name = "messagesButton"
-        Me.messagesButton.Size = New System.Drawing.Size(80, 80)
+        Me.messagesButton.Size = New System.Drawing.Size(107, 98)
         Me.messagesButton.TabIndex = 8
         Me.messagesButton.UseVisualStyleBackColor = True
         '
@@ -129,9 +137,10 @@ Partial Class MenuControl
         '
         Me.mapsButton.BackgroundImage = CType(resources.GetObject("mapsButton.BackgroundImage"), System.Drawing.Image)
         Me.mapsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.mapsButton.Location = New System.Drawing.Point(15, 239)
+        Me.mapsButton.Location = New System.Drawing.Point(20, 294)
+        Me.mapsButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.mapsButton.Name = "mapsButton"
-        Me.mapsButton.Size = New System.Drawing.Size(80, 80)
+        Me.mapsButton.Size = New System.Drawing.Size(107, 98)
         Me.mapsButton.TabIndex = 5
         Me.mapsButton.UseVisualStyleBackColor = True
         '
@@ -139,15 +148,16 @@ Partial Class MenuControl
         '
         Me.walletButton.BackgroundImage = CType(resources.GetObject("walletButton.BackgroundImage"), System.Drawing.Image)
         Me.walletButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.walletButton.Location = New System.Drawing.Point(15, 475)
+        Me.walletButton.Location = New System.Drawing.Point(20, 585)
+        Me.walletButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.walletButton.Name = "walletButton"
-        Me.walletButton.Size = New System.Drawing.Size(80, 80)
+        Me.walletButton.Size = New System.Drawing.Size(107, 98)
         Me.walletButton.TabIndex = 4
         Me.walletButton.UseVisualStyleBackColor = True
         '
         'MenuControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.Controls.Add(Me.clockLabel)
@@ -160,8 +170,9 @@ Partial Class MenuControl
         Me.Controls.Add(Me.walletLabel)
         Me.Controls.Add(Me.mapsButton)
         Me.Controls.Add(Me.walletButton)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MenuControl"
-        Me.Size = New System.Drawing.Size(116, 649)
+        Me.Size = New System.Drawing.Size(155, 799)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

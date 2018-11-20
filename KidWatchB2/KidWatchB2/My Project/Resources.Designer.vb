@@ -143,9 +143,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property garfield() As System.Drawing.Bitmap
+        Friend ReadOnly Property decline() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("garfield", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("decline", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -153,9 +153,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property decline() As System.Drawing.Bitmap
+        Friend ReadOnly Property garfield() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("decline", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("garfield", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -176,6 +176,16 @@ Namespace My.Resources
         Friend ReadOnly Property ios_clock_icon2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ios_clock_icon2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property map_location() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("map_location", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

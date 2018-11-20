@@ -92,6 +92,12 @@
       <DependentUpon>KidWatch.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MapControl.Designer.vb">
+      <DependentUpon>MapControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="MenuControl.Designer.vb">
       <DependentUpon>MenuControl.vb</DependentUpon>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KidWatch.resx">
       <DependentUpon>KidWatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl.resx">
+      <DependentUpon>MapControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuControl.resx">
       <DependentUpon>MenuControl.vb</DependentUpon>
@@ -253,6 +262,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\voicemail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-location.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
