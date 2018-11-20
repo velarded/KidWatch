@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property accept() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("accept", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property calendar_icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("calendar_icon", resourceCulture)
@@ -136,6 +146,16 @@ Namespace My.Resources
         Friend ReadOnly Property garfield() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("garfield", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property decline() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("decline", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -246,6 +266,26 @@ Namespace My.Resources
         Friend ReadOnly Property tap_icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("tap_icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property voicemail() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("voicemail", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property voicemailCard() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("voicemailCard", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

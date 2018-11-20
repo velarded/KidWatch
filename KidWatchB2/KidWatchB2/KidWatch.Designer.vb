@@ -33,7 +33,6 @@ Partial Class KidWatch
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Timer2.Enabled = True
         Me.SuspendLayout()
         '
         'CallButton
@@ -68,9 +67,9 @@ Partial Class KidWatch
         Me.currentTimeLabel.ForeColor = System.Drawing.Color.Aqua
         Me.currentTimeLabel.Location = New System.Drawing.Point(57, 70)
         Me.currentTimeLabel.Name = "currentTimeLabel"
-        Me.currentTimeLabel.Size = New System.Drawing.Size(78, 18)
+        Me.currentTimeLabel.Size = New System.Drawing.Size(79, 18)
         Me.currentTimeLabel.TabIndex = 8
-        Me.currentTimeLabel.Text = Date.Now.ToString("hh:mm tt")
+        Me.currentTimeLabel.Text = "09:06 PM"
         '
         'MenuScreen
         '
@@ -116,6 +115,7 @@ Partial Class KidWatch
         '
         'Timer2
         '
+        Me.Timer2.Enabled = True
         '
         'KidWatch
         '

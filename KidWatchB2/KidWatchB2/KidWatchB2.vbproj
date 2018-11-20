@@ -242,5 +242,17 @@
   <ItemGroup>
     <None Include="Resources\sad-face.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voicemailCard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voicemail.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
