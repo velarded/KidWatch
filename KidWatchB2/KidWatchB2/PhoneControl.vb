@@ -95,6 +95,12 @@
         EndCall()
         Wait(2)
         CloseCallPanel()
+
+        ' TEMP: Trigger Dad calling after ending call with Timmy
+        If CallingContactLabel.Text = "Timmy" Then
+            Wait(2)
+            ReceiveCall()
+        End If
     End Sub
     Private Sub Wait(ByVal seconds As Integer)
         For i As Integer = 0 To seconds * 100
@@ -108,12 +114,15 @@
             TimeLabel.Text = String.Format("{0:00}:{1:00}",
                  callStopwatch.Elapsed.Minutes, callStopwatch.Elapsed.Seconds)
         End If
-    End Sub
 
-    Private Sub PickUpButton_Click(sender As Object, e As EventArgs) Handles PickUpButton.Click
-        CallingContactLabel.Text = "Dad"
-        CallingContactPictureBox.BackgroundImage = My.Resources.person2
-        OngoingCall()
+        ' drop the call after 5 seconds if no pick up
+        If ReceiveCallPanel.Visible = True Then
+            If callStopwatch.Elapsed.Seconds >= 5 Then
+                CallTimer.Stop()
+                callStopwatch.Stop()
+                NoAnswer()
+            End If
+        End If
 
     End Sub
 
@@ -124,6 +133,44 @@
 
     Private Sub CloseVoicemailButton_Click(sender As Object, e As EventArgs) Handles CloseVoicemailButton.Click
         VoicemailPanel.Visible = False
+        ContactsPanel.Visible = True
+    End Sub
+
+    ' Receive call from Dad
+    Private Sub ReceiveCall()
+        ContactsPanel.Visible = False
+        ReceiveCallPanel.BackColor = Color.Goldenrod
+        ReceiveCallPanel.Visible = True
+        CallerLabel.Text = "Dad"
+        CallerPictureBox.BackgroundImage = My.Resources.person2
+
+        ' call timer and wait 5 seconds
+        CallTimer.Start()
+        callStopwatch.Reset()
+        callStopwatch.Start()
+    End Sub
+
+    'Pick up call from dad
+    Private Sub PickUpButton_Click(sender As Object, e As EventArgs) Handles PickUpButton.Click
+        ReceiveCallPanel.Visible = False
+        CallingPanel.Visible = True
+
+        CallingContactLabel.Text = "Dad"
+        CallingContactPictureBox.BackgroundImage = My.Resources.person2
+        OngoingCall()
+    End Sub
+
+    Private Sub DeclineButton_Click(sender As Object, e As EventArgs) Handles DeclineButton.Click
+        NoAnswer()
+    End Sub
+
+    Private Sub NoAnswer()
+        ReceiveCallPanel.BackColor = Color.DimGray
+        Wait(2)
+
+        PickUpButton.Enabled = False
+        DeclineButton.Enabled = False
+        ReceiveCallPanel.Visible = False
         ContactsPanel.Visible = True
     End Sub
 End Class

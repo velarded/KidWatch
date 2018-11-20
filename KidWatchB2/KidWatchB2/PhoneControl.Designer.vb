@@ -233,7 +233,7 @@ Partial Class PhoneControl
         'CallerPictureBox
         '
         Me.CallerPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CallerPictureBox.Location = New System.Drawing.Point(33, 22)
+        Me.CallerPictureBox.Location = New System.Drawing.Point(36, 22)
         Me.CallerPictureBox.Name = "CallerPictureBox"
         Me.CallerPictureBox.Size = New System.Drawing.Size(45, 45)
         Me.CallerPictureBox.TabIndex = 1
@@ -244,7 +244,7 @@ Partial Class PhoneControl
         Me.CallerLabel.AutoSize = True
         Me.CallerLabel.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallerLabel.ForeColor = System.Drawing.Color.Black
-        Me.CallerLabel.Location = New System.Drawing.Point(25, 0)
+        Me.CallerLabel.Location = New System.Drawing.Point(29, 0)
         Me.CallerLabel.Name = "CallerLabel"
         Me.CallerLabel.Size = New System.Drawing.Size(62, 26)
         Me.CallerLabel.TabIndex = 0
