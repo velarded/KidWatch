@@ -1,5 +1,5 @@
 ﻿Public Class WalletControl
-    Private paymentMachine As PaymentMachine
+    Private paymentMachine As New PaymentMachine
 
     Private Sub CancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
         MainWalletPage.BringToFront()
@@ -8,8 +8,6 @@
 
     Private Sub PayButton_Click(sender As Object, e As EventArgs) Handles PayButton.Click
         PaymentPromptPage.BringToFront()
-        Dim paymentMachine As New PaymentMachine
-        Me.paymentMachine = paymentMachine
         paymentMachine.Init(Me)
         paymentMachine.Show()
     End Sub
