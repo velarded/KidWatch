@@ -1,6 +1,10 @@
 ﻿Public Class WalletControl
     Private paymentMachine As New PaymentMachine
 
+    Public Sub InitPaymentMachine()
+        Me.paymentMachine = New PaymentMachine
+    End Sub
+
     Private Sub CancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
         MainWalletPage.BringToFront()
         Me.paymentMachine.Close()

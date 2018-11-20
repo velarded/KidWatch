@@ -24,6 +24,7 @@
 
         kidWatch.Wallet.BringToFront()
         kidWatch.Wallet.MainWalletPage.BringToFront()
+        kidWatch.Wallet.InitPaymentMachine()
     End Sub
     
 End Class
