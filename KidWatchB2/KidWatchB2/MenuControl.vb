@@ -26,5 +26,11 @@
         kidWatch.Wallet.MainWalletPage.BringToFront()
         kidWatch.Wallet.InitPaymentMachine()
     End Sub
-    
+
+    Private Sub messagesButton_Click(sender As Object, e As EventArgs) Handles messagesButton.Click
+        Dim messageButton As Button = sender
+        Dim kidWatch As KidWatch = messageButton.Parent.Parent
+
+        kidWatch.MessagesControl1.BringToFront()
+    End Sub
 End Class

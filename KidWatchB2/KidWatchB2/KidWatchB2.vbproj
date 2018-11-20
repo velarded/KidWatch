@@ -98,6 +98,12 @@
     <Compile Include="MenuControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="messagesControl.Designer.vb">
+      <DependentUpon>messagesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="messagesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuControl.resx">
       <DependentUpon>MenuControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messagesControl.resx">
+      <DependentUpon>messagesControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -253,6 +262,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\voicemail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mommeassage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dadmessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lilymessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timmymessage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

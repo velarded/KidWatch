@@ -33,6 +33,7 @@ Partial Class KidWatch
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.MessagesControl1 = New KidWatchB2.messagesControl()
         Me.SuspendLayout()
         '
         'CallButton
@@ -117,6 +118,15 @@ Partial Class KidWatch
         '
         Me.Timer2.Enabled = True
         '
+        'MessagesControl1
+        '
+        Me.MessagesControl1.AutoScroll = True
+        Me.MessagesControl1.BackColor = System.Drawing.Color.Black
+        Me.MessagesControl1.Location = New System.Drawing.Point(33, 88)
+        Me.MessagesControl1.Name = "MessagesControl1"
+        Me.MessagesControl1.Size = New System.Drawing.Size(116, 100)
+        Me.MessagesControl1.TabIndex = 10
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -132,6 +142,7 @@ Partial Class KidWatch
         Me.Controls.Add(Me.Wallet)
         Me.Controls.Add(Me.PhoneCallScreen)
         Me.Controls.Add(Me.ClockControl1)
+        Me.Controls.Add(Me.MessagesControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
@@ -149,4 +160,5 @@ Partial Class KidWatch
     Friend WithEvents Wallet As WalletControl
     Friend WithEvents PhoneCallScreen As PhoneControl
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents MessagesControl1 As messagesControl
 End Class
