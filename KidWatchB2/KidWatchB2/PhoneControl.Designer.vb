@@ -26,6 +26,7 @@ Partial Class PhoneControl
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PhoneControl))
         Me.StatusLabel = New System.Windows.Forms.Label()
         Me.ContactsPanel = New System.Windows.Forms.Panel()
+        Me.SOSButton = New System.Windows.Forms.Button()
         Me.VoicemailButton = New System.Windows.Forms.Button()
         Me.ContactTimmyButton = New System.Windows.Forms.Button()
         Me.ContactDadButton = New System.Windows.Forms.Button()
@@ -68,6 +69,7 @@ Partial Class PhoneControl
         '
         'ContactsPanel
         '
+        Me.ContactsPanel.Controls.Add(Me.SOSButton)
         Me.ContactsPanel.Controls.Add(Me.VoicemailButton)
         Me.ContactsPanel.Controls.Add(Me.ContactTimmyButton)
         Me.ContactsPanel.Controls.Add(Me.ContactDadButton)
@@ -75,14 +77,24 @@ Partial Class PhoneControl
         Me.ContactsPanel.Controls.Add(Me.ContactMomButton)
         Me.ContactsPanel.Location = New System.Drawing.Point(0, 0)
         Me.ContactsPanel.Name = "ContactsPanel"
-        Me.ContactsPanel.Size = New System.Drawing.Size(99, 518)
+        Me.ContactsPanel.Size = New System.Drawing.Size(99, 605)
         Me.ContactsPanel.TabIndex = 13
+        '
+        'SOSButton
+        '
+        Me.SOSButton.BackgroundImage = CType(resources.GetObject("SOSButton.BackgroundImage"), System.Drawing.Image)
+        Me.SOSButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SOSButton.Location = New System.Drawing.Point(15, 1)
+        Me.SOSButton.Name = "SOSButton"
+        Me.SOSButton.Size = New System.Drawing.Size(80, 88)
+        Me.SOSButton.TabIndex = 17
+        Me.SOSButton.UseVisualStyleBackColor = True
         '
         'VoicemailButton
         '
         Me.VoicemailButton.BackgroundImage = CType(resources.GetObject("VoicemailButton.BackgroundImage"), System.Drawing.Image)
         Me.VoicemailButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.VoicemailButton.Location = New System.Drawing.Point(14, 424)
+        Me.VoicemailButton.Location = New System.Drawing.Point(15, 511)
         Me.VoicemailButton.Name = "VoicemailButton"
         Me.VoicemailButton.Size = New System.Drawing.Size(80, 88)
         Me.VoicemailButton.TabIndex = 16
@@ -93,7 +105,7 @@ Partial Class PhoneControl
         Me.ContactTimmyButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.contactCard4
         Me.ContactTimmyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContactTimmyButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactTimmyButton.Location = New System.Drawing.Point(14, 318)
+        Me.ContactTimmyButton.Location = New System.Drawing.Point(15, 407)
         Me.ContactTimmyButton.Name = "ContactTimmyButton"
         Me.ContactTimmyButton.Size = New System.Drawing.Size(80, 100)
         Me.ContactTimmyButton.TabIndex = 11
@@ -105,7 +117,7 @@ Partial Class PhoneControl
         Me.ContactDadButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.contactCard2
         Me.ContactDadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContactDadButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactDadButton.Location = New System.Drawing.Point(14, 106)
+        Me.ContactDadButton.Location = New System.Drawing.Point(15, 197)
         Me.ContactDadButton.Name = "ContactDadButton"
         Me.ContactDadButton.Size = New System.Drawing.Size(80, 100)
         Me.ContactDadButton.TabIndex = 7
@@ -117,7 +129,7 @@ Partial Class PhoneControl
         Me.ContactLillyButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.contactCard3
         Me.ContactLillyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContactLillyButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactLillyButton.Location = New System.Drawing.Point(14, 212)
+        Me.ContactLillyButton.Location = New System.Drawing.Point(15, 302)
         Me.ContactLillyButton.Name = "ContactLillyButton"
         Me.ContactLillyButton.Size = New System.Drawing.Size(80, 100)
         Me.ContactLillyButton.TabIndex = 9
@@ -129,7 +141,7 @@ Partial Class PhoneControl
         Me.ContactMomButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.contactCard1
         Me.ContactMomButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContactMomButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactMomButton.Location = New System.Drawing.Point(14, 2)
+        Me.ContactMomButton.Location = New System.Drawing.Point(15, 93)
         Me.ContactMomButton.Name = "ContactMomButton"
         Me.ContactMomButton.Size = New System.Drawing.Size(80, 100)
         Me.ContactMomButton.TabIndex = 5
@@ -144,7 +156,7 @@ Partial Class PhoneControl
         Me.CallingPanel.Controls.Add(Me.CallingContactLabel)
         Me.CallingPanel.Controls.Add(Me.CallingContactPictureBox)
         Me.CallingPanel.Controls.Add(Me.StatusLabel)
-        Me.CallingPanel.Location = New System.Drawing.Point(0, 635)
+        Me.CallingPanel.Location = New System.Drawing.Point(0, 719)
         Me.CallingPanel.Name = "CallingPanel"
         Me.CallingPanel.Size = New System.Drawing.Size(116, 100)
         Me.CallingPanel.TabIndex = 14
@@ -202,7 +214,7 @@ Partial Class PhoneControl
         Me.ReceiveCallPanel.Controls.Add(Me.DeclineButton)
         Me.ReceiveCallPanel.Controls.Add(Me.CallerPictureBox)
         Me.ReceiveCallPanel.Controls.Add(Me.CallerLabel)
-        Me.ReceiveCallPanel.Location = New System.Drawing.Point(0, 529)
+        Me.ReceiveCallPanel.Location = New System.Drawing.Point(0, 613)
         Me.ReceiveCallPanel.Name = "ReceiveCallPanel"
         Me.ReceiveCallPanel.Size = New System.Drawing.Size(116, 100)
         Me.ReceiveCallPanel.TabIndex = 15
@@ -256,7 +268,7 @@ Partial Class PhoneControl
         Me.VoicemailPanel.Controls.Add(Me.CloseVoicemailButton)
         Me.VoicemailPanel.Controls.Add(Me.PictureBox1)
         Me.VoicemailPanel.Controls.Add(Me.VoicemailLabel)
-        Me.VoicemailPanel.Location = New System.Drawing.Point(0, 739)
+        Me.VoicemailPanel.Location = New System.Drawing.Point(0, 823)
         Me.VoicemailPanel.Name = "VoicemailPanel"
         Me.VoicemailPanel.Size = New System.Drawing.Size(116, 100)
         Me.VoicemailPanel.TabIndex = 16
@@ -304,7 +316,7 @@ Partial Class PhoneControl
         Me.Controls.Add(Me.ContactsPanel)
         Me.Controls.Add(Me.CallingPanel)
         Me.Name = "PhoneControl"
-        Me.Size = New System.Drawing.Size(116, 869)
+        Me.Size = New System.Drawing.Size(116, 942)
         Me.ContactsPanel.ResumeLayout(False)
         Me.CallingPanel.ResumeLayout(False)
         Me.CallingPanel.PerformLayout()
@@ -341,4 +353,5 @@ Partial Class PhoneControl
     Friend WithEvents CloseVoicemailButton As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents VoicemailLabel As Label
+    Friend WithEvents SOSButton As Button
 End Class

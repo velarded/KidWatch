@@ -33,6 +33,10 @@ Partial Class KidWatch
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.VolumeUpButton = New System.Windows.Forms.Button()
+        Me.VolumeDownButton = New System.Windows.Forms.Button()
+        Me.VolumePictureBox = New System.Windows.Forms.PictureBox()
+        CType(Me.VolumePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CallButton
@@ -117,6 +121,41 @@ Partial Class KidWatch
         '
         Me.Timer2.Enabled = True
         '
+        'VolumeUpButton
+        '
+        Me.VolumeUpButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.VolumeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeUpButton.Font = New System.Drawing.Font("Arial Black", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VolumeUpButton.Location = New System.Drawing.Point(163, 88)
+        Me.VolumeUpButton.Name = "VolumeUpButton"
+        Me.VolumeUpButton.Size = New System.Drawing.Size(22, 50)
+        Me.VolumeUpButton.TabIndex = 10
+        Me.VolumeUpButton.Text = "+"
+        Me.VolumeUpButton.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.VolumeUpButton.UseVisualStyleBackColor = False
+        '
+        'VolumeDownButton
+        '
+        Me.VolumeDownButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.VolumeDownButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeDownButton.Font = New System.Drawing.Font("Arial Black", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VolumeDownButton.Location = New System.Drawing.Point(163, 152)
+        Me.VolumeDownButton.Name = "VolumeDownButton"
+        Me.VolumeDownButton.Size = New System.Drawing.Size(22, 50)
+        Me.VolumeDownButton.TabIndex = 11
+        Me.VolumeDownButton.Text = "-"
+        Me.VolumeDownButton.UseVisualStyleBackColor = False
+        '
+        'VolumePictureBox
+        '
+        Me.VolumePictureBox.BackColor = System.Drawing.SystemColors.Control
+        Me.VolumePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumePictureBox.Location = New System.Drawing.Point(62, 106)
+        Me.VolumePictureBox.Name = "VolumePictureBox"
+        Me.VolumePictureBox.Size = New System.Drawing.Size(50, 50)
+        Me.VolumePictureBox.TabIndex = 12
+        Me.VolumePictureBox.TabStop = False
+        '
         'KidWatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,6 +163,8 @@ Partial Class KidWatch
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(184, 291)
+        Me.Controls.Add(Me.VolumeDownButton)
+        Me.Controls.Add(Me.VolumeUpButton)
         Me.Controls.Add(Me.currentTimeLabel)
         Me.Controls.Add(Me.MenuButton)
         Me.Controls.Add(Me.CallButton)
@@ -132,10 +173,12 @@ Partial Class KidWatch
         Me.Controls.Add(Me.Wallet)
         Me.Controls.Add(Me.PhoneCallScreen)
         Me.Controls.Add(Me.ClockControl1)
+        Me.Controls.Add(Me.VolumePictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
         Me.Text = "Group B2 - KidWatch"
+        CType(Me.VolumePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -149,4 +192,7 @@ Partial Class KidWatch
     Friend WithEvents Wallet As WalletControl
     Friend WithEvents PhoneCallScreen As PhoneControl
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents VolumeUpButton As Button
+    Friend WithEvents VolumeDownButton As Button
+    Friend WithEvents VolumePictureBox As PictureBox
 End Class
