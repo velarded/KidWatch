@@ -254,5 +254,11 @@
   <ItemGroup>
     <None Include="Resources\voicemail.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game-Center-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71uAfFTpYaL.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

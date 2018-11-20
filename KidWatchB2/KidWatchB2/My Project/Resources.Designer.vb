@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _71uAfFTpYaL() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("71uAfFTpYaL", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property accept() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("accept", resourceCulture)
@@ -143,9 +153,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property garfield() As System.Drawing.Bitmap
+        Friend ReadOnly Property decline() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("garfield", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("decline", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -153,9 +163,19 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property decline() As System.Drawing.Bitmap
+        Friend ReadOnly Property Game_Center_icon() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("decline", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Game-Center-icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property garfield() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("garfield", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
