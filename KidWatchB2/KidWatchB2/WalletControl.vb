@@ -12,6 +12,7 @@
 
     Private Sub PayButton_Click(sender As Object, e As EventArgs) Handles PayButton.Click
         PaymentPromptPage.BringToFront()
+        Me.paymentMachine = New PaymentMachine
         paymentMachine.Init(Me)
         paymentMachine.Show()
     End Sub
