@@ -106,4 +106,10 @@
         End If
     End Sub
 
+    Private Sub PickUpButton_Click(sender As Object, e As EventArgs) Handles PickUpButton.Click
+        CallingContactLabel.Text = "Dad"
+        CallingContactPictureBox.BackgroundImage = My.Resources.person2
+        OngoingCall()
+
+    End Sub
 End Class
