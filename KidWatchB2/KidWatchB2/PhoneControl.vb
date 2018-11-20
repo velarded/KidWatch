@@ -2,6 +2,11 @@
     Private WithEvents callStopwatch As Stopwatch = New Stopwatch()
     Public Sub New()
         InitializeComponent()
+        ReceiveCallPanel.Location = New Point(0, 0)
+        CallingPanel.Location = New Point(0, 0)
+        VoicemailPanel.Location = New Point(0, 0)
+        ContactsPanel.Location = New Point(0, 0)
+        ContactsPanel.BringToFront()
     End Sub
 
     ' Mom will NOT pick up. TODO: Automatic transfer to Dad
@@ -37,9 +42,8 @@
         CallingPanel.BackColor = Color.SaddleBrown
         StopCallButton.Enabled = True
         TimeLabel.Visible = False
-        CallingPanel.Location = New Point(0, 0)
         CallingPanel.Visible = True
-        WaitingCall(pickUp)
+        WaitingCall(pickUp, transfer)
     End Sub
 
     Private Sub WaitingCall(Optional pickUp As Boolean = True, Optional ByVal transfer As Boolean = False)
@@ -55,12 +59,12 @@
         If pickUp Then
             OngoingCall()
         Else
-            If transfer Then
+            If transfer = True Then
                 ' transfer to Dad
                 StatusLabel.Text = "Transfer."
             Else
                 ' leave message
-                StatusLabel.Text = "Leave message."
+                StatusLabel.Text = "Message."
             End If
         End If
     End Sub
@@ -111,5 +115,15 @@
         CallingContactPictureBox.BackgroundImage = My.Resources.person2
         OngoingCall()
 
+    End Sub
+
+    Private Sub VoicemailButton_Click(sender As Object, e As EventArgs) Handles VoicemailButton.Click
+        ContactsPanel.Visible = False
+        VoicemailPanel.Visible = True
+    End Sub
+
+    Private Sub CloseVoicemailButton_Click(sender As Object, e As EventArgs) Handles CloseVoicemailButton.Click
+        VoicemailPanel.Visible = False
+        ContactsPanel.Visible = True
     End Sub
 End Class

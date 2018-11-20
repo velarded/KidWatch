@@ -42,8 +42,8 @@ Partial Class PhoneControl
         Me.DeclineButton = New System.Windows.Forms.Button()
         Me.CallerPictureBox = New System.Windows.Forms.PictureBox()
         Me.CallerLabel = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.VoicemailPanel = New System.Windows.Forms.Panel()
+        Me.CloseVoicemailButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.VoicemailLabel = New System.Windows.Forms.Label()
         Me.ContactsPanel.SuspendLayout()
@@ -51,18 +51,18 @@ Partial Class PhoneControl
         CType(Me.CallingContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ReceiveCallPanel.SuspendLayout()
         CType(Me.CallerPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.VoicemailPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StatusLabel
         '
         Me.StatusLabel.AutoSize = True
-        Me.StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StatusLabel.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusLabel.ForeColor = System.Drawing.Color.White
-        Me.StatusLabel.Location = New System.Drawing.Point(16, 1)
+        Me.StatusLabel.Location = New System.Drawing.Point(8, 1)
         Me.StatusLabel.Name = "StatusLabel"
-        Me.StatusLabel.Size = New System.Drawing.Size(68, 20)
+        Me.StatusLabel.Size = New System.Drawing.Size(79, 26)
         Me.StatusLabel.TabIndex = 0
         Me.StatusLabel.Text = "Calling..."
         '
@@ -153,11 +153,11 @@ Partial Class PhoneControl
         'TimeLabel
         '
         Me.TimeLabel.AutoSize = True
-        Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TimeLabel.ForeColor = System.Drawing.Color.White
-        Me.TimeLabel.Location = New System.Drawing.Point(50, 25)
+        Me.TimeLabel.Location = New System.Drawing.Point(48, 25)
         Me.TimeLabel.Name = "TimeLabel"
-        Me.TimeLabel.Size = New System.Drawing.Size(44, 18)
+        Me.TimeLabel.Size = New System.Drawing.Size(55, 24)
         Me.TimeLabel.TabIndex = 15
         Me.TimeLabel.Text = "00:00"
         '
@@ -175,20 +175,20 @@ Partial Class PhoneControl
         'CallingContactLabel
         '
         Me.CallingContactLabel.AutoSize = True
-        Me.CallingContactLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CallingContactLabel.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallingContactLabel.ForeColor = System.Drawing.Color.White
-        Me.CallingContactLabel.Location = New System.Drawing.Point(49, 43)
+        Me.CallingContactLabel.Location = New System.Drawing.Point(46, 43)
         Me.CallingContactLabel.Name = "CallingContactLabel"
-        Me.CallingContactLabel.Size = New System.Drawing.Size(60, 18)
+        Me.CallingContactLabel.Size = New System.Drawing.Size(73, 24)
         Me.CallingContactLabel.TabIndex = 13
         Me.CallingContactLabel.Text = "Contact"
         '
         'CallingContactPictureBox
         '
         Me.CallingContactPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CallingContactPictureBox.Location = New System.Drawing.Point(9, 25)
+        Me.CallingContactPictureBox.Location = New System.Drawing.Point(4, 25)
         Me.CallingContactPictureBox.Name = "CallingContactPictureBox"
-        Me.CallingContactPictureBox.Size = New System.Drawing.Size(40, 40)
+        Me.CallingContactPictureBox.Size = New System.Drawing.Size(42, 41)
         Me.CallingContactPictureBox.TabIndex = 1
         Me.CallingContactPictureBox.TabStop = False
         '
@@ -242,39 +242,40 @@ Partial Class PhoneControl
         'CallerLabel
         '
         Me.CallerLabel.AutoSize = True
-        Me.CallerLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CallerLabel.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallerLabel.ForeColor = System.Drawing.Color.Black
-        Me.CallerLabel.Location = New System.Drawing.Point(29, 2)
+        Me.CallerLabel.Location = New System.Drawing.Point(25, 0)
         Me.CallerLabel.Name = "CallerLabel"
-        Me.CallerLabel.Size = New System.Drawing.Size(49, 20)
+        Me.CallerLabel.Size = New System.Drawing.Size(62, 26)
         Me.CallerLabel.TabIndex = 0
         Me.CallerLabel.Text = "Caller"
         '
-        'Panel1
+        'VoicemailPanel
         '
-        Me.Panel1.BackColor = System.Drawing.Color.RosyBrown
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.VoicemailLabel)
-        Me.Panel1.Location = New System.Drawing.Point(0, 741)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(116, 100)
-        Me.Panel1.TabIndex = 16
-        Me.Panel1.Visible = False
+        Me.VoicemailPanel.BackColor = System.Drawing.Color.RosyBrown
+        Me.VoicemailPanel.Controls.Add(Me.CloseVoicemailButton)
+        Me.VoicemailPanel.Controls.Add(Me.PictureBox1)
+        Me.VoicemailPanel.Controls.Add(Me.VoicemailLabel)
+        Me.VoicemailPanel.Location = New System.Drawing.Point(0, 739)
+        Me.VoicemailPanel.Name = "VoicemailPanel"
+        Me.VoicemailPanel.Size = New System.Drawing.Size(116, 100)
+        Me.VoicemailPanel.TabIndex = 16
+        Me.VoicemailPanel.Visible = False
         '
-        'Button1
+        'CloseVoicemailButton
         '
-        Me.Button1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.decline
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(33, 67)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(45, 32)
-        Me.Button1.TabIndex = 14
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.CloseVoicemailButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.decline
+        Me.CloseVoicemailButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CloseVoicemailButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CloseVoicemailButton.Location = New System.Drawing.Point(33, 67)
+        Me.CloseVoicemailButton.Name = "CloseVoicemailButton"
+        Me.CloseVoicemailButton.Size = New System.Drawing.Size(45, 32)
+        Me.CloseVoicemailButton.TabIndex = 14
+        Me.CloseVoicemailButton.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.voicemail
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(36, 24)
         Me.PictureBox1.Name = "PictureBox1"
@@ -285,11 +286,11 @@ Partial Class PhoneControl
         'VoicemailLabel
         '
         Me.VoicemailLabel.AutoSize = True
-        Me.VoicemailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VoicemailLabel.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VoicemailLabel.ForeColor = System.Drawing.Color.Black
-        Me.VoicemailLabel.Location = New System.Drawing.Point(16, 1)
+        Me.VoicemailLabel.Location = New System.Drawing.Point(9, 0)
         Me.VoicemailLabel.Name = "VoicemailLabel"
-        Me.VoicemailLabel.Size = New System.Drawing.Size(77, 20)
+        Me.VoicemailLabel.Size = New System.Drawing.Size(92, 26)
         Me.VoicemailLabel.TabIndex = 0
         Me.VoicemailLabel.Text = "Voicemail"
         '
@@ -298,12 +299,12 @@ Partial Class PhoneControl
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.VoicemailPanel)
         Me.Controls.Add(Me.ReceiveCallPanel)
         Me.Controls.Add(Me.ContactsPanel)
         Me.Controls.Add(Me.CallingPanel)
         Me.Name = "PhoneControl"
-        Me.Size = New System.Drawing.Size(116, 1011)
+        Me.Size = New System.Drawing.Size(116, 869)
         Me.ContactsPanel.ResumeLayout(False)
         Me.CallingPanel.ResumeLayout(False)
         Me.CallingPanel.PerformLayout()
@@ -311,8 +312,8 @@ Partial Class PhoneControl
         Me.ReceiveCallPanel.ResumeLayout(False)
         Me.ReceiveCallPanel.PerformLayout()
         CType(Me.CallerPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.VoicemailPanel.ResumeLayout(False)
+        Me.VoicemailPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -336,8 +337,8 @@ Partial Class PhoneControl
     Friend WithEvents CallerLabel As Label
     Friend WithEvents TimeLabel As Label
     Friend WithEvents VoicemailButton As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents VoicemailPanel As Panel
+    Friend WithEvents CloseVoicemailButton As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents VoicemailLabel As Label
 End Class
