@@ -4,42 +4,45 @@
         InitializeComponent()
     End Sub
 
+    ' Mom will NOT pick up. TODO: Automatic transfer to Dad
     Private Sub ContactMomButton_Click(sender As Object, e As EventArgs) Handles ContactMomButton.Click
-        CallingContactLabel.Text = "Mom"
-        CallingContactPicture.BackgroundImage = My.Resources.person1
-        SetUpCalling()
+        Dim pickup = False
+        Dim transfer = True
+        SetUpCalling("Mom", My.Resources.person1, pickup, transfer)
     End Sub
 
+    ' Dad will pick up
     Private Sub ContactDadButton_Click(sender As Object, e As EventArgs) Handles ContactDadButton.Click
-        CallingContactLabel.Text = "Dad"
-        CallingContactPicture.BackgroundImage = My.Resources.person2
-        SetUpCalling()
+        SetUpCalling("Dad", My.Resources.person2)
     End Sub
 
+    ' Friend will NOT answer. TODO: leave message
     Private Sub ContactLillyButton_Click(sender As Object, e As EventArgs) Handles ContactLillyButton.Click
-        CallingContactLabel.Text = "Lilly"
-        CallingContactPicture.BackgroundImage = My.Resources.person3
-        SetUpCalling()
+        Dim pickup = False
+        Dim transfer = False ' will leave message and no transfer
+        SetUpCalling("Lilly", My.Resources.person3, pickup, transfer)
     End Sub
 
+    ' Friend will answer just like Dad
     Private Sub ContactTimmyButton_Click(sender As Object, e As EventArgs) Handles ContactTimmyButton.Click
-        CallingContactLabel.Text = "Timmy"
-        CallingContactPicture.BackgroundImage = My.Resources.person4
-        SetUpCalling()
+        SetUpCalling("Timmy", My.Resources.person4)
     End Sub
 
-    Private Sub SetUpCalling()
+    Private Sub SetUpCalling(name As String, picture As Image, Optional pickUp As Boolean = True, Optional ByVal transfer As Boolean = False)
+        CallingContactLabel.Text = name
+        CallingContactPictureBox.BackgroundImage = picture
+
         StatusLabel.Text = "Calling."
         ContactsPanel.Visible = False
         CallingPanel.BackColor = Color.SaddleBrown
-        EndCallButton.Enabled = True
+        StopCallButton.Enabled = True
         TimeLabel.Visible = False
         CallingPanel.Location = New Point(0, 0)
         CallingPanel.Visible = True
-        WaitingCall()
+        WaitingCall(pickUp)
     End Sub
 
-    Private Sub WaitingCall()
+    Private Sub WaitingCall(Optional pickUp As Boolean = True, Optional ByVal transfer As Boolean = False)
         ' wait 4 seconds before connecting
         Wait(1)
         StatusLabel.Text = "Calling..."
@@ -49,7 +52,17 @@
         StatusLabel.Text = "Calling."
         Wait(1)
         StatusLabel.Text = "Calling..."
-        OngoingCall()
+        If pickUp Then
+            OngoingCall()
+        Else
+            If transfer Then
+                ' transfer to Dad
+                StatusLabel.Text = "Transfer."
+            Else
+                ' leave message
+                StatusLabel.Text = "Leave message."
+            End If
+        End If
     End Sub
 
     Private Sub OngoingCall()
@@ -73,8 +86,8 @@
         ContactsPanel.Visible = True
     End Sub
 
-    Private Sub EndCallButton_Click(sender As Object, e As EventArgs) Handles EndCallButton.Click
-        EndCallButton.Enabled = False
+    Private Sub EndCallButton_Click(sender As Object, e As EventArgs) Handles StopCallButton.Click
+        StopCallButton.Enabled = False
         EndCall()
         Wait(2)
         CloseCallPanel()
