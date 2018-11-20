@@ -125,6 +125,12 @@
     <Compile Include="PhoneControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Reminder.Designer.vb">
+      <DependentUpon>Reminder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="WalletControl.Designer.vb">
       <DependentUpon>WalletControl.vb</DependentUpon>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneControl.resx">
       <DependentUpon>PhoneControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reminder.resx">
+      <DependentUpon>Reminder.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WalletControl.resx">
       <DependentUpon>WalletControl.vb</DependentUpon>
@@ -228,16 +237,7 @@
     <None Include="Resources\tap-icon.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cat-thumbs-up.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cat-thumbs-up.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\garfield.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sad-dog.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sad-face.png" />
