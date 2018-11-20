@@ -28,13 +28,16 @@ Partial Class CalendarControl
         'dateLabel
         '
         Me.dateLabel.AutoSize = True
-        Me.dateLabel.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateLabel.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dateLabel.ForeColor = System.Drawing.Color.Aqua
         Me.dateLabel.Location = New System.Drawing.Point(3, 33)
         Me.dateLabel.Name = "dateLabel"
         Me.dateLabel.Size = New System.Drawing.Size(107, 34)
         Me.dateLabel.TabIndex = 0
-        Me.dateLabel.Text = Date.Now.ToString("ddd, dd-MM-yyy")
+        Dim monthInt As Integer = Date.Now.Month()
+        Dim month As String = DateAndTime.MonthName(monthInt, True) + " " + Date.Now.Day().ToString + ", " + Date.Now.Year().ToString()
+        Me.dateLabel.Text = month
+
         '
         'CalendarControl
         '
