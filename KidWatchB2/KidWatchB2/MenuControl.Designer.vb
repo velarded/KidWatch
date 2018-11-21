@@ -29,6 +29,8 @@ Partial Class MenuControl
         Me.calendarLabel = New System.Windows.Forms.Label()
         Me.clockLabel = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MusicLabel = New System.Windows.Forms.Label()
+        Me.RemindersButton = New System.Windows.Forms.Button()
         Me.GamesButton = New System.Windows.Forms.Button()
         Me.MusicButton = New System.Windows.Forms.Button()
         Me.clockButton = New System.Windows.Forms.Button()
@@ -36,7 +38,7 @@ Partial Class MenuControl
         Me.messagesButton = New System.Windows.Forms.Button()
         Me.mapsButton = New System.Windows.Forms.Button()
         Me.walletButton = New System.Windows.Forms.Button()
-        Me.MusicLabel = New System.Windows.Forms.Label()
+        Me.ReminderLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'mapsLabel
@@ -45,7 +47,7 @@ Partial Class MenuControl
         Me.mapsLabel.BackColor = System.Drawing.Color.Transparent
         Me.mapsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mapsLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.mapsLabel.Location = New System.Drawing.Point(34, 438)
+        Me.mapsLabel.Location = New System.Drawing.Point(34, 439)
         Me.mapsLabel.Name = "mapsLabel"
         Me.mapsLabel.Size = New System.Drawing.Size(45, 18)
         Me.mapsLabel.TabIndex = 7
@@ -57,7 +59,7 @@ Partial Class MenuControl
         Me.walletLabel.BackColor = System.Drawing.Color.Transparent
         Me.walletLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.walletLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.walletLabel.Location = New System.Drawing.Point(30, 792)
+        Me.walletLabel.Location = New System.Drawing.Point(29, 911)
         Me.walletLabel.Name = "walletLabel"
         Me.walletLabel.Size = New System.Drawing.Size(49, 18)
         Me.walletLabel.TabIndex = 6
@@ -69,7 +71,7 @@ Partial Class MenuControl
         Me.messagesLabel.BackColor = System.Drawing.Color.Transparent
         Me.messagesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.messagesLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.messagesLabel.Location = New System.Drawing.Point(18, 556)
+        Me.messagesLabel.Location = New System.Drawing.Point(18, 557)
         Me.messagesLabel.Name = "messagesLabel"
         Me.messagesLabel.Size = New System.Drawing.Size(77, 18)
         Me.messagesLabel.TabIndex = 9
@@ -81,7 +83,7 @@ Partial Class MenuControl
         Me.calendarLabel.BackColor = System.Drawing.Color.Transparent
         Me.calendarLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.calendarLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.calendarLabel.Location = New System.Drawing.Point(21, 82)
+        Me.calendarLabel.Location = New System.Drawing.Point(21, 83)
         Me.calendarLabel.Name = "calendarLabel"
         Me.calendarLabel.Size = New System.Drawing.Size(67, 18)
         Me.calendarLabel.TabIndex = 11
@@ -93,7 +95,7 @@ Partial Class MenuControl
         Me.clockLabel.BackColor = System.Drawing.Color.Transparent
         Me.clockLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clockLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.clockLabel.Location = New System.Drawing.Point(30, 200)
+        Me.clockLabel.Location = New System.Drawing.Point(30, 201)
         Me.clockLabel.Name = "clockLabel"
         Me.clockLabel.Size = New System.Drawing.Size(47, 18)
         Me.clockLabel.TabIndex = 13
@@ -104,16 +106,37 @@ Partial Class MenuControl
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(26, 318)
+        Me.Label1.Location = New System.Drawing.Point(26, 319)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 18)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Games"
         '
+        'MusicLabel
+        '
+        Me.MusicLabel.AutoSize = True
+        Me.MusicLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MusicLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.MusicLabel.Location = New System.Drawing.Point(30, 675)
+        Me.MusicLabel.Name = "MusicLabel"
+        Me.MusicLabel.Size = New System.Drawing.Size(48, 18)
+        Me.MusicLabel.TabIndex = 17
+        Me.MusicLabel.Text = "Music"
+        '
+        'RemindersButton
+        '
+        Me.RemindersButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.reminders_icon
+        Me.RemindersButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.RemindersButton.Location = New System.Drawing.Point(15, 714)
+        Me.RemindersButton.Name = "RemindersButton"
+        Me.RemindersButton.Size = New System.Drawing.Size(80, 80)
+        Me.RemindersButton.TabIndex = 18
+        Me.RemindersButton.UseVisualStyleBackColor = True
+        '
         'GamesButton
         '
         Me.GamesButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.Game_Center_icon
-        Me.GamesButton.Location = New System.Drawing.Point(15, 239)
+        Me.GamesButton.Location = New System.Drawing.Point(15, 240)
         Me.GamesButton.Name = "GamesButton"
         Me.GamesButton.Size = New System.Drawing.Size(80, 80)
         Me.GamesButton.TabIndex = 15
@@ -122,7 +145,7 @@ Partial Class MenuControl
         'MusicButton
         '
         Me.MusicButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._71uAfFTpYaL
-        Me.MusicButton.Location = New System.Drawing.Point(15, 595)
+        Me.MusicButton.Location = New System.Drawing.Point(15, 596)
         Me.MusicButton.Name = "MusicButton"
         Me.MusicButton.Size = New System.Drawing.Size(80, 80)
         Me.MusicButton.TabIndex = 14
@@ -132,7 +155,7 @@ Partial Class MenuControl
         '
         Me.clockButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.clockButton.Image = CType(resources.GetObject("clockButton.Image"), System.Drawing.Image)
-        Me.clockButton.Location = New System.Drawing.Point(15, 121)
+        Me.clockButton.Location = New System.Drawing.Point(15, 122)
         Me.clockButton.Name = "clockButton"
         Me.clockButton.Size = New System.Drawing.Size(80, 80)
         Me.clockButton.TabIndex = 12
@@ -142,7 +165,7 @@ Partial Class MenuControl
         '
         Me.calendarButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.calendar_icon
         Me.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.calendarButton.Location = New System.Drawing.Point(15, 3)
+        Me.calendarButton.Location = New System.Drawing.Point(15, 4)
         Me.calendarButton.Name = "calendarButton"
         Me.calendarButton.Size = New System.Drawing.Size(80, 80)
         Me.calendarButton.TabIndex = 10
@@ -152,7 +175,7 @@ Partial Class MenuControl
         '
         Me.messagesButton.BackgroundImage = CType(resources.GetObject("messagesButton.BackgroundImage"), System.Drawing.Image)
         Me.messagesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.messagesButton.Location = New System.Drawing.Point(15, 477)
+        Me.messagesButton.Location = New System.Drawing.Point(15, 478)
         Me.messagesButton.Name = "messagesButton"
         Me.messagesButton.Size = New System.Drawing.Size(80, 80)
         Me.messagesButton.TabIndex = 8
@@ -162,7 +185,7 @@ Partial Class MenuControl
         '
         Me.mapsButton.BackgroundImage = CType(resources.GetObject("mapsButton.BackgroundImage"), System.Drawing.Image)
         Me.mapsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.mapsButton.Location = New System.Drawing.Point(15, 359)
+        Me.mapsButton.Location = New System.Drawing.Point(15, 360)
         Me.mapsButton.Name = "mapsButton"
         Me.mapsButton.Size = New System.Drawing.Size(80, 80)
         Me.mapsButton.TabIndex = 5
@@ -172,28 +195,31 @@ Partial Class MenuControl
         '
         Me.walletButton.BackgroundImage = CType(resources.GetObject("walletButton.BackgroundImage"), System.Drawing.Image)
         Me.walletButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.walletButton.Location = New System.Drawing.Point(15, 709)
+        Me.walletButton.Location = New System.Drawing.Point(15, 832)
         Me.walletButton.Name = "walletButton"
         Me.walletButton.Size = New System.Drawing.Size(80, 80)
         Me.walletButton.TabIndex = 4
         Me.walletButton.UseVisualStyleBackColor = True
         '
-        'MusicLabel
+        'ReminderLabel
         '
-        Me.MusicLabel.AutoSize = True
-        Me.MusicLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MusicLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.MusicLabel.Location = New System.Drawing.Point(30, 674)
-        Me.MusicLabel.Name = "MusicLabel"
-        Me.MusicLabel.Size = New System.Drawing.Size(48, 18)
-        Me.MusicLabel.TabIndex = 17
-        Me.MusicLabel.Text = "Music"
+        Me.ReminderLabel.AutoSize = True
+        Me.ReminderLabel.BackColor = System.Drawing.Color.Black
+        Me.ReminderLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReminderLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.ReminderLabel.Location = New System.Drawing.Point(16, 793)
+        Me.ReminderLabel.Name = "ReminderLabel"
+        Me.ReminderLabel.Size = New System.Drawing.Size(80, 18)
+        Me.ReminderLabel.TabIndex = 19
+        Me.ReminderLabel.Text = "Reminders"
         '
         'MenuControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
+        Me.Controls.Add(Me.ReminderLabel)
+        Me.Controls.Add(Me.RemindersButton)
         Me.Controls.Add(Me.MusicLabel)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GamesButton)
@@ -209,7 +235,7 @@ Partial Class MenuControl
         Me.Controls.Add(Me.mapsButton)
         Me.Controls.Add(Me.walletButton)
         Me.Name = "MenuControl"
-        Me.Size = New System.Drawing.Size(116, 819)
+        Me.Size = New System.Drawing.Size(116, 961)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -229,4 +255,6 @@ Partial Class MenuControl
     Friend WithEvents GamesButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents MusicLabel As Label
+    Friend WithEvents RemindersButton As Button
+    Friend WithEvents ReminderLabel As Label
 End Class

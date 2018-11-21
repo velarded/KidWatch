@@ -223,6 +223,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Pelfusion_Long_Shadow_Ios7_Reminder() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Pelfusion-Long-Shadow-Ios7-Reminder", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property person1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("person1", resourceCulture)
@@ -256,6 +266,26 @@ Namespace My.Resources
         Friend ReadOnly Property person4() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("person4", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property reminder_application_icon_psd() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("reminder-application-icon-psd", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property reminders_icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("reminders-icon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
