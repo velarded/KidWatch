@@ -27,13 +27,13 @@ Partial Class KidWatch
         Me.CallButton = New System.Windows.Forms.Button()
         Me.MenuButton = New System.Windows.Forms.Button()
         Me.currentTimeLabel = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.MessagesControl1 = New KidWatchB2.messagesControl()
         Me.MenuScreen = New KidWatchB2.MenuControl()
         Me.CalendarControl1 = New KidWatchB2.CalendarControl()
         Me.Wallet = New KidWatchB2.WalletControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.MessagesControl1 = New KidWatchB2.messagesControl()
         Me.SuspendLayout()
         '
         'CallButton
@@ -71,6 +71,18 @@ Partial Class KidWatch
         Me.currentTimeLabel.Size = New System.Drawing.Size(79, 18)
         Me.currentTimeLabel.TabIndex = 8
         Me.currentTimeLabel.Text = "09:06 PM"
+        '
+        'Timer2
+        '
+        Me.Timer2.Enabled = True
+        '
+        'MessagesControl1
+        '
+        Me.MessagesControl1.BackColor = System.Drawing.Color.Black
+        Me.MessagesControl1.Location = New System.Drawing.Point(33, 88)
+        Me.MessagesControl1.Name = "MessagesControl1"
+        Me.MessagesControl1.Size = New System.Drawing.Size(116, 100)
+        Me.MessagesControl1.TabIndex = 10
         '
         'MenuScreen
         '
@@ -113,19 +125,6 @@ Partial Class KidWatch
         Me.ClockControl1.Name = "ClockControl1"
         Me.ClockControl1.Size = New System.Drawing.Size(116, 100)
         Me.ClockControl1.TabIndex = 9
-        '
-        'Timer2
-        '
-        Me.Timer2.Enabled = True
-        '
-        'MessagesControl1
-        '
-        Me.MessagesControl1.AutoScroll = True
-        Me.MessagesControl1.BackColor = System.Drawing.Color.Black
-        Me.MessagesControl1.Location = New System.Drawing.Point(33, 88)
-        Me.MessagesControl1.Name = "MessagesControl1"
-        Me.MessagesControl1.Size = New System.Drawing.Size(116, 100)
-        Me.MessagesControl1.TabIndex = 10
         '
         'KidWatch
         '
