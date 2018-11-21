@@ -166,13 +166,13 @@ Partial Class messagesControl
         '
         'StopRecordButton
         '
-        Me.StopRecordButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.decline
         Me.StopRecordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.StopRecordButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StopRecordButton.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StopRecordButton.Location = New System.Drawing.Point(33, 67)
         Me.StopRecordButton.Name = "StopRecordButton"
         Me.StopRecordButton.Size = New System.Drawing.Size(45, 32)
         Me.StopRecordButton.TabIndex = 14
+        Me.StopRecordButton.Text = "End"
         Me.StopRecordButton.UseVisualStyleBackColor = True
         '
         'RecordingContactLabel

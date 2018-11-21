@@ -49,6 +49,7 @@
     End Sub
 
     Private Sub AudioMessageButton_Click(sender As Object, e As EventArgs) Handles AudioMessageButton.Click
-
+        recordingMessagePanel.BringToFront()
+        RecordingMessage()
     End Sub
 End Class
