@@ -17,7 +17,7 @@
     End Sub
 
     ' Dad will pick up
-    Private Sub ContactDadButton_Click(sender As Object, e As EventArgs) Handles ContactDadButton.Click
+    Private Sub ContactDadButton_Click(sender As Object, e As EventArgs) Handles ContactDadButton.Click, SOSButton.Click
         SetUpCalling("Dad", My.Resources.person2)
     End Sub
 
@@ -71,11 +71,12 @@
 
     Private Sub OngoingCall()
         StatusLabel.Text = "Connected"
-        TimeLabel.Visible = True
         CallingPanel.BackColor = Color.DarkGreen
+        StopCallButton.Enabled = True
         CallTimer.Start()
         callStopwatch.Reset()
         callStopwatch.Start()
+        TimeLabel.Visible = True
     End Sub
 
     Private Sub EndCall()
@@ -144,6 +145,9 @@
         CallerLabel.Text = "Dad"
         CallerPictureBox.BackgroundImage = My.Resources.person2
 
+        PickUpButton.Enabled = True
+        DeclineButton.Enabled = True
+
         ' call timer and wait 5 seconds
         CallTimer.Start()
         callStopwatch.Reset()
@@ -155,6 +159,7 @@
         ReceiveCallPanel.Visible = False
         CallingPanel.Visible = True
 
+        StatusLabel.Text = "Connected"
         CallingContactLabel.Text = "Dad"
         CallingContactPictureBox.BackgroundImage = My.Resources.person2
         OngoingCall()
@@ -166,11 +171,12 @@
 
     Private Sub NoAnswer()
         ReceiveCallPanel.BackColor = Color.DimGray
-        Wait(2)
-
         PickUpButton.Enabled = False
         DeclineButton.Enabled = False
+
+        Wait(2)
         ReceiveCallPanel.Visible = False
         ContactsPanel.Visible = True
     End Sub
+
 End Class
