@@ -1,8 +1,10 @@
 ﻿Public Class MapControl
     Public Sub New()
         InitializeComponent()
+        DirectionsPanel3.Location = New Point(0, 0)
         DirectionsPanel2.Location = New Point(0, 0)
         DirectionsPanel1.Location = New Point(0, 0)
+        PlacesListPage.Size = New Size(116, 100)
         PlacesListPage.Location = New Point(0, 0)
         MainMapsPage.Location = New Point(0, 0)
         MainMapsPage.BringToFront()
@@ -17,12 +19,14 @@
     End Sub
 
     Private Sub PlacesListButtons_Click(sender As Object, e As EventArgs) Handles PlaceHomeButton.Click, PlaceLibraryButton.Click, PlaceSchoolButton.Click
-        'MainMapsPage.BringToFront()'
         'Show first direction page'
         DirectionsPanel1.BringToFront()
         Wait(2)
         DirectionsPanel2.BringToFront()
         Wait(2)
+        DirectionsPanel3.BringToFront()
+        Wait(2)
+        CurrentLocationLabel.Text = "Location: Library"
         MainMapsPage.BringToFront()
     End Sub
 

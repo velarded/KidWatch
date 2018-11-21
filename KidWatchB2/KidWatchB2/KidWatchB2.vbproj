@@ -284,5 +284,8 @@
   <ItemGroup>
     <None Include="Resources\directions-page-2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

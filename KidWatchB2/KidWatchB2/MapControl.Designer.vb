@@ -24,6 +24,8 @@ Partial Class MapControl
     Private Sub InitializeComponent()
         Me.PlacesListPage = New System.Windows.Forms.Panel()
         Me.PlacesListBackButton = New System.Windows.Forms.Button()
+        Me.DirectionsPanel3 = New System.Windows.Forms.Panel()
+        Me.DirectionsButton3 = New System.Windows.Forms.Button()
         Me.DirectionsPanel2 = New System.Windows.Forms.Panel()
         Me.DirectionsButton2 = New System.Windows.Forms.Button()
         Me.DirectionsPanel1 = New System.Windows.Forms.Panel()
@@ -33,13 +35,12 @@ Partial Class MapControl
         Me.PlaceHomeButton = New System.Windows.Forms.Button()
         Me.MainMapsPage = New System.Windows.Forms.Panel()
         Me.PlacesButton = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.CurrentLocationLabel = New System.Windows.Forms.Label()
         Me.PlacesListPage.SuspendLayout()
+        Me.DirectionsPanel3.SuspendLayout()
         Me.DirectionsPanel2.SuspendLayout()
         Me.DirectionsPanel1.SuspendLayout()
         Me.MainMapsPage.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PlacesListPage
@@ -67,6 +68,31 @@ Partial Class MapControl
         Me.PlacesListBackButton.TabIndex = 5
         Me.PlacesListBackButton.Text = "BACK"
         Me.PlacesListBackButton.UseVisualStyleBackColor = False
+        '
+        'DirectionsPanel3
+        '
+        Me.DirectionsPanel3.BackColor = System.Drawing.Color.LightCoral
+        Me.DirectionsPanel3.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.directions_page_3
+        Me.DirectionsPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.DirectionsPanel3.Controls.Add(Me.DirectionsButton3)
+        Me.DirectionsPanel3.Location = New System.Drawing.Point(2, 620)
+        Me.DirectionsPanel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.DirectionsPanel3.Name = "DirectionsPanel3"
+        Me.DirectionsPanel3.Size = New System.Drawing.Size(116, 100)
+        Me.DirectionsPanel3.TabIndex = 3
+        '
+        'DirectionsButton3
+        '
+        Me.DirectionsButton3.BackColor = System.Drawing.Color.YellowGreen
+        Me.DirectionsButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DirectionsButton3.Font = New System.Drawing.Font("Comic Sans MS", 8.2!, System.Drawing.FontStyle.Bold)
+        Me.DirectionsButton3.Location = New System.Drawing.Point(0, 70)
+        Me.DirectionsButton3.Margin = New System.Windows.Forms.Padding(0)
+        Me.DirectionsButton3.Name = "DirectionsButton3"
+        Me.DirectionsButton3.Size = New System.Drawing.Size(116, 29)
+        Me.DirectionsButton3.TabIndex = 0
+        Me.DirectionsButton3.Text = "Arrived at library!"
+        Me.DirectionsButton3.UseVisualStyleBackColor = False
         '
         'DirectionsPanel2
         '
@@ -156,6 +182,7 @@ Partial Class MapControl
         Me.MainMapsPage.BackColor = System.Drawing.Color.LightCoral
         Me.MainMapsPage.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.map_location
         Me.MainMapsPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMapsPage.Controls.Add(Me.CurrentLocationLabel)
         Me.MainMapsPage.Controls.Add(Me.PlacesButton)
         Me.MainMapsPage.Location = New System.Drawing.Point(0, 0)
         Me.MainMapsPage.Margin = New System.Windows.Forms.Padding(2)
@@ -176,36 +203,22 @@ Partial Class MapControl
         Me.PlacesButton.Text = "Places"
         Me.PlacesButton.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'CurrentLocationLabel
         '
-        Me.Panel1.BackColor = System.Drawing.Color.LightCoral
-        Me.Panel1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.directions_page_2
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Location = New System.Drawing.Point(2, 620)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(116, 100)
-        Me.Panel1.TabIndex = 3
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.LightCyan
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 8.2!, System.Drawing.FontStyle.Bold)
-        Me.Button1.Location = New System.Drawing.Point(2, 68)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 29)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Turn right 50m"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.CurrentLocationLabel.AutoSize = True
+        Me.CurrentLocationLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CurrentLocationLabel.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CurrentLocationLabel.Location = New System.Drawing.Point(13, 5)
+        Me.CurrentLocationLabel.Name = "CurrentLocationLabel"
+        Me.CurrentLocationLabel.Size = New System.Drawing.Size(97, 16)
+        Me.CurrentLocationLabel.TabIndex = 1
+        Me.CurrentLocationLabel.Text = "Location: School"
         '
         'MapControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.DirectionsPanel3)
         Me.Controls.Add(Me.DirectionsPanel2)
         Me.Controls.Add(Me.DirectionsPanel1)
         Me.Controls.Add(Me.PlacesListPage)
@@ -214,10 +227,11 @@ Partial Class MapControl
         Me.Name = "MapControl"
         Me.Size = New System.Drawing.Size(120, 726)
         Me.PlacesListPage.ResumeLayout(False)
+        Me.DirectionsPanel3.ResumeLayout(False)
         Me.DirectionsPanel2.ResumeLayout(False)
         Me.DirectionsPanel1.ResumeLayout(False)
         Me.MainMapsPage.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
+        Me.MainMapsPage.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -234,6 +248,7 @@ Partial Class MapControl
     Friend WithEvents WalkInstructionButton1 As Button
     Friend WithEvents DirectionsPanel2 As Panel
     Friend WithEvents DirectionsButton2 As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents DirectionsPanel3 As Panel
+    Friend WithEvents DirectionsButton3 As Button
+    Friend WithEvents CurrentLocationLabel As Label
 End Class
