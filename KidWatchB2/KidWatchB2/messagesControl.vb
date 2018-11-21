@@ -3,7 +3,7 @@
     Public Sub New()
         InitializeComponent()
 
-        recordingMessagePanel.Location = New Point(0, 0)
+        recordingAudioMessagePanel.Location = New Point(0, 0)
         MessageOptionspanel.Location = New Point(0, 0)
         MessageContactsPanel.Location = New Point(0, 0)
         MessageContactsPanel.BringToFront()
@@ -17,10 +17,10 @@
 
         RecordingMessageLabel.Text = "Recording."
         MessageContactsPanel.Visible = False
-        recordingMessagePanel.BackColor = Color.SaddleBrown
+        recordingAudioMessagePanel.BackColor = Color.SaddleBrown
         StopRecordButton.Enabled = True
         TimeLabel.Visible = False
-        recordingMessagePanel.Visible = True
+        recordingAudioMessagePanel.Visible = True
 
     End Sub
 
@@ -39,7 +39,7 @@
         MessageTimer.Stop()
 
         RecordingMessageLabel.Text = "Recording Ended"
-        recordingMessagePanel.BackColor = Color.DimGray
+        recordingAudioMessagePanel.BackColor = Color.DimGray
     End Sub
     Private Sub Wait(ByVal seconds As Integer)
         For i As Integer = 0 To seconds * 100
@@ -49,7 +49,9 @@
     End Sub
 
     Private Sub AudioMessageButton_Click(sender As Object, e As EventArgs) Handles AudioMessageButton.Click
-        recordingMessagePanel.BringToFront()
+        recordingAudioMessagePanel.BringToFront()
         RecordingMessage()
     End Sub
+
+
 End Class

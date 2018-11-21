@@ -275,5 +275,44 @@
   <ItemGroup>
     <None Include="Resources\timmymessage.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_green.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71KUQgscjDL._SX425_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-check-mark-computer-icons-clip-art-green-check-mark-2-icon-5ab1d1bfebf0f5.0376901715216030079664.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-check-mark-computer-icons-clip-art-green-check-mark-2-icon-5ab1d1bfebf0f5.03769017152160300796641.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-1769866__340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28-289596_check-mark-computer-icons-clip-art-green-check-mark-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_checkmark_in_box_emoji_flyer-r1fd27011d7df4fd2937bd30940e2a87e_vgvyf_8byvr_307.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28-289596_check-mark-computer-icons-clip-art-green-check-mark-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-1769866__3401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seasonal-weather-landscape-icon-vector-19925537.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hugging_Face_Emoji_2028ce8b-c213-4d45-94aa-21e1a0842b4d_large.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
