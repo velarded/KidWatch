@@ -254,5 +254,29 @@
   <ItemGroup>
     <None Include="Resources\voicemail.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game-Center-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71uAfFTpYaL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminders-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pelfusion-Long-Shadow-Ios7-Reminder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminder-application-icon-psd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volumeDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volumeUp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
