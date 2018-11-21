@@ -24,18 +24,18 @@ Partial Class MapControl
     Private Sub InitializeComponent()
         Me.PlacesListPage = New System.Windows.Forms.Panel()
         Me.PlacesListBackButton = New System.Windows.Forms.Button()
+        Me.PlaceSchoolButton = New System.Windows.Forms.Button()
+        Me.PlaceLibraryButton = New System.Windows.Forms.Button()
+        Me.PlaceHomeButton = New System.Windows.Forms.Button()
         Me.DirectionsPanel3 = New System.Windows.Forms.Panel()
         Me.DirectionsButton3 = New System.Windows.Forms.Button()
         Me.DirectionsPanel2 = New System.Windows.Forms.Panel()
         Me.DirectionsButton2 = New System.Windows.Forms.Button()
         Me.DirectionsPanel1 = New System.Windows.Forms.Panel()
         Me.WalkInstructionButton1 = New System.Windows.Forms.Button()
-        Me.PlaceSchoolButton = New System.Windows.Forms.Button()
-        Me.PlaceLibraryButton = New System.Windows.Forms.Button()
-        Me.PlaceHomeButton = New System.Windows.Forms.Button()
         Me.MainMapsPage = New System.Windows.Forms.Panel()
-        Me.PlacesButton = New System.Windows.Forms.Button()
         Me.CurrentLocationLabel = New System.Windows.Forms.Label()
+        Me.PlacesButton = New System.Windows.Forms.Button()
         Me.PlacesListPage.SuspendLayout()
         Me.DirectionsPanel3.SuspendLayout()
         Me.DirectionsPanel2.SuspendLayout()
@@ -69,6 +69,39 @@ Partial Class MapControl
         Me.PlacesListBackButton.Text = "BACK"
         Me.PlacesListBackButton.UseVisualStyleBackColor = False
         '
+        'PlaceSchoolButton
+        '
+        Me.PlaceSchoolButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.place_school_icon
+        Me.PlaceSchoolButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlaceSchoolButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.PlaceSchoolButton.Location = New System.Drawing.Point(21, 177)
+        Me.PlaceSchoolButton.Name = "PlaceSchoolButton"
+        Me.PlaceSchoolButton.Size = New System.Drawing.Size(75, 79)
+        Me.PlaceSchoolButton.TabIndex = 4
+        Me.PlaceSchoolButton.UseVisualStyleBackColor = True
+        '
+        'PlaceLibraryButton
+        '
+        Me.PlaceLibraryButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.place_library_icon
+        Me.PlaceLibraryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlaceLibraryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.PlaceLibraryButton.Location = New System.Drawing.Point(21, 92)
+        Me.PlaceLibraryButton.Name = "PlaceLibraryButton"
+        Me.PlaceLibraryButton.Size = New System.Drawing.Size(75, 79)
+        Me.PlaceLibraryButton.TabIndex = 3
+        Me.PlaceLibraryButton.UseVisualStyleBackColor = True
+        '
+        'PlaceHomeButton
+        '
+        Me.PlaceHomeButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.place_home_icon
+        Me.PlaceHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlaceHomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.PlaceHomeButton.Location = New System.Drawing.Point(21, 7)
+        Me.PlaceHomeButton.Name = "PlaceHomeButton"
+        Me.PlaceHomeButton.Size = New System.Drawing.Size(75, 79)
+        Me.PlaceHomeButton.TabIndex = 2
+        Me.PlaceHomeButton.UseVisualStyleBackColor = True
+        '
         'DirectionsPanel3
         '
         Me.DirectionsPanel3.BackColor = System.Drawing.Color.LightCoral
@@ -85,7 +118,7 @@ Partial Class MapControl
         '
         Me.DirectionsButton3.BackColor = System.Drawing.Color.YellowGreen
         Me.DirectionsButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.DirectionsButton3.Font = New System.Drawing.Font("Comic Sans MS", 8.2!, System.Drawing.FontStyle.Bold)
+        Me.DirectionsButton3.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DirectionsButton3.Location = New System.Drawing.Point(0, 70)
         Me.DirectionsButton3.Margin = New System.Windows.Forms.Padding(0)
         Me.DirectionsButton3.Name = "DirectionsButton3"
@@ -144,39 +177,6 @@ Partial Class MapControl
         Me.WalkInstructionButton1.Text = "Turn left 100m"
         Me.WalkInstructionButton1.UseVisualStyleBackColor = False
         '
-        'PlaceSchoolButton
-        '
-        Me.PlaceSchoolButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.place_school_icon
-        Me.PlaceSchoolButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PlaceSchoolButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PlaceSchoolButton.Location = New System.Drawing.Point(21, 177)
-        Me.PlaceSchoolButton.Name = "PlaceSchoolButton"
-        Me.PlaceSchoolButton.Size = New System.Drawing.Size(75, 79)
-        Me.PlaceSchoolButton.TabIndex = 4
-        Me.PlaceSchoolButton.UseVisualStyleBackColor = True
-        '
-        'PlaceLibraryButton
-        '
-        Me.PlaceLibraryButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.place_library_icon
-        Me.PlaceLibraryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PlaceLibraryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PlaceLibraryButton.Location = New System.Drawing.Point(21, 92)
-        Me.PlaceLibraryButton.Name = "PlaceLibraryButton"
-        Me.PlaceLibraryButton.Size = New System.Drawing.Size(75, 79)
-        Me.PlaceLibraryButton.TabIndex = 3
-        Me.PlaceLibraryButton.UseVisualStyleBackColor = True
-        '
-        'PlaceHomeButton
-        '
-        Me.PlaceHomeButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.place_home_icon
-        Me.PlaceHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PlaceHomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PlaceHomeButton.Location = New System.Drawing.Point(21, 7)
-        Me.PlaceHomeButton.Name = "PlaceHomeButton"
-        Me.PlaceHomeButton.Size = New System.Drawing.Size(75, 79)
-        Me.PlaceHomeButton.TabIndex = 2
-        Me.PlaceHomeButton.UseVisualStyleBackColor = True
-        '
         'MainMapsPage
         '
         Me.MainMapsPage.BackColor = System.Drawing.Color.LightCoral
@@ -190,6 +190,17 @@ Partial Class MapControl
         Me.MainMapsPage.Size = New System.Drawing.Size(116, 100)
         Me.MainMapsPage.TabIndex = 0
         '
+        'CurrentLocationLabel
+        '
+        Me.CurrentLocationLabel.AutoSize = True
+        Me.CurrentLocationLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CurrentLocationLabel.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CurrentLocationLabel.Location = New System.Drawing.Point(13, 5)
+        Me.CurrentLocationLabel.Name = "CurrentLocationLabel"
+        Me.CurrentLocationLabel.Size = New System.Drawing.Size(97, 16)
+        Me.CurrentLocationLabel.TabIndex = 1
+        Me.CurrentLocationLabel.Text = "Location: School"
+        '
         'PlacesButton
         '
         Me.PlacesButton.BackColor = System.Drawing.Color.LightCyan
@@ -202,17 +213,6 @@ Partial Class MapControl
         Me.PlacesButton.TabIndex = 0
         Me.PlacesButton.Text = "Places"
         Me.PlacesButton.UseVisualStyleBackColor = False
-        '
-        'CurrentLocationLabel
-        '
-        Me.CurrentLocationLabel.AutoSize = True
-        Me.CurrentLocationLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CurrentLocationLabel.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CurrentLocationLabel.Location = New System.Drawing.Point(13, 5)
-        Me.CurrentLocationLabel.Name = "CurrentLocationLabel"
-        Me.CurrentLocationLabel.Size = New System.Drawing.Size(97, 16)
-        Me.CurrentLocationLabel.TabIndex = 1
-        Me.CurrentLocationLabel.Text = "Location: School"
         '
         'MapControl
         '

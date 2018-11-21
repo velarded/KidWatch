@@ -19,14 +19,33 @@
     End Sub
 
     Private Sub PlacesListButtons_Click(sender As Object, e As EventArgs) Handles PlaceHomeButton.Click, PlaceLibraryButton.Click, PlaceSchoolButton.Click
+        Dim button As Button = sender
+        If (button.Name.Equals("PlaceHomeButton")) Then
+            DirectionsButton3.Text = "Arrived at Home!"
+        ElseIf (button.Name.Equals("PlaceLibraryButton")) Then
+            DirectionsButton3.Text = "Arrived at Library!"
+        Else
+            DirectionsButton3.Text = "Arrived at School!"
+        End If
+
         'Show first direction page'
         DirectionsPanel1.BringToFront()
         Wait(2)
         DirectionsPanel2.BringToFront()
         Wait(2)
+
         DirectionsPanel3.BringToFront()
+
         Wait(2)
-        CurrentLocationLabel.Text = "Location: Library"
+
+        If (button.Name.Equals("PlaceHomeButton")) Then
+            CurrentLocationLabel.Text = "Location: Home"
+        ElseIf (button.Name.Equals("PlaceLibraryButton")) Then
+            CurrentLocationLabel.Text = "Location: Library"
+        Else
+            CurrentLocationLabel.Text = "Location: School"
+        End If
+
         MainMapsPage.BringToFront()
     End Sub
 
