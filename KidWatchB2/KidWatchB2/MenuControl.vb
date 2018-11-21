@@ -26,5 +26,10 @@
         kidWatch.Wallet.MainWalletPage.BringToFront()
         kidWatch.Wallet.InitPaymentMachine()
     End Sub
-    
+
+    Private Sub RemindersButton_Click(sender As Object, e As EventArgs) Handles RemindersButton.Click
+        Dim reminderButton As Button = sender
+        Dim kidWatch As KidWatch = reminderButton.Parent.Parent
+        kidWatch.ReminderScreen.BringToFront()
+    End Sub
 End Class

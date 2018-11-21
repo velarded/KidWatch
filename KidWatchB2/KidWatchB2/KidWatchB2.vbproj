@@ -125,10 +125,10 @@
     <Compile Include="PhoneControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Reminder.Designer.vb">
-      <DependentUpon>Reminder.vb</DependentUpon>
+    <Compile Include="ReminderControl.Designer.vb">
+      <DependentUpon>ReminderControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Reminder.vb">
+    <Compile Include="ReminderControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="WalletControl.Designer.vb">
@@ -163,8 +163,8 @@
     <EmbeddedResource Include="PhoneControl.resx">
       <DependentUpon>PhoneControl.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reminder.resx">
-      <DependentUpon>Reminder.vb</DependentUpon>
+    <EmbeddedResource Include="ReminderControl.resx">
+      <DependentUpon>ReminderControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WalletControl.resx">
       <DependentUpon>WalletControl.vb</DependentUpon>

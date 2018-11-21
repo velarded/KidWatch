@@ -9,6 +9,13 @@
         ContactsPanel.BringToFront()
     End Sub
 
+    ' CALL THIS TO TRIGGER DAD CALLING (after 2 seconds)
+    Public Sub TriggerCall()
+        Wait(2)
+        ReceiveCall()
+        Me.BringToFront()
+    End Sub
+
     ' Mom will NOT pick up. TODO: Automatic transfer to Dad
     Private Sub ContactMomButton_Click(sender As Object, e As EventArgs) Handles ContactMomButton.Click
         Dim pickup = False
@@ -98,10 +105,10 @@
         CloseCallPanel()
 
         ' TEMP: Trigger Dad calling after ending call with Timmy
-        If CallingContactLabel.Text = "Timmy" Then
-            Wait(2)
-            ReceiveCall()
-        End If
+        'If CallingContactLabel.Text = "Timmy" Then
+        '    Wait(2)
+        '    ReceiveCall()
+        'End If
     End Sub
     Private Sub Wait(ByVal seconds As Integer)
         For i As Integer = 0 To seconds * 100

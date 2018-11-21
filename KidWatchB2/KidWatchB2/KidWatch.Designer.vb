@@ -27,15 +27,16 @@ Partial Class KidWatch
         Me.CallButton = New System.Windows.Forms.Button()
         Me.MenuButton = New System.Windows.Forms.Button()
         Me.currentTimeLabel = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.VolumeUpButton = New System.Windows.Forms.Button()
+        Me.VolumeDownButton = New System.Windows.Forms.Button()
+        Me.VolumePictureBox = New System.Windows.Forms.PictureBox()
         Me.MenuScreen = New KidWatchB2.MenuControl()
         Me.CalendarControl1 = New KidWatchB2.CalendarControl()
         Me.Wallet = New KidWatchB2.WalletControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.VolumeUpButton = New System.Windows.Forms.Button()
-        Me.VolumeDownButton = New System.Windows.Forms.Button()
-        Me.VolumePictureBox = New System.Windows.Forms.PictureBox()
+        Me.ReminderScreen = New KidWatchB2.ReminderControl()
         CType(Me.VolumePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,6 +75,45 @@ Partial Class KidWatch
         Me.currentTimeLabel.Size = New System.Drawing.Size(79, 18)
         Me.currentTimeLabel.TabIndex = 8
         Me.currentTimeLabel.Text = "09:06 PM"
+        '
+        'Timer2
+        '
+        Me.Timer2.Enabled = True
+        '
+        'VolumeUpButton
+        '
+        Me.VolumeUpButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.VolumeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeUpButton.Font = New System.Drawing.Font("Arial Black", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VolumeUpButton.Location = New System.Drawing.Point(163, 88)
+        Me.VolumeUpButton.Name = "VolumeUpButton"
+        Me.VolumeUpButton.Size = New System.Drawing.Size(22, 50)
+        Me.VolumeUpButton.TabIndex = 10
+        Me.VolumeUpButton.Text = "+"
+        Me.VolumeUpButton.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.VolumeUpButton.UseVisualStyleBackColor = False
+        '
+        'VolumeDownButton
+        '
+        Me.VolumeDownButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.VolumeDownButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeDownButton.Font = New System.Drawing.Font("Arial Black", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VolumeDownButton.Location = New System.Drawing.Point(163, 152)
+        Me.VolumeDownButton.Name = "VolumeDownButton"
+        Me.VolumeDownButton.Size = New System.Drawing.Size(22, 50)
+        Me.VolumeDownButton.TabIndex = 11
+        Me.VolumeDownButton.Text = "-"
+        Me.VolumeDownButton.UseVisualStyleBackColor = False
+        '
+        'VolumePictureBox
+        '
+        Me.VolumePictureBox.BackColor = System.Drawing.SystemColors.Control
+        Me.VolumePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumePictureBox.Location = New System.Drawing.Point(62, 106)
+        Me.VolumePictureBox.Name = "VolumePictureBox"
+        Me.VolumePictureBox.Size = New System.Drawing.Size(50, 50)
+        Me.VolumePictureBox.TabIndex = 12
+        Me.VolumePictureBox.TabStop = False
         '
         'MenuScreen
         '
@@ -117,44 +157,13 @@ Partial Class KidWatch
         Me.ClockControl1.Size = New System.Drawing.Size(116, 100)
         Me.ClockControl1.TabIndex = 9
         '
-        'Timer2
+        'ReminderScreen
         '
-        Me.Timer2.Enabled = True
-        '
-        'VolumeUpButton
-        '
-        Me.VolumeUpButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.VolumeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.VolumeUpButton.Font = New System.Drawing.Font("Arial Black", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolumeUpButton.Location = New System.Drawing.Point(163, 88)
-        Me.VolumeUpButton.Name = "VolumeUpButton"
-        Me.VolumeUpButton.Size = New System.Drawing.Size(22, 50)
-        Me.VolumeUpButton.TabIndex = 10
-        Me.VolumeUpButton.Text = "+"
-        Me.VolumeUpButton.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.VolumeUpButton.UseVisualStyleBackColor = False
-        '
-        'VolumeDownButton
-        '
-        Me.VolumeDownButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.VolumeDownButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.VolumeDownButton.Font = New System.Drawing.Font("Arial Black", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolumeDownButton.Location = New System.Drawing.Point(163, 152)
-        Me.VolumeDownButton.Name = "VolumeDownButton"
-        Me.VolumeDownButton.Size = New System.Drawing.Size(22, 50)
-        Me.VolumeDownButton.TabIndex = 11
-        Me.VolumeDownButton.Text = "-"
-        Me.VolumeDownButton.UseVisualStyleBackColor = False
-        '
-        'VolumePictureBox
-        '
-        Me.VolumePictureBox.BackColor = System.Drawing.SystemColors.Control
-        Me.VolumePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.VolumePictureBox.Location = New System.Drawing.Point(62, 106)
-        Me.VolumePictureBox.Name = "VolumePictureBox"
-        Me.VolumePictureBox.Size = New System.Drawing.Size(50, 50)
-        Me.VolumePictureBox.TabIndex = 12
-        Me.VolumePictureBox.TabStop = False
+        Me.ReminderScreen.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ReminderScreen.Location = New System.Drawing.Point(33, 88)
+        Me.ReminderScreen.Name = "ReminderScreen"
+        Me.ReminderScreen.Size = New System.Drawing.Size(116, 100)
+        Me.ReminderScreen.TabIndex = 13
         '
         'KidWatch
         '
@@ -174,6 +183,7 @@ Partial Class KidWatch
         Me.Controls.Add(Me.PhoneCallScreen)
         Me.Controls.Add(Me.ClockControl1)
         Me.Controls.Add(Me.VolumePictureBox)
+        Me.Controls.Add(Me.ReminderScreen)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
@@ -195,4 +205,5 @@ Partial Class KidWatch
     Friend WithEvents VolumeUpButton As Button
     Friend WithEvents VolumeDownButton As Button
     Friend WithEvents VolumePictureBox As PictureBox
+    Friend WithEvents ReminderScreen As ReminderControl
 End Class
