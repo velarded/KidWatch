@@ -11,6 +11,7 @@
         MessageOptionspanel.Location = New Point(0, 0)
         MessageContactsPanel.Location = New Point(0, 0)
         ListeningAudioMessagePanel.Location = New Point(0, 0)
+        viewPicturePanel.Location = New Point(0, 0)
         MessageContactsPanel.BringToFront()
     End Sub
     Private Sub MomMessageButton_Click(sender As Object, e As EventArgs) Handles MomMessageButton.Click
@@ -168,8 +169,10 @@
     End Sub
 
     Private Sub EndListeningButton_Click(sender As Object, e As EventArgs) Handles EndListeningButton.Click
-        MessageOptionspanel.BringToFront()
+        ViewMessagePanel.BringToFront()
         MessageTimer.Stop()
+        Wait(2)
+        MessageOptionspanel.BringToFront()
 
 
     End Sub
@@ -179,5 +182,13 @@
                  messageStopwatch.Elapsed.Minutes, messageStopwatch.Elapsed.Seconds)
     End Sub
 
+    Private Sub BackButtonButton_Click(sender As Object, e As EventArgs) Handles BackButtonButton.Click
+        ViewMessagePanel.BringToFront()
+        Wait(2)
+        MessageOptionspanel.BringToFront()
+    End Sub
 
+    Private Sub viewPictureMessageButton_Click(sender As Object, e As EventArgs) Handles viewPictureMessageButton.Click
+        viewPicturePanel.BringToFront()
+    End Sub
 End Class
