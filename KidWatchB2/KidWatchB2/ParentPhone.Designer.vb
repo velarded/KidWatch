@@ -27,6 +27,7 @@ Partial Class ParentPhone
         Me.KidWatchAppButton = New System.Windows.Forms.Button()
         Me.ParentPhoneMainControl1 = New KidWatchB2.ParentPhoneMainControl()
         Me.ParentMessagesMainControl1 = New KidWatchB2.ParentMessagesMainControl()
+        Me.ParentGPSMainControl1 = New KidWatchB2.ParentGPSMainControl()
         Me.SuspendLayout()
         '
         'KidWatchLabel
@@ -66,6 +67,14 @@ Partial Class ParentPhone
         Me.ParentMessagesMainControl1.Size = New System.Drawing.Size(248, 396)
         Me.ParentMessagesMainControl1.TabIndex = 21
         '
+        'ParentGPSMainControl1
+        '
+        Me.ParentGPSMainControl1.BackColor = System.Drawing.SystemColors.Info
+        Me.ParentGPSMainControl1.Location = New System.Drawing.Point(32, 84)
+        Me.ParentGPSMainControl1.Name = "ParentGPSMainControl1"
+        Me.ParentGPSMainControl1.Size = New System.Drawing.Size(248, 396)
+        Me.ParentGPSMainControl1.TabIndex = 22
+        '
         'ParentPhone
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -77,6 +86,7 @@ Partial Class ParentPhone
         Me.Controls.Add(Me.KidWatchLabel)
         Me.Controls.Add(Me.KidWatchAppButton)
         Me.Controls.Add(Me.ParentMessagesMainControl1)
+        Me.Controls.Add(Me.ParentGPSMainControl1)
         Me.Name = "ParentPhone"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "ParentPhone"
@@ -88,4 +98,5 @@ Partial Class ParentPhone
     Friend WithEvents KidWatchAppButton As Button
     Friend WithEvents ParentPhoneMainControl1 As ParentPhoneMainControl
     Friend WithEvents ParentMessagesMainControl1 As ParentMessagesMainControl
+    Friend WithEvents ParentGPSMainControl1 As ParentGPSMainControl
 End Class
