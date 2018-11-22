@@ -317,5 +317,8 @@
   <ItemGroup>
     <None Include="Resources\phone-messages-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\james.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
