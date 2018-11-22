@@ -431,5 +431,8 @@
   <ItemGroup>
     <None Include="Resources\clipart-arabic-clock-19.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-game-console-controller-icon-digital-red-vector-17114378.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
