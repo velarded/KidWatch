@@ -47,6 +47,10 @@
         End If
 
         MainMapsPage.BringToFront()
+
+        Wait(2)
+        Dim kidWatch As KidWatch = button.Parent.Parent.Parent
+        kidWatch.ReminderScreen.PopupReminder()
     End Sub
 
     Private Sub Wait(ByVal seconds As Integer)
@@ -55,4 +59,5 @@
             Application.DoEvents()
         Next
     End Sub
+
 End Class

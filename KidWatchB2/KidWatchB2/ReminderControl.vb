@@ -4,9 +4,8 @@
         InitializeComponent()
     End Sub
 
-    ' CALL THIS TO POP UP THE REMINDER IN THE WATCH (after 2 seconds)
+    ' CALL THIS TO POP UP THE REMINDER IN THE WATCH
     Public Sub PopupReminder()
-        Wait(2)
         HmwkPopupPanel.BringToFront()
         Me.BringToFront()
     End Sub
