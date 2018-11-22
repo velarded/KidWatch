@@ -124,20 +124,38 @@
   <data name="contactCard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\contactCard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="phone_call_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone-call-app-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sad_face" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sad-face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="person4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kidwatch_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kidwatch-app-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wallet_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallet_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_location" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map-location.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ios_clock_icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ios_clock_icon2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="contactCard3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contactCard3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="james" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\james.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maps_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maps_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="directions_page_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\directions-page-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="voicemail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\voicemail.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,20 +163,29 @@
   <data name="person1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maps_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maps_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="decline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="garfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garfield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SmartWatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SmartWatch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone_messages_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone-messages-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="directions_page_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\directions-page-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calendar_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="71uAfFTpYaL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\71uAfFTpYaL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="volumeDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volumeDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contactCard2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contactCard2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tap_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tap-icon.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,14 +196,26 @@
   <data name="call_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\call_button.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="contactCard2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contactCard2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="place_library_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\place-library-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="volumeUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volumeUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="messages_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\messages_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="place_home_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\place-home-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Game-Center-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Game-Center-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reminder-application-icon-psd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reminder-application-icon-psd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="person3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,70 +229,34 @@
   <data name="person2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="contactCard4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contactCard4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="decline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\decline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Game-Center-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game-Center-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="voicemailCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\voicemailCard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reminder-application-icon-psd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reminder-application-icon-psd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="volumeDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\volumeDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="volumeUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\volumeUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map_location" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-location.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="directions_page_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\directions-page-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phone_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="directions_page_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\directions-page-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="place_home_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\place-home-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="place_library_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\place-library-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="place_school_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\place-school-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="directions_page_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\directions-page-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="contactCard4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contactCard4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phone_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="contactCard3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contactCard3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kidwatch_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kidwatch-app-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SmartWatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartWatch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phone_call_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone-call-app-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phone_messages_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone-messages-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="james" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\james.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="voicemailCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voicemailCard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="health_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\health_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="settings_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="71uAfFTpYaL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\71uAfFTpYaL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipart-arabic-clock-19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clipart-arabic-clock-19.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

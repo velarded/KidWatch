@@ -26,10 +26,11 @@ Partial Class CalendarControl
         Me.DailyScheduleButton = New System.Windows.Forms.Button()
         Me.DatePanel = New System.Windows.Forms.Panel()
         Me.DailySchedulePanel = New System.Windows.Forms.Panel()
-        Me.DailyScheduleLabel = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.DailyScheduleLabel = New System.Windows.Forms.Label()
         Me.AppointmentPanel = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.AppointmentConfirmButton = New System.Windows.Forms.Button()
         Me.DatePanel.SuspendLayout()
         Me.DailySchedulePanel.SuspendLayout()
         Me.AppointmentPanel.SuspendLayout()
@@ -77,16 +78,6 @@ Partial Class CalendarControl
         Me.DailySchedulePanel.Size = New System.Drawing.Size(116, 100)
         Me.DailySchedulePanel.TabIndex = 3
         '
-        'DailyScheduleLabel
-        '
-        Me.DailyScheduleLabel.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DailyScheduleLabel.ForeColor = System.Drawing.Color.Maroon
-        Me.DailyScheduleLabel.Location = New System.Drawing.Point(0, 11)
-        Me.DailyScheduleLabel.Name = "DailyScheduleLabel"
-        Me.DailyScheduleLabel.Size = New System.Drawing.Size(118, 82)
-        Me.DailyScheduleLabel.TabIndex = 0
-        Me.DailyScheduleLabel.Text = "9AM-3PM: School" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "3PM-5PM: Library" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "6PM: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -98,9 +89,20 @@ Partial Class CalendarControl
         Me.Button1.Text = "Dentist Appointment"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'DailyScheduleLabel
+        '
+        Me.DailyScheduleLabel.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DailyScheduleLabel.ForeColor = System.Drawing.Color.Maroon
+        Me.DailyScheduleLabel.Location = New System.Drawing.Point(0, 11)
+        Me.DailyScheduleLabel.Name = "DailyScheduleLabel"
+        Me.DailyScheduleLabel.Size = New System.Drawing.Size(118, 82)
+        Me.DailyScheduleLabel.TabIndex = 0
+        Me.DailyScheduleLabel.Text = "9AM-3PM: School" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "3PM-5PM: Library" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "6PM: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'AppointmentPanel
         '
         Me.AppointmentPanel.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.AppointmentPanel.Controls.Add(Me.AppointmentConfirmButton)
         Me.AppointmentPanel.Controls.Add(Me.Label1)
         Me.AppointmentPanel.Location = New System.Drawing.Point(0, 205)
         Me.AppointmentPanel.Name = "AppointmentPanel"
@@ -112,11 +114,22 @@ Partial Class CalendarControl
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Maroon
-        Me.Label1.Location = New System.Drawing.Point(3, 20)
+        Me.Label1.Location = New System.Drawing.Point(3, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(110, 63)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Go to Dr. Chan's Clinic for regular checkup"
+        '
+        'AppointmentConfirmButton
+        '
+        Me.AppointmentConfirmButton.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AppointmentConfirmButton.ForeColor = System.Drawing.Color.DarkGreen
+        Me.AppointmentConfirmButton.Location = New System.Drawing.Point(34, 66)
+        Me.AppointmentConfirmButton.Name = "AppointmentConfirmButton"
+        Me.AppointmentConfirmButton.Size = New System.Drawing.Size(40, 23)
+        Me.AppointmentConfirmButton.TabIndex = 1
+        Me.AppointmentConfirmButton.Text = "OK"
+        Me.AppointmentConfirmButton.UseVisualStyleBackColor = True
         '
         'CalendarControl
         '
@@ -144,4 +157,5 @@ Partial Class CalendarControl
     Friend WithEvents DailyScheduleLabel As Label
     Friend WithEvents AppointmentPanel As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents AppointmentConfirmButton As Button
 End Class

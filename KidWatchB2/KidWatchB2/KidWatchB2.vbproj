@@ -359,5 +359,8 @@
   <ItemGroup>
     <None Include="Resources\health_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart-arabic-clock-19.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

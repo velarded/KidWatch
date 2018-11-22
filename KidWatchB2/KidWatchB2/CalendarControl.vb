@@ -19,4 +19,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         AppointmentPanel.BringToFront()
     End Sub
+
+    Private Sub AppointmentConfirmButton_Click(sender As Object, e As EventArgs) Handles AppointmentConfirmButton.Click
+        DailySchedulePanel.BringToFront()
+    End Sub
 End Class

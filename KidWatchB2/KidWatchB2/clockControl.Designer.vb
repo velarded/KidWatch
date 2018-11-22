@@ -23,34 +23,35 @@ Partial Class clockControl
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.AnalogClockPictureBox = New System.Windows.Forms.PictureBox()
         Me.DigitalTimeLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.AnalogClockPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.AnalogClockPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'AnalogClockPictureBox
-        '
-        Me.AnalogClockPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.ios_clock_icon2
-        Me.AnalogClockPictureBox.Location = New System.Drawing.Point(27, 9)
-        Me.AnalogClockPictureBox.Name = "AnalogClockPictureBox"
-        Me.AnalogClockPictureBox.Size = New System.Drawing.Size(59, 59)
-        Me.AnalogClockPictureBox.TabIndex = 0
-        Me.AnalogClockPictureBox.TabStop = False
         '
         'DigitalTimeLabel
         '
         Me.DigitalTimeLabel.AutoSize = True
         Me.DigitalTimeLabel.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DigitalTimeLabel.ForeColor = System.Drawing.Color.Aqua
-        Me.DigitalTimeLabel.Location = New System.Drawing.Point(13, 69)
+        Me.DigitalTimeLabel.Location = New System.Drawing.Point(11, 76)
         Me.DigitalTimeLabel.Name = "DigitalTimeLabel"
-        Me.DigitalTimeLabel.Size = New System.Drawing.Size(96, 19)
+        Me.DigitalTimeLabel.Size = New System.Drawing.Size(103, 19)
         Me.DigitalTimeLabel.TabIndex = 1
         Me.DigitalTimeLabel.Text = "10:10:30 AM"
         '
         'Timer1
         '
+        '
+        'AnalogClockPictureBox
+        '
+        Me.AnalogClockPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.clipart_arabic_clock_19
+        Me.AnalogClockPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AnalogClockPictureBox.Location = New System.Drawing.Point(16, -2)
+        Me.AnalogClockPictureBox.Name = "AnalogClockPictureBox"
+        Me.AnalogClockPictureBox.Size = New System.Drawing.Size(80, 80)
+        Me.AnalogClockPictureBox.TabIndex = 0
+        Me.AnalogClockPictureBox.TabStop = False
         '
         'clockControl
         '
