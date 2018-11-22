@@ -85,4 +85,12 @@
     Private Sub StopCallButton2_Click(sender As Object, e As EventArgs) Handles StopCallButton2.Click
         EndParentCall(Me)
     End Sub
+
+    Private Sub LocationButton_Click(sender As Object, e As EventArgs) Handles LocationButton.Click
+        Dim phone As ParentPhone = Me.Parent
+        Dim currentChildLocation As String = phone.mainForm.kidWatch.MapControl1.CurrentLocationLabel.Text
+        phone.ParentGPSMainControl1.CurrentChildLocationLabel.Text = "James' " + currentChildLocation
+
+        phone.ParentGPSMainControl1.BringToFront()
+    End Sub
 End Class
