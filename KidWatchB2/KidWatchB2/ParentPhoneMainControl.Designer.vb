@@ -38,7 +38,9 @@ Partial Class ParentPhoneMainControl
         Me.ConfigButton = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.CallingPanel = New System.Windows.Forms.Panel()
+        Me.CallingPictureBox = New System.Windows.Forms.PictureBox()
         Me.TimeLabel = New System.Windows.Forms.Label()
+        Me.StopCallButton = New System.Windows.Forms.Button()
         Me.StatusLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MessagePictureBox = New System.Windows.Forms.PictureBox()
@@ -48,13 +50,11 @@ Partial Class ParentPhoneMainControl
         Me.JamesPictureBox = New System.Windows.Forms.PictureBox()
         Me.MessagesButton = New System.Windows.Forms.Button()
         Me.CallButton = New System.Windows.Forms.Button()
-        Me.CallingPictureBox = New System.Windows.Forms.PictureBox()
-        Me.StopCallButton = New System.Windows.Forms.Button()
         Me.CallingPanel.SuspendLayout()
+        CType(Me.CallingPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MessagePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConfigPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JamesPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CallingPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TitleLabel
@@ -107,6 +107,7 @@ Partial Class ParentPhoneMainControl
         '
         'GamesButton
         '
+        Me.GamesButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.Game_Center_icon
         Me.GamesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GamesButton.Location = New System.Drawing.Point(131, 170)
         Me.GamesButton.Name = "GamesButton"
@@ -178,14 +179,15 @@ Partial Class ParentPhoneMainControl
         Me.PlaylistLabel.BackColor = System.Drawing.Color.Transparent
         Me.PlaylistLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PlaylistLabel.ForeColor = System.Drawing.Color.Black
-        Me.PlaylistLabel.Location = New System.Drawing.Point(67, 223)
+        Me.PlaylistLabel.Location = New System.Drawing.Point(71, 223)
         Me.PlaylistLabel.Name = "PlaylistLabel"
-        Me.PlaylistLabel.Size = New System.Drawing.Size(51, 16)
+        Me.PlaylistLabel.Size = New System.Drawing.Size(43, 16)
         Me.PlaylistLabel.TabIndex = 31
-        Me.PlaylistLabel.Text = "Playlist"
+        Me.PlaylistLabel.Text = "Music"
         '
         'PlaylistButton
         '
+        Me.PlaylistButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._71uAfFTpYaL
         Me.PlaylistButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PlaylistButton.Location = New System.Drawing.Point(68, 170)
         Me.PlaylistButton.Name = "PlaylistButton"
@@ -226,6 +228,16 @@ Partial Class ParentPhoneMainControl
         Me.CallingPanel.TabIndex = 15
         Me.CallingPanel.Visible = False
         '
+        'CallingPictureBox
+        '
+        Me.CallingPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.james
+        Me.CallingPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CallingPictureBox.Location = New System.Drawing.Point(44, 92)
+        Me.CallingPictureBox.Name = "CallingPictureBox"
+        Me.CallingPictureBox.Size = New System.Drawing.Size(136, 138)
+        Me.CallingPictureBox.TabIndex = 16
+        Me.CallingPictureBox.TabStop = False
+        '
         'TimeLabel
         '
         Me.TimeLabel.AutoSize = True
@@ -236,6 +248,17 @@ Partial Class ParentPhoneMainControl
         Me.TimeLabel.Size = New System.Drawing.Size(71, 29)
         Me.TimeLabel.TabIndex = 15
         Me.TimeLabel.Text = "00:00"
+        '
+        'StopCallButton
+        '
+        Me.StopCallButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.decline
+        Me.StopCallButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.StopCallButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StopCallButton.Location = New System.Drawing.Point(78, 242)
+        Me.StopCallButton.Name = "StopCallButton"
+        Me.StopCallButton.Size = New System.Drawing.Size(62, 49)
+        Me.StopCallButton.TabIndex = 14
+        Me.StopCallButton.UseVisualStyleBackColor = True
         '
         'StatusLabel
         '
@@ -321,27 +344,6 @@ Partial Class ParentPhoneMainControl
         Me.CallButton.TabIndex = 18
         Me.CallButton.UseVisualStyleBackColor = True
         '
-        'CallingPictureBox
-        '
-        Me.CallingPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.james
-        Me.CallingPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CallingPictureBox.Location = New System.Drawing.Point(44, 92)
-        Me.CallingPictureBox.Name = "CallingPictureBox"
-        Me.CallingPictureBox.Size = New System.Drawing.Size(136, 138)
-        Me.CallingPictureBox.TabIndex = 16
-        Me.CallingPictureBox.TabStop = False
-        '
-        'StopCallButton
-        '
-        Me.StopCallButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.decline
-        Me.StopCallButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.StopCallButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StopCallButton.Location = New System.Drawing.Point(78, 242)
-        Me.StopCallButton.Name = "StopCallButton"
-        Me.StopCallButton.Size = New System.Drawing.Size(62, 49)
-        Me.StopCallButton.TabIndex = 14
-        Me.StopCallButton.UseVisualStyleBackColor = True
-        '
         'ParentPhoneMainControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -373,10 +375,10 @@ Partial Class ParentPhoneMainControl
         Me.Size = New System.Drawing.Size(248, 396)
         Me.CallingPanel.ResumeLayout(False)
         Me.CallingPanel.PerformLayout()
+        CType(Me.CallingPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MessagePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConfigPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JamesPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CallingPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
