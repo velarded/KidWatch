@@ -28,9 +28,18 @@
         kidWatch.Wallet.InitPaymentMachine()
     End Sub
 
+
     Private Sub RemindersButton_Click(sender As Object, e As EventArgs) Handles RemindersButton.Click
         Dim reminderButton As Button = sender
         Dim kidWatch As KidWatch = reminderButton.Parent.Parent
         kidWatch.ReminderScreen.BringToFront()
+    End Sub
+    
+    Private Sub mapsButton_Click(sender As Object, e As EventArgs) Handles mapsButton.Click
+        'Create new map control'
+        Dim mapButton As Button = sender
+        Dim kidWatch As KidWatch = mapButton.Parent.Parent
+        kidWatch.MapControl1.BringToFront()
+        kidWatch.MapControl1.MainMapsPage.BringToFront()
     End Sub
 End Class
