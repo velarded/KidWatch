@@ -6,7 +6,8 @@
     Public Sub ConnectParentCall()
         StatusLabel.Text = "Connected"
         TimeLabel.Visible = True
-        Timer1.Start()
+        Me.Timer1.Start()
+        callStopwatch.Reset()
         callStopwatch.Start()
         ReceiveCallControlsPanel.Visible = False
     End Sub
@@ -23,15 +24,20 @@
     End Sub
 
     ' CALLED BY KID WATCH OR END CALL BUTTON
-    Public Sub EndParentCall()
-        Timer1.Stop()
+    Public Sub EndParentCall(sender As Object)
+        Me.Timer1.Stop()
         callStopwatch.Stop()
-        'StatusLabel.Text = "Call Ended"
-        'CallingPanel.BackColor = Color.DimGray
-        Dim parentPhone As ParentPhone = Me.ParentForm
-        parentPhone.mainForm.kidWatch.PhoneCallScreen.EndCallKidWatch()
+        StatusLabel.Text = "Call Ended"
+        CallingPanel.BackColor = Color.DimGray
+        Dim parentPhone As ParentPhone = Me.Parent
 
-        'Wait(2)
+        If sender.Name.Equals(Me.Name) Then
+            parentPhone.mainForm.kidWatch.PhoneCallScreen.EndCallKidWatch(Me)
+        Else
+            Wait(2)
+        End If
+
+
         CallingPanel.Visible = False
         CallingPanel.SendToBack()
     End Sub
@@ -49,7 +55,7 @@
     End Sub
 
     Private Sub StopCallButton_Click(sender As Object, e As EventArgs) Handles StopCallButton.Click
-        EndParentCall()
+        EndParentCall(Me)
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -67,12 +73,16 @@
     End Sub
 
     Private Sub PickUpButton_Click(sender As Object, e As EventArgs) Handles PickUpButton.Click
-        Dim phone As ParentPhone = Me.Parent.Parent
+        Dim phone As ParentPhone = Me.Parent
         phone.mainForm.kidWatch.PhoneCallScreen.ConnectCallKidWatch()
+        ReceiveCallControlsPanel.Visible = False
+        TimeLabel.Visible = True
+        ConnectParentCall()
+
 
     End Sub
 
     Private Sub StopCallButton2_Click(sender As Object, e As EventArgs) Handles StopCallButton2.Click
-        EndParentCall()
+        EndParentCall(Me)
     End Sub
 End Class

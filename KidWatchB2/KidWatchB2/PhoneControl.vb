@@ -16,10 +16,15 @@
     End Sub
 
     ' Call this if dad hangs up
-    Public Sub EndCallKidWatch()
+    Public Sub EndCallKidWatch(sender As Object)
         Dim kidForm As KidWatch = Me.ParentForm
-        kidForm.mainForm.parentPhone.ParentPhoneMainControl1.EndParentCall()
         EndCall()
+        If sender.Name.Equals(Me.Name) Then
+            kidForm.mainForm.parentPhone.ParentPhoneMainControl1.EndParentCall(Me)
+        Else
+            Wait(2)
+        End If
+        CloseCallPanel()
     End Sub
 
     Public Sub ConnectCallKidWatch()
@@ -116,7 +121,7 @@
 
     Private Sub EndCallButton_Click(sender As Object, e As EventArgs) Handles StopCallButton.Click
         StopCallButton.Enabled = False
-        EndCall()
+        EndCallKidWatch(Me)
         Wait(2)
         CloseCallPanel()
     End Sub
