@@ -9,9 +9,9 @@
         ContactsPanel.BringToFront()
     End Sub
 
-    ' CALL THIS TO TRIGGER DAD CALLING (after 2 seconds)
+    ' CALL THIS TO TRIGGER DAD CALLING (after 5 seconds)
     Public Sub TriggerCall()
-        Wait(2)
+        Wait(5)
         ReceiveCall()
         Me.BringToFront()
     End Sub
@@ -123,9 +123,9 @@
                  callStopwatch.Elapsed.Minutes, callStopwatch.Elapsed.Seconds)
         End If
 
-        ' drop the call after 5 seconds if no pick up
+        ' drop the call after 10 seconds if no pick up
         If ReceiveCallPanel.Visible = True Then
-            If callStopwatch.Elapsed.Seconds >= 5 Then
+            If callStopwatch.Elapsed.Seconds >= 10 Then
                 CallTimer.Stop()
                 callStopwatch.Stop()
                 NoAnswer()
