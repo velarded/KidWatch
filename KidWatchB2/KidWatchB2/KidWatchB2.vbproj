@@ -350,5 +350,14 @@
   <ItemGroup>
     <None Include="Resources\phone-messages-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\james.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
