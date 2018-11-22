@@ -16,6 +16,7 @@
         Dim calendarButton As Button = sender
         Dim kidwatch As KidWatch = calendarButton.Parent.Parent
         kidwatch.CalendarControl1.BringToFront()
+        kidwatch.CalendarControl1.DatePanel.BringToFront()
     End Sub
 
     Private Sub walletButton_Click(sender As Object, e As EventArgs) Handles walletButton.Click
