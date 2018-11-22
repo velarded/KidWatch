@@ -24,8 +24,8 @@ Partial Class messagesControl
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MessageOptionspanel = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.pictureMessageButton = New System.Windows.Forms.Button()
+        Me.videoMessageButton = New System.Windows.Forms.Button()
         Me.AudioMessageButton = New System.Windows.Forms.Button()
         Me.ViewMessagesButton = New System.Windows.Forms.Button()
         Me.MessageContactsPanel = New System.Windows.Forms.Panel()
@@ -52,6 +52,12 @@ Partial Class messagesControl
         Me.StopRecordButton = New System.Windows.Forms.Button()
         Me.TimeLabel = New System.Windows.Forms.Label()
         Me.RecordAudioMessagePage = New System.Windows.Forms.Panel()
+        Me.ListeningAudioMessagePanel = New System.Windows.Forms.Panel()
+        Me.ListeningTimeLabel = New System.Windows.Forms.Label()
+        Me.EndListeningButton = New System.Windows.Forms.Button()
+        Me.ListeningContactLabel = New System.Windows.Forms.Label()
+        Me.ListeningContactPictureBox = New System.Windows.Forms.PictureBox()
+        Me.ListeningMessageLabel = New System.Windows.Forms.Label()
         Me.MessageOptionspanel.SuspendLayout()
         Me.MessageContactsPanel.SuspendLayout()
         Me.ConfirmationPanel.SuspendLayout()
@@ -60,14 +66,16 @@ Partial Class messagesControl
         Me.ViewMessagePanel.SuspendLayout()
         CType(Me.RecordingContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RecordAudioMessagePage.SuspendLayout()
+        Me.ListeningAudioMessagePanel.SuspendLayout()
+        CType(Me.ListeningContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MessageOptionspanel
         '
         Me.MessageOptionspanel.AutoSize = True
         Me.MessageOptionspanel.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.MessageOptionspanel.Controls.Add(Me.Button1)
-        Me.MessageOptionspanel.Controls.Add(Me.Button3)
+        Me.MessageOptionspanel.Controls.Add(Me.pictureMessageButton)
+        Me.MessageOptionspanel.Controls.Add(Me.videoMessageButton)
         Me.MessageOptionspanel.Controls.Add(Me.AudioMessageButton)
         Me.MessageOptionspanel.Controls.Add(Me.ViewMessagesButton)
         Me.MessageOptionspanel.Location = New System.Drawing.Point(0, 102)
@@ -75,25 +83,25 @@ Partial Class messagesControl
         Me.MessageOptionspanel.Size = New System.Drawing.Size(116, 100)
         Me.MessageOptionspanel.TabIndex = 4
         '
-        'Button1
+        'pictureMessageButton
         '
-        Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(15, 74)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(86, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Send Picture "
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.pictureMessageButton.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pictureMessageButton.Location = New System.Drawing.Point(15, 74)
+        Me.pictureMessageButton.Name = "pictureMessageButton"
+        Me.pictureMessageButton.Size = New System.Drawing.Size(86, 23)
+        Me.pictureMessageButton.TabIndex = 3
+        Me.pictureMessageButton.Text = "Send Picture "
+        Me.pictureMessageButton.UseVisualStyleBackColor = True
         '
-        'Button3
+        'videoMessageButton
         '
-        Me.Button3.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(15, 49)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(86, 25)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Send Video"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.videoMessageButton.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.videoMessageButton.Location = New System.Drawing.Point(15, 49)
+        Me.videoMessageButton.Name = "videoMessageButton"
+        Me.videoMessageButton.Size = New System.Drawing.Size(86, 25)
+        Me.videoMessageButton.TabIndex = 2
+        Me.videoMessageButton.Text = "Send Video"
+        Me.videoMessageButton.UseVisualStyleBackColor = True
         '
         'AudioMessageButton
         '
@@ -167,6 +175,9 @@ Partial Class messagesControl
         Me.DadMessageButton.Size = New System.Drawing.Size(80, 100)
         Me.DadMessageButton.TabIndex = 1
         Me.DadMessageButton.UseVisualStyleBackColor = True
+        '
+        'MessageTimer
+        '
         '
         'ConfirmationPanel
         '
@@ -259,7 +270,7 @@ Partial Class messagesControl
         Me.SelectPictureLabel.AutoSize = True
         Me.SelectPictureLabel.Font = New System.Drawing.Font("Comic Sans MS", 8.75!, System.Drawing.FontStyle.Bold)
         Me.SelectPictureLabel.ForeColor = System.Drawing.Color.Red
-        Me.SelectPictureLabel.Location = New System.Drawing.Point(8, 5)
+        Me.SelectPictureLabel.Location = New System.Drawing.Point(8, 2)
         Me.SelectPictureLabel.Name = "SelectPictureLabel"
         Me.SelectPictureLabel.Size = New System.Drawing.Size(102, 16)
         Me.SelectPictureLabel.TabIndex = 0
@@ -289,13 +300,13 @@ Partial Class messagesControl
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 8.75!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
         Me.Label1.Location = New System.Drawing.Point(3, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(110, 45)
+        Me.Label1.Size = New System.Drawing.Size(107, 45)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "1 Audio Message      Received"
+        Me.Label1.Text = "You have 1 audio message!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'RecordingMessageLabel
         '
@@ -363,11 +374,78 @@ Partial Class messagesControl
         Me.RecordAudioMessagePage.Size = New System.Drawing.Size(116, 100)
         Me.RecordAudioMessagePage.TabIndex = 15
         '
+        'ListeningAudioMessagePanel
+        '
+        Me.ListeningAudioMessagePanel.BackColor = System.Drawing.Color.SaddleBrown
+        Me.ListeningAudioMessagePanel.Controls.Add(Me.ListeningTimeLabel)
+        Me.ListeningAudioMessagePanel.Controls.Add(Me.EndListeningButton)
+        Me.ListeningAudioMessagePanel.Controls.Add(Me.ListeningContactLabel)
+        Me.ListeningAudioMessagePanel.Controls.Add(Me.ListeningContactPictureBox)
+        Me.ListeningAudioMessagePanel.Controls.Add(Me.ListeningMessageLabel)
+        Me.ListeningAudioMessagePanel.Location = New System.Drawing.Point(0, 608)
+        Me.ListeningAudioMessagePanel.Name = "ListeningAudioMessagePanel"
+        Me.ListeningAudioMessagePanel.Size = New System.Drawing.Size(116, 100)
+        Me.ListeningAudioMessagePanel.TabIndex = 20
+        '
+        'ListeningTimeLabel
+        '
+        Me.ListeningTimeLabel.AutoSize = True
+        Me.ListeningTimeLabel.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListeningTimeLabel.ForeColor = System.Drawing.Color.White
+        Me.ListeningTimeLabel.Location = New System.Drawing.Point(57, 25)
+        Me.ListeningTimeLabel.Name = "ListeningTimeLabel"
+        Me.ListeningTimeLabel.Size = New System.Drawing.Size(55, 24)
+        Me.ListeningTimeLabel.TabIndex = 15
+        Me.ListeningTimeLabel.Text = "00:00"
+        '
+        'EndListeningButton
+        '
+        Me.EndListeningButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EndListeningButton.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EndListeningButton.Location = New System.Drawing.Point(33, 67)
+        Me.EndListeningButton.Name = "EndListeningButton"
+        Me.EndListeningButton.Size = New System.Drawing.Size(45, 32)
+        Me.EndListeningButton.TabIndex = 14
+        Me.EndListeningButton.Text = "End"
+        Me.EndListeningButton.UseVisualStyleBackColor = True
+        '
+        'ListeningContactLabel
+        '
+        Me.ListeningContactLabel.AutoSize = True
+        Me.ListeningContactLabel.Font = New System.Drawing.Font("Comic Sans MS", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListeningContactLabel.ForeColor = System.Drawing.Color.White
+        Me.ListeningContactLabel.Location = New System.Drawing.Point(46, 43)
+        Me.ListeningContactLabel.Name = "ListeningContactLabel"
+        Me.ListeningContactLabel.Size = New System.Drawing.Size(73, 24)
+        Me.ListeningContactLabel.TabIndex = 13
+        Me.ListeningContactLabel.Text = "Contact"
+        '
+        'ListeningContactPictureBox
+        '
+        Me.ListeningContactPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ListeningContactPictureBox.Location = New System.Drawing.Point(4, 25)
+        Me.ListeningContactPictureBox.Name = "ListeningContactPictureBox"
+        Me.ListeningContactPictureBox.Size = New System.Drawing.Size(42, 41)
+        Me.ListeningContactPictureBox.TabIndex = 1
+        Me.ListeningContactPictureBox.TabStop = False
+        '
+        'ListeningMessageLabel
+        '
+        Me.ListeningMessageLabel.AutoSize = True
+        Me.ListeningMessageLabel.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListeningMessageLabel.ForeColor = System.Drawing.Color.White
+        Me.ListeningMessageLabel.Location = New System.Drawing.Point(2, 1)
+        Me.ListeningMessageLabel.Name = "ListeningMessageLabel"
+        Me.ListeningMessageLabel.Size = New System.Drawing.Size(87, 23)
+        Me.ListeningMessageLabel.TabIndex = 0
+        Me.ListeningMessageLabel.Text = "Listening..."
+        '
         'messagesControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
+        Me.Controls.Add(Me.ListeningAudioMessagePanel)
         Me.Controls.Add(Me.ViewMessagePanel)
         Me.Controls.Add(Me.PictureMessagePanel)
         Me.Controls.Add(Me.ConfirmationPanel)
@@ -387,6 +465,9 @@ Partial Class messagesControl
         CType(Me.RecordingContactPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RecordAudioMessagePage.ResumeLayout(False)
         Me.RecordAudioMessagePage.PerformLayout()
+        Me.ListeningAudioMessagePanel.ResumeLayout(False)
+        Me.ListeningAudioMessagePanel.PerformLayout()
+        CType(Me.ListeningContactPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -397,8 +478,8 @@ Partial Class messagesControl
     Friend WithEvents LilyMessageButton As Button
     Friend WithEvents TimmyMessageButton As Button
     Friend WithEvents MessageOptionspanel As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents pictureMessageButton As Button
+    Friend WithEvents videoMessageButton As Button
     Friend WithEvents AudioMessageButton As Button
     Friend WithEvents ViewMessagesButton As Button
     Friend WithEvents MessageContactsPanel As Panel
@@ -421,4 +502,10 @@ Partial Class messagesControl
     Friend WithEvents StopRecordButton As Button
     Friend WithEvents TimeLabel As Label
     Friend WithEvents RecordAudioMessagePage As Panel
+    Friend WithEvents ListeningAudioMessagePanel As Panel
+    Friend WithEvents ListeningTimeLabel As Label
+    Friend WithEvents EndListeningButton As Button
+    Friend WithEvents ListeningContactLabel As Label
+    Friend WithEvents ListeningContactPictureBox As PictureBox
+    Friend WithEvents ListeningMessageLabel As Label
 End Class
