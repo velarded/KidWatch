@@ -38,9 +38,6 @@
     Private Sub PaymentSuccessOKButton_Click(sender As Object, e As EventArgs) Handles PaymentSuccessOKButton.Click, PaymentFailedOKButton.Click
         MainWalletPage.BringToFront()
         Me.paymentMachine.Close()
-
-        Dim kidWatch As KidWatch = sender.Parent.Parent.Parent
-        kidWatch.PhoneCallScreen.TriggerCall()
     End Sub
 
     Public Sub ClosePaymentMachineIfOpen()

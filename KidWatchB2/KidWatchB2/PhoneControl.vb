@@ -9,11 +9,21 @@
         ContactsPanel.BringToFront()
     End Sub
 
-    ' CALL THIS TO TRIGGER DAD CALLING (after 5 seconds)
-    Public Sub TriggerCall()
-        Wait(5)
+    ' CALL THIS TO TRIGGER DAD CALLING
+    Public Sub CallKidWatch()
         ReceiveCall()
         Me.BringToFront()
+    End Sub
+
+    ' Call this if dad hangs up
+    Public Sub EndCallKidWatch()
+        Dim kidForm As KidWatch = Me.ParentForm
+        kidForm.mainForm.parentPhone.ParentPhoneMainControl1.EndParentCall()
+        EndCall()
+    End Sub
+
+    Public Sub ConnectCallKidWatch()
+        OngoingCall()
     End Sub
 
     ' Mom will NOT pick up. TODO: Automatic transfer to Dad
@@ -50,28 +60,34 @@
         StopCallButton.Enabled = True
         TimeLabel.Visible = False
         CallingPanel.Visible = True
-        WaitingCall(pickUp, transfer)
+        WaitingCall(name, pickUp, transfer)
     End Sub
 
-    Private Sub WaitingCall(Optional pickUp As Boolean = True, Optional ByVal transfer As Boolean = False)
-        ' wait 4 seconds before connecting
-        Wait(1)
-        StatusLabel.Text = "Calling..."
-        Wait(1)
-        StatusLabel.Text = "Calling....."
-        Wait(1)
-        StatusLabel.Text = "Calling."
-        Wait(1)
-        StatusLabel.Text = "Calling..."
-        If pickUp Then
-            OngoingCall()
+    Private Sub WaitingCall(name As String, Optional pickUp As Boolean = True, Optional ByVal transfer As Boolean = False)
+        If name = "Dad" Then
+            StatusLabel.Text = "Calling..."
+            Dim kidForm As KidWatch = Me.ParentForm
+            kidForm.mainForm.parentPhone.ParentPhoneMainControl1.ReceiveParentCall()
         Else
-            If transfer = True Then
-                ' transfer to Dad
-                StatusLabel.Text = "Transfer."
+            ' wait 4 seconds before connecting
+            Wait(1)
+            StatusLabel.Text = "Calling..."
+            Wait(1)
+            StatusLabel.Text = "Calling....."
+            Wait(1)
+            StatusLabel.Text = "Calling."
+            Wait(1)
+            StatusLabel.Text = "Calling..."
+            If pickUp Then
+                OngoingCall()
             Else
-                ' leave message
-                StatusLabel.Text = "Message."
+                If transfer = True Then
+                    ' transfer to Dad
+                    StatusLabel.Text = "Transfer."
+                Else
+                    ' leave message
+                    StatusLabel.Text = "Message."
+                End If
             End If
         End If
     End Sub
@@ -103,12 +119,6 @@
         EndCall()
         Wait(2)
         CloseCallPanel()
-
-        ' TEMP: Trigger Dad calling after ending call with Timmy
-        'If CallingContactLabel.Text = "Timmy" Then
-        '    Wait(2)
-        '    ReceiveCall()
-        'End If
     End Sub
     Private Sub Wait(ByVal seconds As Integer)
         For i As Integer = 0 To seconds * 100
@@ -165,6 +175,11 @@
     Private Sub PickUpButton_Click(sender As Object, e As EventArgs) Handles PickUpButton.Click
         ReceiveCallPanel.Visible = False
         CallingPanel.Visible = True
+
+        Dim watch As KidWatch = Me.Parent.Parent
+
+        Dim mainform As MainForm = watch.mainForm
+        mainform.parentPhone.ParentPhoneMainControl1.ConnectParentCall()
 
         StatusLabel.Text = "Connected"
         CallingContactLabel.Text = "Dad"
