@@ -24,23 +24,23 @@ Partial Class ParentMessagesMainControl
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.AudioMessageNotificationPanel = New System.Windows.Forms.Panel()
+        Me.CloseButton = New System.Windows.Forms.Button()
+        Me.ListenLabel = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.AudioMessageReceivedLabel = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.EndOfAudioMessageLabel = New System.Windows.Forms.Label()
+        Me.ListenAgainButton = New System.Windows.Forms.Button()
         Me.ContactNameLabel = New System.Windows.Forms.Label()
         Me.AudioMessageListenTimerLabel = New System.Windows.Forms.Label()
         Me.CloseListeningPanelButton = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.CloseButton = New System.Windows.Forms.Button()
-        Me.ListenLabel = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.AudioMessageReceivedLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ListenAgainButton = New System.Windows.Forms.Button()
-        Me.EndOfAudioMessageLabel = New System.Windows.Forms.Label()
         Me.AudioMessageNotificationPanel.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'AudioMessageNotificationPanel
@@ -54,6 +54,44 @@ Partial Class ParentMessagesMainControl
         Me.AudioMessageNotificationPanel.Name = "AudioMessageNotificationPanel"
         Me.AudioMessageNotificationPanel.Size = New System.Drawing.Size(248, 396)
         Me.AudioMessageNotificationPanel.TabIndex = 0
+        '
+        'CloseButton
+        '
+        Me.CloseButton.Location = New System.Drawing.Point(156, 288)
+        Me.CloseButton.Name = "CloseButton"
+        Me.CloseButton.Size = New System.Drawing.Size(75, 23)
+        Me.CloseButton.TabIndex = 3
+        Me.CloseButton.Text = "Close"
+        Me.CloseButton.UseVisualStyleBackColor = True
+        '
+        'ListenLabel
+        '
+        Me.ListenLabel.Location = New System.Drawing.Point(17, 288)
+        Me.ListenLabel.Name = "ListenLabel"
+        Me.ListenLabel.Size = New System.Drawing.Size(75, 23)
+        Me.ListenLabel.TabIndex = 2
+        Me.ListenLabel.Text = "Listen"
+        Me.ListenLabel.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.james
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(70, 95)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(102, 103)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'AudioMessageReceivedLabel
+        '
+        Me.AudioMessageReceivedLabel.AutoSize = True
+        Me.AudioMessageReceivedLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AudioMessageReceivedLabel.Location = New System.Drawing.Point(14, 231)
+        Me.AudioMessageReceivedLabel.Name = "AudioMessageReceivedLabel"
+        Me.AudioMessageReceivedLabel.Size = New System.Drawing.Size(217, 18)
+        Me.AudioMessageReceivedLabel.TabIndex = 0
+        Me.AudioMessageReceivedLabel.Text = "You have a new audio message"
         '
         'Panel1
         '
@@ -69,6 +107,28 @@ Partial Class ParentMessagesMainControl
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(248, 396)
         Me.Panel1.TabIndex = 4
+        '
+        'EndOfAudioMessageLabel
+        '
+        Me.EndOfAudioMessageLabel.AutoSize = True
+        Me.EndOfAudioMessageLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EndOfAudioMessageLabel.Location = New System.Drawing.Point(13, 46)
+        Me.EndOfAudioMessageLabel.Name = "EndOfAudioMessageLabel"
+        Me.EndOfAudioMessageLabel.Size = New System.Drawing.Size(222, 24)
+        Me.EndOfAudioMessageLabel.TabIndex = 7
+        Me.EndOfAudioMessageLabel.Text = "End of Audio Message"
+        Me.EndOfAudioMessageLabel.Visible = False
+        '
+        'ListenAgainButton
+        '
+        Me.ListenAgainButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold)
+        Me.ListenAgainButton.Location = New System.Drawing.Point(73, 269)
+        Me.ListenAgainButton.Name = "ListenAgainButton"
+        Me.ListenAgainButton.Size = New System.Drawing.Size(110, 42)
+        Me.ListenAgainButton.TabIndex = 6
+        Me.ListenAgainButton.Text = "Listen Again"
+        Me.ListenAgainButton.UseVisualStyleBackColor = True
+        Me.ListenAgainButton.Visible = False
         '
         'ContactNameLabel
         '
@@ -120,68 +180,8 @@ Partial Class ParentMessagesMainControl
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Listening..."
         '
-        'CloseButton
-        '
-        Me.CloseButton.Location = New System.Drawing.Point(156, 288)
-        Me.CloseButton.Name = "CloseButton"
-        Me.CloseButton.Size = New System.Drawing.Size(75, 23)
-        Me.CloseButton.TabIndex = 3
-        Me.CloseButton.Text = "Close"
-        Me.CloseButton.UseVisualStyleBackColor = True
-        '
-        'ListenLabel
-        '
-        Me.ListenLabel.Location = New System.Drawing.Point(17, 288)
-        Me.ListenLabel.Name = "ListenLabel"
-        Me.ListenLabel.Size = New System.Drawing.Size(75, 23)
-        Me.ListenLabel.TabIndex = 2
-        Me.ListenLabel.Text = "Listen"
-        Me.ListenLabel.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.james
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(70, 95)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(102, 103)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'AudioMessageReceivedLabel
-        '
-        Me.AudioMessageReceivedLabel.AutoSize = True
-        Me.AudioMessageReceivedLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AudioMessageReceivedLabel.Location = New System.Drawing.Point(14, 231)
-        Me.AudioMessageReceivedLabel.Name = "AudioMessageReceivedLabel"
-        Me.AudioMessageReceivedLabel.Size = New System.Drawing.Size(217, 18)
-        Me.AudioMessageReceivedLabel.TabIndex = 0
-        Me.AudioMessageReceivedLabel.Text = "You have a new audio message"
-        '
         'Timer1
         '
-        '
-        'ListenAgainButton
-        '
-        Me.ListenAgainButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold)
-        Me.ListenAgainButton.Location = New System.Drawing.Point(73, 269)
-        Me.ListenAgainButton.Name = "ListenAgainButton"
-        Me.ListenAgainButton.Size = New System.Drawing.Size(110, 42)
-        Me.ListenAgainButton.TabIndex = 6
-        Me.ListenAgainButton.Text = "Listen Again"
-        Me.ListenAgainButton.UseVisualStyleBackColor = True
-        Me.ListenAgainButton.Visible = False
-        '
-        'EndOfAudioMessageLabel
-        '
-        Me.EndOfAudioMessageLabel.AutoSize = True
-        Me.EndOfAudioMessageLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EndOfAudioMessageLabel.Location = New System.Drawing.Point(13, 46)
-        Me.EndOfAudioMessageLabel.Name = "EndOfAudioMessageLabel"
-        Me.EndOfAudioMessageLabel.Size = New System.Drawing.Size(222, 24)
-        Me.EndOfAudioMessageLabel.TabIndex = 7
-        Me.EndOfAudioMessageLabel.Text = "End of Audio Message"
-        Me.EndOfAudioMessageLabel.Visible = False
         '
         'ParentMessagesMainControl
         '
@@ -193,10 +193,10 @@ Partial Class ParentMessagesMainControl
         Me.Size = New System.Drawing.Size(675, 628)
         Me.AudioMessageNotificationPanel.ResumeLayout(False)
         Me.AudioMessageNotificationPanel.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

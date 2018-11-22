@@ -72,4 +72,9 @@
     Private Sub ListenAgainButton_Click(sender As Object, e As EventArgs) Handles ListenAgainButton.Click
         ListeningMessage()
     End Sub
+
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
+        Dim phone As ParentPhone = Me.Parent
+        phone.ParentPhoneMainControl1.BringToFront()
+    End Sub
 End Class
