@@ -92,6 +92,18 @@
       <DependentUpon>KidWatch.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapControl.Designer.vb">
+      <DependentUpon>MapControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="MenuControl.Designer.vb">
       <DependentUpon>MenuControl.vb</DependentUpon>
     </Compile>
@@ -112,6 +124,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParentPhone.Designer.vb">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentPhoneMainControl.Designer.vb">
+      <DependentUpon>ParentPhoneMainControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPhoneMainControl.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PaymentMachine.Designer.vb">
       <DependentUpon>PaymentMachine.vb</DependentUpon>
@@ -148,6 +172,12 @@
     <EmbeddedResource Include="KidWatch.resx">
       <DependentUpon>KidWatch.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl.resx">
+      <DependentUpon>MapControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuControl.resx">
       <DependentUpon>MenuControl.vb</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +186,12 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentPhone.resx">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentPhoneMainControl.resx">
+      <DependentUpon>ParentPhoneMainControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentMachine.resx">
       <DependentUpon>PaymentMachine.vb</DependentUpon>
@@ -277,6 +313,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\volumeUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-library-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-school-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidwatch-app-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call-app-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-messages-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
