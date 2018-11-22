@@ -14,4 +14,25 @@
 
         currentTimeLabel.Text = Date.Now.ToString("hh:mm tt")
     End Sub
+
+    Private Sub VolumeUpButton_Click(sender As Object, e As EventArgs) Handles VolumeUpButton.Click
+        VolumePictureBox.BackgroundImage = My.Resources.volumeUp
+        VolumePictureBox.BringToFront()
+        Wait(1)
+        VolumePictureBox.SendToBack()
+    End Sub
+
+    Private Sub VolumeDownButton_Click(sender As Object, e As EventArgs) Handles VolumeDownButton.Click
+        VolumePictureBox.BackgroundImage = My.Resources.volumeDown
+        VolumePictureBox.BringToFront()
+        Wait(1)
+        VolumePictureBox.SendToBack()
+    End Sub
+    Private Sub Wait(ByVal seconds As Integer)
+        For i As Integer = 0 To seconds * 100
+            Threading.Thread.Sleep(10)
+            Application.DoEvents()
+        Next
+    End Sub
+
 End Class

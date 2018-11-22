@@ -118,6 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="SOSButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="VoicemailButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4RGmRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAExAAIAAAAm

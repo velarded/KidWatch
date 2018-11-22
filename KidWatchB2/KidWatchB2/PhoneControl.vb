@@ -9,6 +9,13 @@
         ContactsPanel.BringToFront()
     End Sub
 
+    ' CALL THIS TO TRIGGER DAD CALLING (after 5 seconds)
+    Public Sub TriggerCall()
+        Wait(5)
+        ReceiveCall()
+        Me.BringToFront()
+    End Sub
+
     ' Mom will NOT pick up. TODO: Automatic transfer to Dad
     Private Sub ContactMomButton_Click(sender As Object, e As EventArgs) Handles ContactMomButton.Click
         Dim pickup = False
@@ -17,7 +24,7 @@
     End Sub
 
     ' Dad will pick up
-    Private Sub ContactDadButton_Click(sender As Object, e As EventArgs) Handles ContactDadButton.Click
+    Private Sub ContactDadButton_Click(sender As Object, e As EventArgs) Handles ContactDadButton.Click, SOSButton.Click
         SetUpCalling("Dad", My.Resources.person2)
     End Sub
 
@@ -71,11 +78,12 @@
 
     Private Sub OngoingCall()
         StatusLabel.Text = "Connected"
-        TimeLabel.Visible = True
         CallingPanel.BackColor = Color.DarkGreen
+        StopCallButton.Enabled = True
         CallTimer.Start()
         callStopwatch.Reset()
         callStopwatch.Start()
+        TimeLabel.Visible = True
     End Sub
 
     Private Sub EndCall()
@@ -97,10 +105,10 @@
         CloseCallPanel()
 
         ' TEMP: Trigger Dad calling after ending call with Timmy
-        If CallingContactLabel.Text = "Timmy" Then
-            Wait(2)
-            ReceiveCall()
-        End If
+        'If CallingContactLabel.Text = "Timmy" Then
+        '    Wait(2)
+        '    ReceiveCall()
+        'End If
     End Sub
     Private Sub Wait(ByVal seconds As Integer)
         For i As Integer = 0 To seconds * 100
@@ -115,9 +123,9 @@
                  callStopwatch.Elapsed.Minutes, callStopwatch.Elapsed.Seconds)
         End If
 
-        ' drop the call after 5 seconds if no pick up
+        ' drop the call after 10 seconds if no pick up
         If ReceiveCallPanel.Visible = True Then
-            If callStopwatch.Elapsed.Seconds >= 5 Then
+            If callStopwatch.Elapsed.Seconds >= 10 Then
                 CallTimer.Stop()
                 callStopwatch.Stop()
                 NoAnswer()
@@ -144,6 +152,9 @@
         CallerLabel.Text = "Dad"
         CallerPictureBox.BackgroundImage = My.Resources.person2
 
+        PickUpButton.Enabled = True
+        DeclineButton.Enabled = True
+
         ' call timer and wait 5 seconds
         CallTimer.Start()
         callStopwatch.Reset()
@@ -155,6 +166,7 @@
         ReceiveCallPanel.Visible = False
         CallingPanel.Visible = True
 
+        StatusLabel.Text = "Connected"
         CallingContactLabel.Text = "Dad"
         CallingContactPictureBox.BackgroundImage = My.Resources.person2
         OngoingCall()
@@ -166,11 +178,12 @@
 
     Private Sub NoAnswer()
         ReceiveCallPanel.BackColor = Color.DimGray
-        Wait(2)
-
         PickUpButton.Enabled = False
         DeclineButton.Enabled = False
+
+        Wait(2)
         ReceiveCallPanel.Visible = False
         ContactsPanel.Visible = True
     End Sub
+
 End Class

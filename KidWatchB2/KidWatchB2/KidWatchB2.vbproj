@@ -92,6 +92,18 @@
       <DependentUpon>KidWatch.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapControl.Designer.vb">
+      <DependentUpon>MapControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="MenuControl.Designer.vb">
       <DependentUpon>MenuControl.vb</DependentUpon>
     </Compile>
@@ -119,6 +131,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ParentPhone.Designer.vb">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentPhoneMainControl.Designer.vb">
+      <DependentUpon>ParentPhoneMainControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPhoneMainControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="PaymentMachine.Designer.vb">
       <DependentUpon>PaymentMachine.vb</DependentUpon>
     </Compile>
@@ -129,6 +153,12 @@
       <DependentUpon>PhoneControl.vb</DependentUpon>
     </Compile>
     <Compile Include="PhoneControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReminderControl.Designer.vb">
+      <DependentUpon>ReminderControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReminderControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="WalletControl.Designer.vb">
@@ -148,6 +178,12 @@
     <EmbeddedResource Include="KidWatch.resx">
       <DependentUpon>KidWatch.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl.resx">
+      <DependentUpon>MapControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuControl.resx">
       <DependentUpon>MenuControl.vb</DependentUpon>
     </EmbeddedResource>
@@ -160,11 +196,20 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ParentPhone.resx">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentPhoneMainControl.resx">
+      <DependentUpon>ParentPhoneMainControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PaymentMachine.resx">
       <DependentUpon>PaymentMachine.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneControl.resx">
       <DependentUpon>PhoneControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReminderControl.resx">
+      <DependentUpon>ReminderControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WalletControl.resx">
       <DependentUpon>WalletControl.vb</DependentUpon>
@@ -237,16 +282,7 @@
     <None Include="Resources\tap-icon.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cat-thumbs-up.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cat-thumbs-up.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\garfield.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sad-dog.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sad-face.png" />
@@ -313,6 +349,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hugging_Face_Emoji_2028ce8b-c213-4d45-94aa-21e1a0842b4d_large.png" />
+</ItemGroup>
+<ItemGroup>
+    <None Include="Resources\Game-Center-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71uAfFTpYaL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminders-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pelfusion-Long-Shadow-Ios7-Reminder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminder-application-icon-psd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volumeDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volumeUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-library-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place-school-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directions-page-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidwatch-app-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call-app-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-messages-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\james.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart-arabic-clock-19.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
