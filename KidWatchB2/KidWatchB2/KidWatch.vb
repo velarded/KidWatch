@@ -1,4 +1,11 @@
 ﻿Public Class KidWatch
+
+    Public mainForm As MainForm
+    Public Sub New(aMainForm As MainForm)
+        InitializeComponent()
+        Me.mainForm = aMainForm
+    End Sub
+
     Private Sub MenuButton_Click(sender As Object, e As EventArgs) Handles MenuButton.Click
         MenuScreen.BringToFront()
         Wallet.ClosePaymentMachineIfOpen()

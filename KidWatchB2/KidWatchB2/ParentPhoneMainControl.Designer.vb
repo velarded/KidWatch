@@ -50,11 +50,15 @@ Partial Class ParentPhoneMainControl
         Me.JamesPictureBox = New System.Windows.Forms.PictureBox()
         Me.MessagesButton = New System.Windows.Forms.Button()
         Me.CallButton = New System.Windows.Forms.Button()
+        Me.PickUpButton = New System.Windows.Forms.Button()
+        Me.ReceiveCallControlsPanel = New System.Windows.Forms.Panel()
+        Me.StopCallButton2 = New System.Windows.Forms.Button()
         Me.CallingPanel.SuspendLayout()
         CType(Me.CallingPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MessagePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConfigPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JamesPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ReceiveCallControlsPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'TitleLabel
@@ -218,6 +222,7 @@ Partial Class ParentPhoneMainControl
         'CallingPanel
         '
         Me.CallingPanel.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.CallingPanel.Controls.Add(Me.ReceiveCallControlsPanel)
         Me.CallingPanel.Controls.Add(Me.CallingPictureBox)
         Me.CallingPanel.Controls.Add(Me.TimeLabel)
         Me.CallingPanel.Controls.Add(Me.StopCallButton)
@@ -344,11 +349,44 @@ Partial Class ParentPhoneMainControl
         Me.CallButton.TabIndex = 18
         Me.CallButton.UseVisualStyleBackColor = True
         '
+        'PickUpButton
+        '
+        Me.PickUpButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.accept
+        Me.PickUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PickUpButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PickUpButton.Location = New System.Drawing.Point(12, 13)
+        Me.PickUpButton.Name = "PickUpButton"
+        Me.PickUpButton.Size = New System.Drawing.Size(56, 49)
+        Me.PickUpButton.TabIndex = 17
+        Me.PickUpButton.UseVisualStyleBackColor = True
+        '
+        'ReceiveCallControlsPanel
+        '
+        Me.ReceiveCallControlsPanel.Controls.Add(Me.StopCallButton2)
+        Me.ReceiveCallControlsPanel.Controls.Add(Me.PickUpButton)
+        Me.ReceiveCallControlsPanel.Location = New System.Drawing.Point(17, 242)
+        Me.ReceiveCallControlsPanel.Name = "ReceiveCallControlsPanel"
+        Me.ReceiveCallControlsPanel.Size = New System.Drawing.Size(201, 74)
+        Me.ReceiveCallControlsPanel.TabIndex = 18
+        Me.ReceiveCallControlsPanel.Visible = False
+        '
+        'StopCallButton2
+        '
+        Me.StopCallButton2.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.decline
+        Me.StopCallButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.StopCallButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StopCallButton2.Location = New System.Drawing.Point(119, 13)
+        Me.StopCallButton2.Name = "StopCallButton2"
+        Me.StopCallButton2.Size = New System.Drawing.Size(62, 49)
+        Me.StopCallButton2.TabIndex = 18
+        Me.StopCallButton2.UseVisualStyleBackColor = True
+        '
         'ParentPhoneMainControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightCyan
+        Me.Controls.Add(Me.CallingPanel)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ConfigButton)
         Me.Controls.Add(Me.MessagePictureBox)
@@ -370,7 +408,6 @@ Partial Class ParentPhoneMainControl
         Me.Controls.Add(Me.PhoneLabel)
         Me.Controls.Add(Me.TitleLabel)
         Me.Controls.Add(Me.CallButton)
-        Me.Controls.Add(Me.CallingPanel)
         Me.Name = "ParentPhoneMainControl"
         Me.Size = New System.Drawing.Size(248, 396)
         Me.CallingPanel.ResumeLayout(False)
@@ -379,6 +416,7 @@ Partial Class ParentPhoneMainControl
         CType(Me.MessagePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConfigPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JamesPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ReceiveCallControlsPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -411,4 +449,7 @@ Partial Class ParentPhoneMainControl
     Friend WithEvents StopCallButton As Button
     Friend WithEvents StatusLabel As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents ReceiveCallControlsPanel As Panel
+    Friend WithEvents StopCallButton2 As Button
+    Friend WithEvents PickUpButton As Button
 End Class
