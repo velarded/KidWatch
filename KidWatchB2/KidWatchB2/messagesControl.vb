@@ -79,6 +79,10 @@
         ConfirmationPanel.BringToFront()
         Wait(2)
         MessageOptionspanel.BringToFront()
+
+        Dim kidWatch As KidWatch = Me.Parent
+        kidWatch.mainForm.parentPhone.ParentMessagesMainControl1.receiveAudioMessageOnPhone(TimeLabel.Text)
+
     End Sub
 
     Private Sub DadMessageButton_Click(sender As Object, e As EventArgs) Handles DadMessageButton.Click

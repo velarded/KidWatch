@@ -131,6 +131,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ParentMessagesMainControl.Designer.vb">
+      <DependentUpon>ParentMessagesMainControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentMessagesMainControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ParentPhone.Designer.vb">
       <DependentUpon>ParentPhone.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentMessagesMainControl.resx">
+      <DependentUpon>ParentMessagesMainControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParentPhone.resx">
       <DependentUpon>ParentPhone.vb</DependentUpon>
@@ -349,8 +358,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hugging_Face_Emoji_2028ce8b-c213-4d45-94aa-21e1a0842b4d_large.png" />
-</ItemGroup>
-<ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Game-Center-icon.jpg" />
   </ItemGroup>
   <ItemGroup>
