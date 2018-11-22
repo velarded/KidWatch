@@ -32,6 +32,8 @@
         Dim kidWatch As KidWatch = messageButton.Parent.Parent
 
         kidWatch.MessagesControl1.BringToFront()
+        kidWatch.MessagesControl1.MessageContactsPanel.BringToFront()
+
 
 
     End Sub

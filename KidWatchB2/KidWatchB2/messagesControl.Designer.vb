@@ -150,7 +150,7 @@ Partial Class messagesControl
         '
         Me.MomMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.mommeassage
         Me.MomMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MomMessageButton.Location = New System.Drawing.Point(18, 4)
+        Me.MomMessageButton.Location = New System.Drawing.Point(18, 2)
         Me.MomMessageButton.Name = "MomMessageButton"
         Me.MomMessageButton.Size = New System.Drawing.Size(80, 100)
         Me.MomMessageButton.TabIndex = 0
