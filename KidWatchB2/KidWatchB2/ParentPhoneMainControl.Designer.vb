@@ -22,6 +22,7 @@ Partial Class ParentPhoneMainControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.TitleLabel = New System.Windows.Forms.Label()
         Me.MessagesAppLabel = New System.Windows.Forms.Label()
         Me.PhoneLabel = New System.Windows.Forms.Label()
@@ -43,9 +44,17 @@ Partial Class ParentPhoneMainControl
         Me.MessagePictureBox = New System.Windows.Forms.PictureBox()
         Me.ConfigButton = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.CallingPanel = New System.Windows.Forms.Panel()
+        Me.StatusLabel = New System.Windows.Forms.Label()
+        Me.StopCallButton = New System.Windows.Forms.Button()
+        Me.TimeLabel = New System.Windows.Forms.Label()
+        Me.CallingPictureBox = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.JamesPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConfigPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MessagePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CallingPanel.SuspendLayout()
+        CType(Me.CallingPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TitleLabel
@@ -90,7 +99,7 @@ Partial Class ParentPhoneMainControl
         Me.GamesLabel.BackColor = System.Drawing.Color.Transparent
         Me.GamesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GamesLabel.ForeColor = System.Drawing.Color.Black
-        Me.GamesLabel.Location = New System.Drawing.Point(133, 223)
+        Me.GamesLabel.Location = New System.Drawing.Point(130, 223)
         Me.GamesLabel.Name = "GamesLabel"
         Me.GamesLabel.Size = New System.Drawing.Size(52, 16)
         Me.GamesLabel.TabIndex = 25
@@ -271,11 +280,70 @@ Partial Class ParentPhoneMainControl
         Me.Button2.Text = "Message Management"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'CallingPanel
+        '
+        Me.CallingPanel.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.CallingPanel.Controls.Add(Me.CallingPictureBox)
+        Me.CallingPanel.Controls.Add(Me.TimeLabel)
+        Me.CallingPanel.Controls.Add(Me.StopCallButton)
+        Me.CallingPanel.Controls.Add(Me.StatusLabel)
+        Me.CallingPanel.Location = New System.Drawing.Point(1, 74)
+        Me.CallingPanel.Name = "CallingPanel"
+        Me.CallingPanel.Size = New System.Drawing.Size(243, 319)
+        Me.CallingPanel.TabIndex = 15
+        Me.CallingPanel.Visible = False
+        '
+        'StatusLabel
+        '
+        Me.StatusLabel.AutoSize = True
+        Me.StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StatusLabel.ForeColor = System.Drawing.Color.Black
+        Me.StatusLabel.Location = New System.Drawing.Point(56, 14)
+        Me.StatusLabel.Name = "StatusLabel"
+        Me.StatusLabel.Size = New System.Drawing.Size(121, 31)
+        Me.StatusLabel.TabIndex = 0
+        Me.StatusLabel.Text = "Calling..."
+        '
+        'StopCallButton
+        '
+        Me.StopCallButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.decline
+        Me.StopCallButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.StopCallButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StopCallButton.Location = New System.Drawing.Point(78, 242)
+        Me.StopCallButton.Name = "StopCallButton"
+        Me.StopCallButton.Size = New System.Drawing.Size(62, 49)
+        Me.StopCallButton.TabIndex = 14
+        Me.StopCallButton.UseVisualStyleBackColor = True
+        '
+        'TimeLabel
+        '
+        Me.TimeLabel.AutoSize = True
+        Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel.ForeColor = System.Drawing.Color.Black
+        Me.TimeLabel.Location = New System.Drawing.Point(73, 57)
+        Me.TimeLabel.Name = "TimeLabel"
+        Me.TimeLabel.Size = New System.Drawing.Size(71, 29)
+        Me.TimeLabel.TabIndex = 15
+        Me.TimeLabel.Text = "00:00"
+        '
+        'CallingPictureBox
+        '
+        Me.CallingPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.james
+        Me.CallingPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CallingPictureBox.Location = New System.Drawing.Point(44, 92)
+        Me.CallingPictureBox.Name = "CallingPictureBox"
+        Me.CallingPictureBox.Size = New System.Drawing.Size(136, 138)
+        Me.CallingPictureBox.TabIndex = 16
+        Me.CallingPictureBox.TabStop = False
+        '
+        'Timer1
+        '
+        '
         'ParentPhoneMainControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.LightCyan
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ConfigButton)
         Me.Controls.Add(Me.MessagePictureBox)
@@ -297,11 +365,15 @@ Partial Class ParentPhoneMainControl
         Me.Controls.Add(Me.PhoneLabel)
         Me.Controls.Add(Me.TitleLabel)
         Me.Controls.Add(Me.CallButton)
+        Me.Controls.Add(Me.CallingPanel)
         Me.Name = "ParentPhoneMainControl"
         Me.Size = New System.Drawing.Size(248, 396)
         CType(Me.JamesPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConfigPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MessagePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CallingPanel.ResumeLayout(False)
+        Me.CallingPanel.PerformLayout()
+        CType(Me.CallingPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -328,4 +400,10 @@ Partial Class ParentPhoneMainControl
     Friend WithEvents MessagePictureBox As PictureBox
     Friend WithEvents ConfigButton As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents CallingPanel As Panel
+    Friend WithEvents CallingPictureBox As PictureBox
+    Friend WithEvents TimeLabel As Label
+    Friend WithEvents StopCallButton As Button
+    Friend WithEvents StatusLabel As Label
+    Friend WithEvents Timer1 As Timer
 End Class
