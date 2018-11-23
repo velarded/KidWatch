@@ -14,7 +14,7 @@
 
     Public Sub ReceiveParentCall()
         CallingPanel.BackColor = Color.PaleTurquoise
-        StatusLabel.Text = "Timmy"
+        StatusLabel.Text = "James"
         CallingPanel.Visible = True
         TimeLabel.Visible = False
         CallingPanel.BringToFront()

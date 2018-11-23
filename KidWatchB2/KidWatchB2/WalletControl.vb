@@ -37,6 +37,8 @@
 
     Private Sub PaymentSuccessOKButton_Click(sender As Object, e As EventArgs) Handles PaymentSuccessOKButton.Click, PaymentFailedOKButton.Click
         MainWalletPage.BringToFront()
+        Dim kidWatch As KidWatch = Me.ParentForm
+        kidWatch.MenuScreen.BringToFront()
         Me.paymentMachine.Close()
     End Sub
 

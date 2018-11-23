@@ -117,6 +117,8 @@
     Private Sub CloseCallPanel()
         CallingPanel.Visible = False
         ContactsPanel.Visible = True
+        Dim kidWatch As KidWatch = Me.ParentForm
+        kidWatch.MenuScreen.BringToFront()
     End Sub
 
     Private Sub EndCallButton_Click(sender As Object, e As EventArgs) Handles StopCallButton.Click
