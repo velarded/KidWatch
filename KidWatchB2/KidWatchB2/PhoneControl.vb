@@ -181,7 +181,7 @@
         ReceiveCallPanel.Visible = False
         CallingPanel.Visible = True
 
-        Dim watch As KidWatch = Me.Parent.Parent
+        Dim watch As KidWatch = Me.Parent
 
         Dim mainform As MainForm = watch.mainForm
         mainform.parentPhone.ParentPhoneMainControl1.ConnectParentCall()
