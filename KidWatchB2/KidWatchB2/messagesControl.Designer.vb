@@ -29,25 +29,16 @@ Partial Class messagesControl
         Me.AudioMessageButton = New System.Windows.Forms.Button()
         Me.ViewMessagesButton = New System.Windows.Forms.Button()
         Me.MessageContactsPanel = New System.Windows.Forms.Panel()
-        Me.LilyMessageButton = New System.Windows.Forms.Button()
-        Me.MomMessageButton = New System.Windows.Forms.Button()
-        Me.TimmyMessageButton = New System.Windows.Forms.Button()
-        Me.DadMessageButton = New System.Windows.Forms.Button()
         Me.MessageTimer = New System.Windows.Forms.Timer(Me.components)
         Me.ConfirmationPanel = New System.Windows.Forms.Panel()
-        Me.CheckMarkPictureBox = New System.Windows.Forms.PictureBox()
         Me.MessageSentLabel = New System.Windows.Forms.Label()
         Me.PictureMessagePanel = New System.Windows.Forms.Panel()
-        Me.Picture3 = New System.Windows.Forms.Button()
-        Me.Picture1 = New System.Windows.Forms.Button()
-        Me.Picture2 = New System.Windows.Forms.Button()
-        Me.Picture4 = New System.Windows.Forms.Button()
         Me.SelectPictureLabel = New System.Windows.Forms.Label()
         Me.ViewMessagePanel = New System.Windows.Forms.Panel()
+        Me.viewPictureMessageButton = New System.Windows.Forms.Button()
         Me.ListenMessageButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.RecordingMessageLabel = New System.Windows.Forms.Label()
-        Me.RecordingContactPictureBox = New System.Windows.Forms.PictureBox()
         Me.RecordingContactLabel = New System.Windows.Forms.Label()
         Me.StopRecordButton = New System.Windows.Forms.Button()
         Me.TimeLabel = New System.Windows.Forms.Label()
@@ -56,45 +47,63 @@ Partial Class messagesControl
         Me.ListeningTimeLabel = New System.Windows.Forms.Label()
         Me.EndListeningButton = New System.Windows.Forms.Button()
         Me.ListeningContactLabel = New System.Windows.Forms.Label()
-        Me.ListeningContactPictureBox = New System.Windows.Forms.PictureBox()
         Me.ListeningMessageLabel = New System.Windows.Forms.Label()
-        Me.viewPictureMessageButton = New System.Windows.Forms.Button()
         Me.viewPicturePanel = New System.Windows.Forms.Panel()
         Me.BackButtonButton = New System.Windows.Forms.Button()
         Me.viewPicturePictureBox = New System.Windows.Forms.PictureBox()
+        Me.ListeningContactPictureBox = New System.Windows.Forms.PictureBox()
+        Me.Picture3 = New System.Windows.Forms.Button()
+        Me.Picture1 = New System.Windows.Forms.Button()
+        Me.Picture2 = New System.Windows.Forms.Button()
+        Me.Picture4 = New System.Windows.Forms.Button()
+        Me.CheckMarkPictureBox = New System.Windows.Forms.PictureBox()
+        Me.RecordingContactPictureBox = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LilyMessageButton = New System.Windows.Forms.Button()
+        Me.MomMessageButton = New System.Windows.Forms.Button()
+        Me.TimmyMessageButton = New System.Windows.Forms.Button()
+        Me.DadMessageButton = New System.Windows.Forms.Button()
         Me.MessageOptionspanel.SuspendLayout()
         Me.MessageContactsPanel.SuspendLayout()
         Me.ConfirmationPanel.SuspendLayout()
-        CType(Me.CheckMarkPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PictureMessagePanel.SuspendLayout()
         Me.ViewMessagePanel.SuspendLayout()
-        CType(Me.RecordingContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RecordAudioMessagePage.SuspendLayout()
         Me.ListeningAudioMessagePanel.SuspendLayout()
-        CType(Me.ListeningContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.viewPicturePanel.SuspendLayout()
         CType(Me.viewPicturePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ListeningContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CheckMarkPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RecordingContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MessageOptionspanel
         '
         Me.MessageOptionspanel.AutoSize = True
-        Me.MessageOptionspanel.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.MessageOptionspanel.BackColor = System.Drawing.Color.Tan
+        Me.MessageOptionspanel.Controls.Add(Me.PictureBox3)
+        Me.MessageOptionspanel.Controls.Add(Me.PictureBox2)
+        Me.MessageOptionspanel.Controls.Add(Me.PictureBox1)
         Me.MessageOptionspanel.Controls.Add(Me.pictureMessageButton)
         Me.MessageOptionspanel.Controls.Add(Me.videoMessageButton)
         Me.MessageOptionspanel.Controls.Add(Me.AudioMessageButton)
         Me.MessageOptionspanel.Controls.Add(Me.ViewMessagesButton)
         Me.MessageOptionspanel.Location = New System.Drawing.Point(0, 102)
         Me.MessageOptionspanel.Name = "MessageOptionspanel"
-        Me.MessageOptionspanel.Size = New System.Drawing.Size(116, 100)
+        Me.MessageOptionspanel.Size = New System.Drawing.Size(118, 101)
         Me.MessageOptionspanel.TabIndex = 4
         '
         'pictureMessageButton
         '
         Me.pictureMessageButton.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pictureMessageButton.Location = New System.Drawing.Point(15, 74)
+        Me.pictureMessageButton.Location = New System.Drawing.Point(33, 75)
         Me.pictureMessageButton.Name = "pictureMessageButton"
-        Me.pictureMessageButton.Size = New System.Drawing.Size(86, 23)
+        Me.pictureMessageButton.Size = New System.Drawing.Size(81, 23)
         Me.pictureMessageButton.TabIndex = 3
         Me.pictureMessageButton.Text = "Send Picture "
         Me.pictureMessageButton.UseVisualStyleBackColor = True
@@ -102,9 +111,9 @@ Partial Class messagesControl
         'videoMessageButton
         '
         Me.videoMessageButton.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.videoMessageButton.Location = New System.Drawing.Point(15, 49)
+        Me.videoMessageButton.Location = New System.Drawing.Point(33, 52)
         Me.videoMessageButton.Name = "videoMessageButton"
-        Me.videoMessageButton.Size = New System.Drawing.Size(86, 25)
+        Me.videoMessageButton.Size = New System.Drawing.Size(81, 22)
         Me.videoMessageButton.TabIndex = 2
         Me.videoMessageButton.Text = "Send Video"
         Me.videoMessageButton.UseVisualStyleBackColor = True
@@ -112,9 +121,9 @@ Partial Class messagesControl
         'AudioMessageButton
         '
         Me.AudioMessageButton.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AudioMessageButton.Location = New System.Drawing.Point(14, 25)
+        Me.AudioMessageButton.Location = New System.Drawing.Point(33, 27)
         Me.AudioMessageButton.Name = "AudioMessageButton"
-        Me.AudioMessageButton.Size = New System.Drawing.Size(87, 23)
+        Me.AudioMessageButton.Size = New System.Drawing.Size(81, 23)
         Me.AudioMessageButton.TabIndex = 1
         Me.AudioMessageButton.Text = "Send Audio "
         Me.AudioMessageButton.UseVisualStyleBackColor = True
@@ -122,9 +131,9 @@ Partial Class messagesControl
         'ViewMessagesButton
         '
         Me.ViewMessagesButton.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ViewMessagesButton.Location = New System.Drawing.Point(5, 3)
+        Me.ViewMessagesButton.Location = New System.Drawing.Point(2, 2)
         Me.ViewMessagesButton.Name = "ViewMessagesButton"
-        Me.ViewMessagesButton.Size = New System.Drawing.Size(107, 23)
+        Me.ViewMessagesButton.Size = New System.Drawing.Size(112, 23)
         Me.ViewMessagesButton.TabIndex = 0
         Me.ViewMessagesButton.Text = "View Messages"
         Me.ViewMessagesButton.UseVisualStyleBackColor = True
@@ -142,46 +151,6 @@ Partial Class messagesControl
         Me.MessageContactsPanel.Size = New System.Drawing.Size(116, 100)
         Me.MessageContactsPanel.TabIndex = 16
         '
-        'LilyMessageButton
-        '
-        Me.LilyMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.lilymessage
-        Me.LilyMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.LilyMessageButton.Location = New System.Drawing.Point(18, 238)
-        Me.LilyMessageButton.Name = "LilyMessageButton"
-        Me.LilyMessageButton.Size = New System.Drawing.Size(80, 100)
-        Me.LilyMessageButton.TabIndex = 2
-        Me.LilyMessageButton.UseVisualStyleBackColor = True
-        '
-        'MomMessageButton
-        '
-        Me.MomMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.mommeassage
-        Me.MomMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MomMessageButton.Location = New System.Drawing.Point(18, 2)
-        Me.MomMessageButton.Name = "MomMessageButton"
-        Me.MomMessageButton.Size = New System.Drawing.Size(80, 100)
-        Me.MomMessageButton.TabIndex = 0
-        Me.MomMessageButton.UseVisualStyleBackColor = True
-        '
-        'TimmyMessageButton
-        '
-        Me.TimmyMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.timmymessage
-        Me.TimmyMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TimmyMessageButton.Location = New System.Drawing.Point(18, 356)
-        Me.TimmyMessageButton.Name = "TimmyMessageButton"
-        Me.TimmyMessageButton.Size = New System.Drawing.Size(80, 100)
-        Me.TimmyMessageButton.TabIndex = 3
-        Me.TimmyMessageButton.UseVisualStyleBackColor = True
-        '
-        'DadMessageButton
-        '
-        Me.DadMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.dadmessage
-        Me.DadMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.DadMessageButton.Location = New System.Drawing.Point(18, 120)
-        Me.DadMessageButton.Name = "DadMessageButton"
-        Me.DadMessageButton.Size = New System.Drawing.Size(80, 100)
-        Me.DadMessageButton.TabIndex = 1
-        Me.DadMessageButton.UseVisualStyleBackColor = True
-        '
         'MessageTimer
         '
         '
@@ -195,16 +164,6 @@ Partial Class messagesControl
         Me.ConfirmationPanel.Name = "ConfirmationPanel"
         Me.ConfirmationPanel.Size = New System.Drawing.Size(116, 100)
         Me.ConfirmationPanel.TabIndex = 17
-        '
-        'CheckMarkPictureBox
-        '
-        Me.CheckMarkPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.check_1769866__3401
-        Me.CheckMarkPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CheckMarkPictureBox.Location = New System.Drawing.Point(26, 41)
-        Me.CheckMarkPictureBox.Name = "CheckMarkPictureBox"
-        Me.CheckMarkPictureBox.Size = New System.Drawing.Size(60, 53)
-        Me.CheckMarkPictureBox.TabIndex = 1
-        Me.CheckMarkPictureBox.TabStop = False
         '
         'MessageSentLabel
         '
@@ -231,46 +190,6 @@ Partial Class messagesControl
         Me.PictureMessagePanel.Size = New System.Drawing.Size(116, 100)
         Me.PictureMessagePanel.TabIndex = 18
         '
-        'Picture3
-        '
-        Me.Picture3.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.download
-        Me.Picture3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Picture3.Location = New System.Drawing.Point(12, 57)
-        Me.Picture3.Name = "Picture3"
-        Me.Picture3.Size = New System.Drawing.Size(40, 40)
-        Me.Picture3.TabIndex = 4
-        Me.Picture3.UseVisualStyleBackColor = True
-        '
-        'Picture1
-        '
-        Me.Picture1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.images
-        Me.Picture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Picture1.Location = New System.Drawing.Point(12, 19)
-        Me.Picture1.Name = "Picture1"
-        Me.Picture1.Size = New System.Drawing.Size(40, 40)
-        Me.Picture1.TabIndex = 3
-        Me.Picture1.UseVisualStyleBackColor = True
-        '
-        'Picture2
-        '
-        Me.Picture2.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.seasonal_weather_landscape_icon_vector_19925537
-        Me.Picture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Picture2.Location = New System.Drawing.Point(61, 19)
-        Me.Picture2.Name = "Picture2"
-        Me.Picture2.Size = New System.Drawing.Size(40, 40)
-        Me.Picture2.TabIndex = 2
-        Me.Picture2.UseVisualStyleBackColor = True
-        '
-        'Picture4
-        '
-        Me.Picture4.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.Hugging_Face_Emoji_2028ce8b_c213_4d45_94aa_21e1a0842b4d_large
-        Me.Picture4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Picture4.Location = New System.Drawing.Point(61, 57)
-        Me.Picture4.Name = "Picture4"
-        Me.Picture4.Size = New System.Drawing.Size(40, 40)
-        Me.Picture4.TabIndex = 1
-        Me.Picture4.UseVisualStyleBackColor = True
-        '
         'SelectPictureLabel
         '
         Me.SelectPictureLabel.AutoSize = True
@@ -293,6 +212,17 @@ Partial Class messagesControl
         Me.ViewMessagePanel.Name = "ViewMessagePanel"
         Me.ViewMessagePanel.Size = New System.Drawing.Size(122, 100)
         Me.ViewMessagePanel.TabIndex = 19
+        '
+        'viewPictureMessageButton
+        '
+        Me.viewPictureMessageButton.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewPictureMessageButton.ForeColor = System.Drawing.Color.ForestGreen
+        Me.viewPictureMessageButton.Location = New System.Drawing.Point(61, 58)
+        Me.viewPictureMessageButton.Name = "viewPictureMessageButton"
+        Me.viewPictureMessageButton.Size = New System.Drawing.Size(51, 31)
+        Me.viewPictureMessageButton.TabIndex = 2
+        Me.viewPictureMessageButton.Text = "View"
+        Me.viewPictureMessageButton.UseVisualStyleBackColor = True
         '
         'ListenMessageButton
         '
@@ -325,15 +255,6 @@ Partial Class messagesControl
         Me.RecordingMessageLabel.Size = New System.Drawing.Size(95, 23)
         Me.RecordingMessageLabel.TabIndex = 0
         Me.RecordingMessageLabel.Text = "Recording..."
-        '
-        'RecordingContactPictureBox
-        '
-        Me.RecordingContactPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.RecordingContactPictureBox.Location = New System.Drawing.Point(4, 25)
-        Me.RecordingContactPictureBox.Name = "RecordingContactPictureBox"
-        Me.RecordingContactPictureBox.Size = New System.Drawing.Size(42, 41)
-        Me.RecordingContactPictureBox.TabIndex = 1
-        Me.RecordingContactPictureBox.TabStop = False
         '
         'RecordingContactLabel
         '
@@ -427,15 +348,6 @@ Partial Class messagesControl
         Me.ListeningContactLabel.TabIndex = 13
         Me.ListeningContactLabel.Text = "Contact"
         '
-        'ListeningContactPictureBox
-        '
-        Me.ListeningContactPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ListeningContactPictureBox.Location = New System.Drawing.Point(4, 25)
-        Me.ListeningContactPictureBox.Name = "ListeningContactPictureBox"
-        Me.ListeningContactPictureBox.Size = New System.Drawing.Size(42, 41)
-        Me.ListeningContactPictureBox.TabIndex = 1
-        Me.ListeningContactPictureBox.TabStop = False
-        '
         'ListeningMessageLabel
         '
         Me.ListeningMessageLabel.AutoSize = True
@@ -446,17 +358,6 @@ Partial Class messagesControl
         Me.ListeningMessageLabel.Size = New System.Drawing.Size(87, 23)
         Me.ListeningMessageLabel.TabIndex = 0
         Me.ListeningMessageLabel.Text = "Listening..."
-        '
-        'viewPictureMessageButton
-        '
-        Me.viewPictureMessageButton.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.viewPictureMessageButton.ForeColor = System.Drawing.Color.ForestGreen
-        Me.viewPictureMessageButton.Location = New System.Drawing.Point(61, 58)
-        Me.viewPictureMessageButton.Name = "viewPictureMessageButton"
-        Me.viewPictureMessageButton.Size = New System.Drawing.Size(51, 31)
-        Me.viewPictureMessageButton.TabIndex = 2
-        Me.viewPictureMessageButton.Text = "View"
-        Me.viewPictureMessageButton.UseVisualStyleBackColor = True
         '
         'viewPicturePanel
         '
@@ -490,6 +391,144 @@ Partial Class messagesControl
         Me.viewPicturePictureBox.TabIndex = 3
         Me.viewPicturePictureBox.TabStop = False
         '
+        'ListeningContactPictureBox
+        '
+        Me.ListeningContactPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ListeningContactPictureBox.Location = New System.Drawing.Point(4, 25)
+        Me.ListeningContactPictureBox.Name = "ListeningContactPictureBox"
+        Me.ListeningContactPictureBox.Size = New System.Drawing.Size(42, 41)
+        Me.ListeningContactPictureBox.TabIndex = 1
+        Me.ListeningContactPictureBox.TabStop = False
+        '
+        'Picture3
+        '
+        Me.Picture3.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.download
+        Me.Picture3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Picture3.Location = New System.Drawing.Point(12, 57)
+        Me.Picture3.Name = "Picture3"
+        Me.Picture3.Size = New System.Drawing.Size(40, 40)
+        Me.Picture3.TabIndex = 4
+        Me.Picture3.UseVisualStyleBackColor = True
+        '
+        'Picture1
+        '
+        Me.Picture1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.images
+        Me.Picture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Picture1.Location = New System.Drawing.Point(12, 19)
+        Me.Picture1.Name = "Picture1"
+        Me.Picture1.Size = New System.Drawing.Size(40, 40)
+        Me.Picture1.TabIndex = 3
+        Me.Picture1.UseVisualStyleBackColor = True
+        '
+        'Picture2
+        '
+        Me.Picture2.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.seasonal_weather_landscape_icon_vector_19925537
+        Me.Picture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Picture2.Location = New System.Drawing.Point(61, 19)
+        Me.Picture2.Name = "Picture2"
+        Me.Picture2.Size = New System.Drawing.Size(40, 40)
+        Me.Picture2.TabIndex = 2
+        Me.Picture2.UseVisualStyleBackColor = True
+        '
+        'Picture4
+        '
+        Me.Picture4.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.Hugging_Face_Emoji_2028ce8b_c213_4d45_94aa_21e1a0842b4d_large
+        Me.Picture4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Picture4.Location = New System.Drawing.Point(61, 57)
+        Me.Picture4.Name = "Picture4"
+        Me.Picture4.Size = New System.Drawing.Size(40, 40)
+        Me.Picture4.TabIndex = 1
+        Me.Picture4.UseVisualStyleBackColor = True
+        '
+        'CheckMarkPictureBox
+        '
+        Me.CheckMarkPictureBox.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.check_1769866__3401
+        Me.CheckMarkPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CheckMarkPictureBox.Location = New System.Drawing.Point(26, 41)
+        Me.CheckMarkPictureBox.Name = "CheckMarkPictureBox"
+        Me.CheckMarkPictureBox.Size = New System.Drawing.Size(60, 53)
+        Me.CheckMarkPictureBox.TabIndex = 1
+        Me.CheckMarkPictureBox.TabStop = False
+        '
+        'RecordingContactPictureBox
+        '
+        Me.RecordingContactPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RecordingContactPictureBox.Location = New System.Drawing.Point(4, 25)
+        Me.RecordingContactPictureBox.Name = "RecordingContactPictureBox"
+        Me.RecordingContactPictureBox.Size = New System.Drawing.Size(42, 41)
+        Me.RecordingContactPictureBox.TabIndex = 1
+        Me.RecordingContactPictureBox.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.images__1_
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(3, 75)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(30, 23)
+        Me.PictureBox3.TabIndex = 6
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.KidWatchB2.My.Resources.Resources._72_512
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 51)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(30, 23)
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.audio_icon_symbol_premium_quality_isolated_mike_vector_17203589
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 26)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(30, 23)
+        Me.PictureBox1.TabIndex = 4
+        Me.PictureBox1.TabStop = False
+        '
+        'LilyMessageButton
+        '
+        Me.LilyMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.lilymessage
+        Me.LilyMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LilyMessageButton.Location = New System.Drawing.Point(18, 238)
+        Me.LilyMessageButton.Name = "LilyMessageButton"
+        Me.LilyMessageButton.Size = New System.Drawing.Size(80, 100)
+        Me.LilyMessageButton.TabIndex = 2
+        Me.LilyMessageButton.UseVisualStyleBackColor = True
+        '
+        'MomMessageButton
+        '
+        Me.MomMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.mommeassage
+        Me.MomMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MomMessageButton.Location = New System.Drawing.Point(18, 2)
+        Me.MomMessageButton.Name = "MomMessageButton"
+        Me.MomMessageButton.Size = New System.Drawing.Size(80, 100)
+        Me.MomMessageButton.TabIndex = 0
+        Me.MomMessageButton.UseVisualStyleBackColor = True
+        '
+        'TimmyMessageButton
+        '
+        Me.TimmyMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.timmymessage
+        Me.TimmyMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TimmyMessageButton.Location = New System.Drawing.Point(18, 356)
+        Me.TimmyMessageButton.Name = "TimmyMessageButton"
+        Me.TimmyMessageButton.Size = New System.Drawing.Size(80, 100)
+        Me.TimmyMessageButton.TabIndex = 3
+        Me.TimmyMessageButton.UseVisualStyleBackColor = True
+        '
+        'DadMessageButton
+        '
+        Me.DadMessageButton.BackgroundImage = Global.KidWatchB2.My.Resources.Resources.dadmessage
+        Me.DadMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.DadMessageButton.Location = New System.Drawing.Point(18, 120)
+        Me.DadMessageButton.Name = "DadMessageButton"
+        Me.DadMessageButton.Size = New System.Drawing.Size(80, 100)
+        Me.DadMessageButton.TabIndex = 1
+        Me.DadMessageButton.UseVisualStyleBackColor = True
+        '
         'messagesControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -509,18 +548,21 @@ Partial Class messagesControl
         Me.MessageContactsPanel.ResumeLayout(False)
         Me.ConfirmationPanel.ResumeLayout(False)
         Me.ConfirmationPanel.PerformLayout()
-        CType(Me.CheckMarkPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PictureMessagePanel.ResumeLayout(False)
         Me.PictureMessagePanel.PerformLayout()
         Me.ViewMessagePanel.ResumeLayout(False)
-        CType(Me.RecordingContactPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RecordAudioMessagePage.ResumeLayout(False)
         Me.RecordAudioMessagePage.PerformLayout()
         Me.ListeningAudioMessagePanel.ResumeLayout(False)
         Me.ListeningAudioMessagePanel.PerformLayout()
-        CType(Me.ListeningContactPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.viewPicturePanel.ResumeLayout(False)
         CType(Me.viewPicturePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ListeningContactPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CheckMarkPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RecordingContactPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -565,4 +607,7 @@ Partial Class messagesControl
     Friend WithEvents viewPicturePanel As Panel
     Friend WithEvents viewPicturePictureBox As PictureBox
     Friend WithEvents BackButtonButton As Button
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

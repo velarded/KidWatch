@@ -443,5 +443,14 @@
   <ItemGroup>
     <None Include="Resources\video-game-console-controller-icon-digital-red-vector-17114378.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio-icon-symbol-premium-quality-isolated-mike-vector-17203589.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
