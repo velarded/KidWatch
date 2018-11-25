@@ -28,23 +28,18 @@ Partial Class KidWatch
         Me.MenuButton = New System.Windows.Forms.Button()
         Me.currentTimeLabel = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-
         Me.MessagesControl1 = New KidWatchB2.messagesControl()
-
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.VolumePictureBox = New System.Windows.Forms.PictureBox()
-
         Me.MenuScreen = New KidWatchB2.MenuControl()
         Me.CalendarControl1 = New KidWatchB2.CalendarControl()
         Me.Wallet = New KidWatchB2.WalletControl()
         Me.PhoneCallScreen = New KidWatchB2.PhoneControl()
         Me.ClockControl1 = New KidWatchB2.clockControl()
-
         Me.ReminderScreen = New KidWatchB2.ReminderControl()
-        CType(Me.VolumePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MapControl1 = New KidWatchB2.MapControl()
-
+        CType(Me.VolumePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CallButton
@@ -184,7 +179,7 @@ Partial Class KidWatch
         Me.ReminderScreen.Name = "ReminderScreen"
         Me.ReminderScreen.Size = New System.Drawing.Size(116, 100)
         Me.ReminderScreen.TabIndex = 13
-
+        '
         'MapControl1
         '
         Me.MapControl1.Location = New System.Drawing.Point(33, 88)
@@ -192,7 +187,6 @@ Partial Class KidWatch
         Me.MapControl1.Name = "MapControl1"
         Me.MapControl1.Size = New System.Drawing.Size(116, 100)
         Me.MapControl1.TabIndex = 10
-
         '
         'KidWatch
         '
@@ -211,14 +205,10 @@ Partial Class KidWatch
         Me.Controls.Add(Me.Wallet)
         Me.Controls.Add(Me.PhoneCallScreen)
         Me.Controls.Add(Me.ClockControl1)
-
         Me.Controls.Add(Me.MessagesControl1)
-
         Me.Controls.Add(Me.VolumePictureBox)
         Me.Controls.Add(Me.ReminderScreen)
-
         Me.Controls.Add(Me.MapControl1)
-
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"

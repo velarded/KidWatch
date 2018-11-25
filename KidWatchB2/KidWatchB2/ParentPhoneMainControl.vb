@@ -43,6 +43,7 @@
     End Sub
 
     Private Sub CallButton_Click(sender As Object, e As EventArgs) Handles CallButton.Click
+        ReceiveCallControlsPanel.Visible = False
         StatusLabel.Text = "Calling..."
         CallingPanel.BackColor = Color.PaleTurquoise
         callStopwatch.Reset()

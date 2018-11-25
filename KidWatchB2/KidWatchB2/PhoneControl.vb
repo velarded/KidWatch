@@ -44,10 +44,10 @@
     End Sub
 
     ' Friend will NOT answer. TODO: leave message
-    Private Sub ContactLillyButton_Click(sender As Object, e As EventArgs) Handles ContactLillyButton.Click
+    Private Sub ContactLilyButton_Click(sender As Object, e As EventArgs) Handles ContactLilyButton.Click
         Dim pickup = False
         Dim transfer = False ' will leave message and no transfer
-        SetUpCalling("Lilly", My.Resources.person3, pickup, transfer)
+        SetUpCalling("Lily", My.Resources.person3, pickup, transfer)
     End Sub
 
     ' Friend will answer just like Dad
@@ -88,10 +88,12 @@
             Else
                 If transfer = True Then
                     ' transfer to Dad
-                    StatusLabel.Text = "Transfer."
+                    StatusLabel.Text = "Transfering"
+                    Wait(2)
+                    SetUpCalling("Dad", My.Resources.person2)
                 Else
                     ' leave message
-                    StatusLabel.Text = "Message."
+                    SendToVoicemail()
                 End If
             End If
         End If
@@ -100,6 +102,15 @@
     Private Sub OngoingCall()
         StatusLabel.Text = "Connected"
         CallingPanel.BackColor = Color.DarkGreen
+        StopCallButton.Enabled = True
+        CallTimer.Start()
+        callStopwatch.Reset()
+        callStopwatch.Start()
+        TimeLabel.Visible = True
+    End Sub
+
+    Private Sub SendToVoicemail()
+        StatusLabel.Text = "Voicemail"
         StopCallButton.Enabled = True
         CallTimer.Start()
         callStopwatch.Reset()
@@ -124,8 +135,6 @@
     Private Sub EndCallButton_Click(sender As Object, e As EventArgs) Handles StopCallButton.Click
         StopCallButton.Enabled = False
         EndCallKidWatch(Me)
-        Wait(2)
-        CloseCallPanel()
     End Sub
     Private Sub Wait(ByVal seconds As Integer)
         For i As Integer = 0 To seconds * 100
@@ -135,8 +144,13 @@
     End Sub
 
     Private Sub OngoingCallTimer_Tick(sender As Object, e As EventArgs) Handles CallTimer.Tick
-        If StatusLabel.Text = "Connected" Then
+        If StatusLabel.Text = "Connected" Or CallingContactLabel.Text = "Lily" Then
             TimeLabel.Text = String.Format("{0:00}:{1:00}",
+                 callStopwatch.Elapsed.Minutes, callStopwatch.Elapsed.Seconds)
+        End If
+
+        If VoicemailPanel.Visible = True Then
+            VoicemailTimeLabel.Text = String.Format("{0:00}:{1:00}",
                  callStopwatch.Elapsed.Minutes, callStopwatch.Elapsed.Seconds)
         End If
 
@@ -152,13 +166,18 @@
     End Sub
 
     Private Sub VoicemailButton_Click(sender As Object, e As EventArgs) Handles VoicemailButton.Click
+        callStopwatch.Reset()
         ContactsPanel.Visible = False
         VoicemailPanel.Visible = True
+        CallTimer.Start()
+        callStopwatch.Start()
     End Sub
 
     Private Sub CloseVoicemailButton_Click(sender As Object, e As EventArgs) Handles CloseVoicemailButton.Click
+        callStopwatch.Stop()
         VoicemailPanel.Visible = False
         ContactsPanel.Visible = True
+        CloseCallPanel()
     End Sub
 
     ' Receive call from Dad
@@ -202,7 +221,7 @@
         ReceiveCallPanel.BackColor = Color.DimGray
         PickUpButton.Enabled = False
         DeclineButton.Enabled = False
-
+        EndCallKidWatch(Me)
         Wait(2)
         ReceiveCallPanel.Visible = False
         ContactsPanel.Visible = True
