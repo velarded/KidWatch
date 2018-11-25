@@ -88,7 +88,7 @@
             Else
                 If transfer = True Then
                     ' transfer to Dad
-                    StatusLabel.Text = "Transfering"
+                    StatusLabel.Text = "Transfer.."
                     Wait(2)
                     SetUpCalling("Dad", My.Resources.person2)
                 Else
