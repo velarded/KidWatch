@@ -37,7 +37,6 @@
             Wait(2)
         End If
 
-
         CallingPanel.Visible = False
         CallingPanel.SendToBack()
     End Sub

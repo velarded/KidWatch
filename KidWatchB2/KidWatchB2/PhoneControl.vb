@@ -110,7 +110,8 @@
     End Sub
 
     Private Sub SendToVoicemail()
-        StatusLabel.Text = "Voicemail"
+        LeaveMsgLabel.Visible = True
+        LeaveMsgLabel.BringToFront()
         StopCallButton.Enabled = True
         CallTimer.Start()
         callStopwatch.Reset()
@@ -121,6 +122,7 @@
     Private Sub EndCall()
         CallTimer.Stop()
         callStopwatch.Stop()
+        LeaveMsgLabel.Visible = False
         StatusLabel.Text = "Call Ended"
         CallingPanel.BackColor = Color.DimGray
     End Sub

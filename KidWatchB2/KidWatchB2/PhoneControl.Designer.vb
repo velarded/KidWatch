@@ -48,6 +48,7 @@ Partial Class PhoneControl
         Me.CloseVoicemailButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.VoicemailLabel = New System.Windows.Forms.Label()
+        Me.LeaveMsgLabel = New System.Windows.Forms.Label()
         Me.ContactsPanel.SuspendLayout()
         Me.CallingPanel.SuspendLayout()
         CType(Me.CallingContactPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -157,6 +158,7 @@ Partial Class PhoneControl
         Me.CallingPanel.Controls.Add(Me.CallingContactLabel)
         Me.CallingPanel.Controls.Add(Me.CallingContactPictureBox)
         Me.CallingPanel.Controls.Add(Me.StatusLabel)
+        Me.CallingPanel.Controls.Add(Me.LeaveMsgLabel)
         Me.CallingPanel.Location = New System.Drawing.Point(0, 719)
         Me.CallingPanel.Name = "CallingPanel"
         Me.CallingPanel.Size = New System.Drawing.Size(116, 100)
@@ -319,6 +321,18 @@ Partial Class PhoneControl
         Me.VoicemailLabel.TabIndex = 0
         Me.VoicemailLabel.Text = "Voicemail"
         '
+        'LeaveMsgLabel
+        '
+        Me.LeaveMsgLabel.AutoSize = True
+        Me.LeaveMsgLabel.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LeaveMsgLabel.ForeColor = System.Drawing.Color.White
+        Me.LeaveMsgLabel.Location = New System.Drawing.Point(0, 5)
+        Me.LeaveMsgLabel.Name = "LeaveMsgLabel"
+        Me.LeaveMsgLabel.Size = New System.Drawing.Size(115, 20)
+        Me.LeaveMsgLabel.TabIndex = 16
+        Me.LeaveMsgLabel.Text = "Leave message.."
+        Me.LeaveMsgLabel.Visible = False
+        '
         'PhoneControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -368,4 +382,5 @@ Partial Class PhoneControl
     Friend WithEvents VoicemailLabel As Label
     Friend WithEvents SOSButton As Button
     Friend WithEvents VoicemailTimeLabel As Label
+    Friend WithEvents LeaveMsgLabel As Label
 End Class
