@@ -54,7 +54,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.OpenParentPhoneButton)
         Me.Controls.Add(Me.OpenKidWatchButton)
         Me.Name = "MainForm"
-        Me.Text = "MainForm"
+        Me.Text = "Group B2 - KidWatch"
         Me.ResumeLayout(False)
 
     End Sub

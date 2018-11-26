@@ -212,7 +212,7 @@ Partial Class KidWatch
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "KidWatch"
-        Me.Text = "Group B2 - KidWatch"
+        Me.Text = "KidWatch"
         CType(Me.VolumePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
